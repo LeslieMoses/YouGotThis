@@ -1,0 +1,219 @@
+html {
+  position: relative;
+  min-height: 100%;
+  /*background: pink;*/
+
+}
+
+body {
+  margin-bottom: 60px;
+   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#febbbb+0,fe9090+45,fe9090+62,fe9090+74,ff5c5c+100 */
+background: pink; /* Old browsers */
+background: -moz-linear-gradient(45deg, #febbbb 0%, #fe9090 45%, #fe9090 62%, #fe9090 74%, #ff5c5c 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(45deg, #febbbb 0%,#fe9090 45%,#fe9090 62%,#fe9090 74%,#ff5c5c 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(45deg, #febbbb 0%,#fe9090 45%,#fe9090 62%,#fe9090 74%,#ff5c5c 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#febbbb', endColorstr='#ff5c5c',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+}
+
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  padding-right: 20px;
+  padding-left: 20px;
+  background: transparent;
+
+}
+
+.gold {
+  color: gold;
+}
+
+
+.quote {
+  padding-top: 20px;
+}
+
+.navHed {
+color: white;
+/*font-family: 'Abril Fatface', cursive; nice.plain*/
+/*font-family: 'Geostar Fill', cursive; showy?*/
+/*font-family: 'Fredericka the Great', cursive; light?*/
+/*font-family: 'Bungee Outline', cursive; light?*/
+/*font-family: 'Monofett', cursive;;;)*/
+font-family: 'Bungee Shade', cursive;
+}
+
+/*PAIR W/ BUNGEE: 
+Hed bold--Bungee
+Hed cursive--Lobster
+Hed disco--Monoton
+text sans--Open Sans   font-family: 'Open Sans', sans-serif;*/
+
+
+
+nav.navbar.navbar-default {
+background: #333;    
+    /*border-color: pink;*/
+}
+
+a.navHed.navbar-brand{
+    color: black;
+    color: white;
+font-size: 29px;
+
+}
+/*HOME pg?*/
+ label {
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: -15px;
+    font-weight: 700;
+    font-size: 42px;
+    /* font-family: 'Open Sans', sans-serif; */
+    font-family: 'Bungee', cursive;
+}
+
+.beenThereHome {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+color: #333;
+font-weight: bold;
+}
+
+ .form-group {
+     margin-bottom: 10px; 
+    margin-top: 60px;
+}
+
+.and {
+font-family: 'Bungee', cursive;
+font-size: 25px;
+color: white;
+}
+
+.fa-book:before {
+    content: "\f02d";
+    font-size: 770%;
+    color: navajowhite;
+}
+
+.YouGotThisDekHome {
+font-family: 'Bungee', cursive;
+font-size: 72px;
+margin-top: 10px;
+color: white;
+/*background-color: white;*/
+
+}
+
+ul {list-style: none;
+}
+
+/*CONCERN PG*/
+
+.concernTally{
+background: white; 
+width: 20%; 
+padding: 5px;
+ margin-top:7px; 
+border-radius:10px; 
+text-align:center;
+}
+
+.thereHereBtns li  {
+  display:inline;
+  margin-right: 5px;
+  /*float: left;*/
+  }
+
+.thereHereTally li  {
+  display:inline;
+  margin-right: 15px;
+  float: left;
+  /*margin-right: */
+  
+  }
+
+.concernPgBtns li  {
+  display:inline;
+  margin-right: 5px;
+  /*float: left;*/
+  }
+
+.storyText{
+background: white; 
+border-radius:10px; 
+padding: 15px;
+height: 40%;
+width: 100%;
+margin-top:17px; 
+}
+
+.blockquote  {
+    padding: 30px 20px;
+    margin: 20 0 20px;
+    font-size: 20px;
+    border-left: 5px solid #eee;
+    /*color: green;*/
+}
+
+/*ABOUT US pg*/
+
+.bio {
+background: white; 
+border-radius:10px; 
+padding: 15px;
+height: 70%;
+width: 100%;
+margin-top:17px; 
+}
+
+/*WHY pg*/
+
+.whyPgBtns li {
+    display:inline;
+  margin-right: 5px;
+  /*float: left;*/
+      margin-top: 17%;
+  }
+}
+
+/*LOGINBOX pg*/
+/*
+body {
+    width:100px;
+	height:100px;
+  background: -webkit-linear-gradient(90deg, #16222A 10%, #3A6073 90%); /* Chrome 10+, Saf5.1+ */
+  background:    -moz-linear-gradient(90deg, #16222A 10%, #3A6073 90%); /* FF3.6+ */
+  background:     -ms-linear-gradient(90deg, #16222A 10%, #3A6073 90%); /* IE10 */
+  background:      -o-linear-gradient(90deg, #16222A 10%, #3A6073 90%); /* Opera 11.10+ */
+  background:         linear-gradient(90deg, #16222A 10%, #3A6073 90%); /* W3C */
+font-family: 'Raleway', sans-serif;
+}
+
+p {
+	color:#CCC;
+}
+
+.spacing {
+	padding-top:7px;
+	padding-bottom:7px;
+}
+.middlePage {
+	width: 680px;
+    height: 500px;
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.logo {
+	color:#CCC;
+}*/
