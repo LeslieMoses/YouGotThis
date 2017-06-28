@@ -74,7 +74,7 @@ class Concerns extends Component {
           <div className="col-md-3 col-md-8 col-md-offset-1"> 
         <div style={styles.formStyle} className="form-group">
           <label htmlFor="input-box">
-            #dynamic Concern
+
             {this.state.concernUpdate}
           </label>
            <button onClick={this.addClick.bind(this)} type="button" className="btn btn-success">Been There <span className="badge"> {this.state.beenThere}</span></button> 
