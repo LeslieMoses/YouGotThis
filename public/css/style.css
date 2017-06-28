@@ -101,6 +101,19 @@ color: white;
     color: navajowhite;
 }
 
+.fa-book:hover {
+    content: "\f02d";
+    font-size: 480%;
+    color: black;
+        /*font-size: 5em;*/
+}
+
+/*.book-icon:hover{
+    content: "\f02d";
+    font-size: 700%;
+    color: black;
+}*/
+
 .YouGotThisDekHome {
 font-family: 'Bungee', cursive;
 font-size: 72px;
@@ -217,3 +230,34 @@ p {
 .logo {
 	color:#CCC;
 }*/
+
+/*SUBMIT STORY pg*/
+
+ div .inputTitle {
+  font-family: 'Open Sans', sans-serif;
+  	color:#CCC;
+    font-size: 20px;
+}
+
+#by {
+  width: 40%;
+    border-radius: 5px;
+
+}
+
+#title {
+  width: 60%;
+    border-radius: 5px;
+}
+
+#sel1 {
+  width: 40%;
+    border-radius: 5px;
+}
+
+
+#comment {
+  width: 60%;
+      border-radius: 5px;
+
+}

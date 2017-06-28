@@ -17,7 +17,8 @@ const Navigation = () => (
   <Navbar collapseOnSelect>
     <Navbar.Header>
       <Navbar.Brand>
-        <a href="#" className="navHed">You Got This</a>
+        <Link to="/" className="navHed">You Got This</Link>
+        {/*<a href="#" className="navHed">You Got This</a>*/}
       </Navbar.Brand>
       
       <Navbar.Toggle/>

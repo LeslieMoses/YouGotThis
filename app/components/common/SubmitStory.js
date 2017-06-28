@@ -8,7 +8,7 @@ class SubmitStory extends Component {
     this.state = {
       quotes: [],
       true: true,
-      numberOfGuests: 6
+    
     };
     // Binding getQuotes to this component since we'll be passing this method to
     // other components to use
@@ -57,44 +57,83 @@ class SubmitStory extends Component {
   render() {
     return (
       
+   <div className="container-fluid">
+
       <div>
-        <form>
-          <label>
-            True?
+       
+<div>
+
+ 
+        
+        <div className="input-group">
+
+         
+          <div className="container">
+        
+            <form>
+              <div className="form-group">
+         
+                <h3 className="inputTitle">Storyteller</h3>
+                <input type="password" placeholder=" &nbsp;Your Name " className="form-control" id="by" />           
+                
+    <br />               
+
+            <h3 className="inputTitle" htmlFor="sel1">Story's Concern</h3>
+            <select className="form-control" id="sel1">
+              <option> &nbsp; Concern 1</option>
+              <option> &nbsp; Concern 2</option>
+              <option> &nbsp; Concern 3</option>
+              <option> &nbsp; Concern 4</option>
+              <option> &nbsp; Concern 5</option>
+              <option> &nbsp; Concern 6</option>
+              <option> &nbsp; Other</option>
+
+            </select>            
+        <br />       
+            <h3 className="inputTitle" htmlFor="usr">Headline</h3>
+                <input type="text" className="form-control" placeholder=" &nbsp;Story Title " id="title" />
+   
+         
+
+            </div>
+ 
+
+            </form>
+
+          </div>
+
+        </div>
+
+
+  <form>
+    
+    <div className="form-group">
+      <h3 className="inputTitle" for="comment">Story:</h3>
+ <form>
+          <h3 className="inputTitle">
+            True story? 
             <input
               name="true"
               type="checkbox"
               checked={this.state.true}
               onChange={this.handleInputChange}/>
-          </label>
+          </h3>
           <br/>
-          <label>
-            Number of guests:
-            <input
-              name="numberOfGuests"
-              type="number"
-              value={this.state.numberOfGuests}
-              onChange={this.handleInputChange}/>
-          </label>
+           <h3 className="inputTitle">Source</h3>
+                <input type="password" placeholder=" &nbsp;Your Name " className="form-control" id="by" />           
         </form>
-
-         
-
-<div className="container">
-
-  <h2>Form control: textarea</h2>
-  <p>The form below contains a textarea for comments:</p>
-
-  <form>
-    
-    <div className="form-group">
-      <label for="comment">Story:</label>
-
       <textarea className="form-control" rows="9" id="comment" spellCheck="true"></textarea>
-    </div>
+             <span className="input-group-addon" id="basic-addon3">Guidelines:
+
+
+
+
+
+          </span> </div>
   </form>
 </div>
-      </div>
+     
+      </div></div>
 
     );
   }

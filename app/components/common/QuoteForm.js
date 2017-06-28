@@ -1,6 +1,7 @@
 import React, {Component} from "react";
 import API from "../../utils/API";
 var FontAwesome = require('react-fontawesome');
+import {Link} from "react-router";
 
 
 class QuoteForm extends Component {
@@ -44,12 +45,23 @@ class QuoteForm extends Component {
           <div className="row">
             <div className="col-md-6 col-md-5 col-md-offset-0">
 
-<FontAwesome
-        className='bookIcon'
+{/*???            <i
+              onClick={() => this.favoriteQuote(this.props.quote)}
+              style={styles.favoriteStyle}
+              className={this.props.quote.favorited ? "fa fa-star gold" : "fa fa-star-o"}
+              aria-hidden="true"
+            />???*/}
+
+               <Link to="/concerns"><FontAwesome
+        className=''
         name='book'
         size='5x'
         style={{ color: "white", textShadow: '0 1px 0 rgba(0, 0, 0, 0.1)' }}
-      />           
+
+        
+      /> </Link>
+              
+          
         </div>
 
         <div className="col-md-3 col-md-5 col-md-offset-1">
@@ -63,7 +75,7 @@ class QuoteForm extends Component {
               }}> Got </span>
               This
           </div>
-
+    <hr />
             <p className="beenThereHome">
             hope via people who've 
             <span style={{

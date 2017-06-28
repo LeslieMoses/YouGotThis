@@ -25,6 +25,7 @@ class Concerns extends Component {
   handleInputChange(event) {
     this.setState({inputValue: event.target.value});
   }
+
   handleButtonClick() {
 
     const newQuote = this.state.inputValue;
@@ -37,15 +38,23 @@ class Concerns extends Component {
   addClick() {
     console.log("hi");
     this.setState({beenThere: this.state.beenThere + 1});
-
-
   }
+
     addHereClick() {
     console.log("hey");
     this.setState({hereNow: this.state.hereNow + 1});
-
-
   }
+
+    concernUpdate(concern) {
+    console.log("concern here");
+    this.setState({concernUpdate: concern});
+  }
+
+  // updateConcern1(){
+  //   console.log("updating concern")
+  //       this.setState({????: this.state.???? + "Concern1"});
+
+  // }
       /*Variables for tracking tallies*/
     
 
@@ -66,11 +75,11 @@ class Concerns extends Component {
         <div style={styles.formStyle} className="form-group">
           <label htmlFor="input-box">
             #dynamic Concern
+            {this.state.concernUpdate}
           </label>
            <button onClick={this.addClick.bind(this)} type="button" className="btn btn-success">Been There <span className="badge"> {this.state.beenThere}</span></button> 
      
   <button onClick={this.addHereClick.bind(this)} type="button" className="btn btn-danger">Here Now <span className="badge"> {this.state.hereNow}</span></button>        
-
         </div>
     
 
@@ -89,15 +98,18 @@ class Concerns extends Component {
 <p>And that’s when it all changed. That’s when I realized I saw the start of a world yet undiscovered...” </p>
   
 </blockquote>*/}
-<div className="container">
+<div className="container-fluid">
   
 <div className="dropdown">
         <button className="btn dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">Tutorials
           <span className="caret" /></button>
         <ul className="dropdown-menu" role="menu" aria-labelledby="menu1">
-          <li role="presentation"><a role="menuitem" tabIndex={-1} href="#">HTML</a></li>
-          <li role="presentation"><a role="menuitem" tabIndex={-1} href="#">CSS</a></li>
-          <li role="presentation"><a role="menuitem" tabIndex={-1} href="#">JavaScript</a></li>
+          <li role="presentation"><a role="menuitem" tabIndex={-1} onClick={() => this.concernUpdate("concern1")} href="#">concern1</a></li>
+          <li role="presentation"><a role="menuitem" tabIndex={-1} onClick={() => this.concernUpdate("concern2")} href="#">concern2</a></li>
+          <li role="presentation"><a role="menuitem" tabIndex={-1} onClick={() => this.concernUpdate("concern3")} href="#">concern3</a></li>
+          <li role="presentation"><a role="menuitem" tabIndex={-1} onClick={() => this.concernUpdate("concern4")} href="#">concern4</a></li>
+          <li role="presentation"><a role="menuitem" tabIndex={-1} onClick={() => this.concernUpdate("concern5")} href="#">concern5</a></li>
+          <li role="presentation"><a role="menuitem" tabIndex={-1} onClick={() => this.concernUpdate("concern6")} href="#">concern6</a></li>
           <li role="presentation" className="divider" />
           <li role="presentation"><a role="menuitem" tabIndex={-1} href="#">About Us</a></li>
         </ul>
@@ -113,6 +125,9 @@ class Concerns extends Component {
                   className="btn btn-danger"
                   style={styles.buttonStyle}>
                   concern1
+                 
+                 {/*<button onClick={this.updateConcern1.bind(this)} type="button" className="btn btn-success">concern 1 try <span className="badge"> {this.state.beenThere}</span></button> */}
+
                 </button>
               </li>
               <li>

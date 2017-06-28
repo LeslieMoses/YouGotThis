@@ -77,7 +77,7 @@ class Why extends Component {
                                         onClick={this.handleButtonClick}
                                         className="btn btn-danger"
                                         style={styles.buttonStyle}>
-                                        Moment vs Overhaul
+                                        Moment -vs- Overhaul
                                     </button>
                                 </li>
                                 <li>
