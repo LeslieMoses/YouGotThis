@@ -74,7 +74,7 @@ class SubmitStory extends Component {
               <div className="form-group">
          
                 <h3 className="inputTitle">Storyteller</h3>
-                <input type="password" placeholder=" &nbsp;Your Name " className="form-control" id="by" />           
+                <input type="text" placeholder=" &nbsp;Your Name " className="form-control" id="by" />           
                 
     <br />               
 

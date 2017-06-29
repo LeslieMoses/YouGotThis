@@ -1,19 +1,20 @@
 html {
   position: relative;
   min-height: 100%;
-  /*background: pink;*/
-
+  background-color: black;
 }
 
 body {
-  margin-bottom: 60px;
+    background-color: darkslategray;
+  /*margin-bottom: 60px;*/
    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#febbbb+0,fe9090+45,fe9090+62,fe9090+74,ff5c5c+100 */
-background: pink; /* Old browsers */
+background: darkgrey; /* Old browsers */
 background: -moz-linear-gradient(45deg, #febbbb 0%, #fe9090 45%, #fe9090 62%, #fe9090 74%, #ff5c5c 100%); /* FF3.6-15 */
 background: -webkit-linear-gradient(45deg, #febbbb 0%,#fe9090 45%,#fe9090 62%,#fe9090 74%,#ff5c5c 100%); /* Chrome10-25,Safari5.1-6 */
 background: linear-gradient(45deg, #febbbb 0%,#fe9090 45%,#fe9090 62%,#fe9090 74%,#ff5c5c 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#febbbb', endColorstr='#ff5c5c',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#febbbb', endColorstr='#ff5c5c',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */;
 
+  
 }
 
 
@@ -97,8 +98,8 @@ color: white;
 
 .fa-book:before {
     content: "\f02d";
-    font-size: 770%;
-    color: navajowhite;
+    font-size: 1070%;
+    color: black;
 }
 
 .fa-book:hover {
@@ -128,6 +129,12 @@ ul {list-style: none;
 
 /*CONCERN PG*/
 
+ .concernHed {
+  font-size: 60px;
+  color: lightgrey;
+  font-family: 'Open Sans', sans-serif;
+}
+
 .concernTally{
 background: white; 
 width: 20%; 
@@ -148,8 +155,7 @@ text-align:center;
   margin-right: 15px;
   float: left;
   /*margin-right: */
-  
-  }
+    }
 
 .concernPgBtns li  {
   display:inline;
@@ -172,6 +178,14 @@ margin-top:17px;
     font-size: 20px;
     border-left: 5px solid #eee;
     /*color: green;*/
+}
+/*green dropdown List*/
+.list-group.panel > .list-group-item {
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px
+}
+.list-group-submenu {
+  margin-left:20px;
 }
 
 /*ABOUT US pg*/
@@ -235,7 +249,7 @@ p {
 
  div .inputTitle {
   font-family: 'Open Sans', sans-serif;
-  	color:#CCC;
+  	color:black;
     font-size: 20px;
 }
 

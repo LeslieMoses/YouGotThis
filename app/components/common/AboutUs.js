@@ -97,7 +97,7 @@ class AboutUs extends Component {
   
   {/*<!-- Right-aligned media object -->*/}
     <div className="media-body">
-      <h4 className="media-heading">Caleb</h4>
+      <h4 className="media-heading">heree</h4>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
       <p>Sit amet, consectelit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
       <p>Km dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -105,7 +105,7 @@ class AboutUs extends Component {
                                         onClick={this.handleButtonClick}
                                         className="btn btn-danger"
                                         style={styles.buttonStyle}>
-                                        C's Favorite Story
+                                        Favorite Story
                                     </button>
     </div>
     {/*<div className="media-right">
