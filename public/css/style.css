@@ -14,7 +14,6 @@ background: -webkit-linear-gradient(45deg, #febbbb 0%,#fe9090 45%,#fe9090 62%,#f
 background: linear-gradient(45deg, #febbbb 0%,#fe9090 45%,#fe9090 62%,#fe9090 74%,#ff5c5c 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#febbbb', endColorstr='#ff5c5c',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */;
 
-  
 }
 
 
@@ -71,11 +70,13 @@ font-size: 29px;
  label {
     display: inline-block;
     max-width: 100%;
-    margin-bottom: -15px;
+    margin-bottom: -25px;
     font-weight: 700;
     font-size: 42px;
-    /* font-family: 'Open Sans', sans-serif; */
     font-family: 'Bungee', cursive;
+     font-family: 'Open Sans', sans-serif; 
+     color: #555
+    
 }
 
 .beenThereHome {
@@ -98,22 +99,18 @@ color: white;
 
 .fa-book:before {
     content: "\f02d";
-    font-size: 1070%;
-    color: black;
+    font-size: 870%;
+    color: navajowhite; 
 }
 
 .fa-book:hover {
     content: "\f02d";
     font-size: 480%;
-    color: black;
+    color: navajowhite;
         /*font-size: 5em;*/
 }
 
-/*.book-icon:hover{
-    content: "\f02d";
-    font-size: 700%;
-    color: black;
-}*/
+
 
 .YouGotThisDekHome {
 font-family: 'Bungee', cursive;
@@ -131,7 +128,7 @@ ul {list-style: none;
 
  .concernHed {
   font-size: 60px;
-  color: lightgrey;
+  color: whitesmoke;
   font-family: 'Open Sans', sans-serif;
 }
 

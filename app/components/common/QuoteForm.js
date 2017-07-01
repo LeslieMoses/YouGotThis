@@ -38,7 +38,7 @@ class QuoteForm extends Component {
           <div style={styles.formStyle} className="form-group">
             <label htmlFor="input-box">
               {/*style={styles.labelStyle}*/}
-              Pepto for the soul...
+              We've got stories...
             </label>
           </div>
           </div>
@@ -67,20 +67,20 @@ class QuoteForm extends Component {
         <div className="col-md-3 col-md-5 col-md-offset-1">
           <div className="YouGotThisDekHome">
               <span className="and">+ 
-              </span> coating for the hopeless 
-              {/*<span
+              </span> you 
+              <span
                 style={{
                 color: '#333',
                 fontFamily: 'Bungee Shade'
               }}> Got </span>
-              This*/}
+              This
           </div>
     <hr />
             <p className="beenThereHome">
-            hope via people who've 
+            
             <span style={{
               fontWeight: 'bold', color:"white"
-            }}> been there</span>
+            }}>hope for the hopeless</span>
           </p>
                   </div>
 

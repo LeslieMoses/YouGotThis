@@ -93,7 +93,28 @@ class SubmitStory extends Component {
             <h3 className="inputTitle" htmlFor="usr">Headline</h3>
                 <input type="text" className="form-control" placeholder=" &nbsp;Story Title " id="title" />
    
-         
+         <div>
+        <div className="form-group"> {/* Name field */}
+          <label className="control-label " htmlFor="name">Name</label>
+          <input className="form-control" id="name" name="name" type="text" />
+        </div>
+        <div className="form-group"> {/* Email field */}
+          <label className="control-label requiredField" htmlFor="email">Email<span className="asteriskField">*</span></label>
+          <input className="form-control" id="email" name="email" type="text" />
+        </div>
+        <div className="form-group"> {/* Subject field */}
+          <label className="control-label " htmlFor="subject">Subject</label>
+          <input className="form-control" id="subject" name="subject" type="text" />
+        </div>
+        <div className="form-group"> {/* Message field */}
+          <label className="control-label " htmlFor="message">Message</label>
+          <textarea className="form-control" cols={40} id="message" name="message" rows={10} defaultValue={""} />
+        </div>
+        <div className="form-group">
+          <button className="btn btn-primary " name="submit" type="submit">Submit</button>
+        </div>
+      </div>
+
 
             </div>
  

@@ -1,15 +1,34 @@
 import React, {Component} from "react";
 import API from "../../utils/API";
 // import Panel.js from "Panel";
+
+import Rebase from 're-base';
+import firebase from "firebase";
+
+var config = {
+    apiKey: "AIzaSyDCWbrkcN-685RdoPHM4dC-PEEPzSx0Ijk",
+    authDomain: "you-got-this.firebaseapp.com",
+    databaseURL: "https://you-got-this.firebaseio.com",
+    projectId: "you-got-this",
+    storageBucket: "you-got-this.appspot.com",
+    messagingSenderId: "536841211014"
+  };
+  var app = firebase.initializeApp(config);
+
+var base = Rebase.createClass(app.database());
 var FontAwesome = require('react-fontawesome');
 
 class Concerns extends Component {
   constructor() {
     super();
+
     this.state = {
       inputValue: "",
       beenThere: 0,
-      hereNow: 0
+      hereNow: 0,
+      notes: [],
+			bio: {},
+			repos: []
     };
     // Binding handleInputChange and handleButtonClick since we'll be passing them
     // as callbacks and 'this' will change otherwise
@@ -52,6 +71,24 @@ class Concerns extends Component {
     this.setState({concernUpdate: concern});
   }
 
+componentDidMount () { // Where all AJAX requests will live
+		// this.init();
+
+    base.fetch('you-got-this', {
+    context: this,
+    asArray: true,
+    then(data){
+      console.log("data test", data);
+    this.setState({notes});
+    }
+  });
+
+  	}
+
+    	componentWillUnmount () { // So that we don't get listeners keep adding, we will unmount them
+		 base.removeBinding(this.ref);
+	}
+
   render() {
     return (
       <div className="container-fluid">
@@ -68,19 +105,19 @@ class Concerns extends Component {
                 .addClick
                 .bind(this)}
                 type="button"
-                className="btn btn-warning">Been There
+                className="btn btn-danger"> Been There &nbsp;
                 <span className="badge">
-                  {this.state.beenThere}</span>
+                  {this.state.beenThere} </span>
               </button>
-
+&nbsp;&nbsp;&nbsp;&nbsp;
               <button
                 onClick={this
                 .addHereClick
                 .bind(this)}
                 type="button"
-                className="btn btn-danger">Here Now
-                <span className="badge">
-                  {this.state.hereNow}</span>
+                className="btn btn-danger"> Here Now &nbsp;
+                <span className="badge"> 
+                  {this.state.hereNow} </span>
               </button>
             </div>
 
@@ -100,8 +137,8 @@ class Concerns extends Component {
                           <a
                             role="menuitem"
                             tabIndex={-1}
-                            onClick={() => this.concernUpdate("Concern1")}
-                            href="#">Concern1</a>
+                            onClick={() => this.concernUpdate("Life feels unbearable")}
+                            href="#">1. Life feels unbearable</a>
                         </a>
                       </h5>
                     </div>
@@ -133,8 +170,8 @@ class Concerns extends Component {
                           <a
                             role="menuitem"
                             tabIndex={-1}
-                            onClick={() => this.concernUpdate("Concern2")}
-                            href="#">Concern2</a>
+                            onClick={() => this.concernUpdate("I’m not enough")}
+                            href="#">2. I’m not enough</a>
                         </a>
                       </h5>
                     </div>
@@ -168,8 +205,8 @@ class Concerns extends Component {
                           <a
                             role="menuitem"
                             tabIndex={-1}
-                            onClick={() => this.concernUpdate("Concern3")}
-                            href="#">Concern3</a>
+                            onClick={() => this.concernUpdate("I’ve failed so much")}
+                            href="#">3. I’ve failed so much</a>
                         </a>
                       </h5>
                     </div>
@@ -197,8 +234,8 @@ class Concerns extends Component {
                         <a
                           role="menuitem"
                           tabIndex={-1}
-                          onClick={() => this.concernUpdate("Concern4")}
-                          href="#">Concern4</a>
+                          onClick={() => this.concernUpdate("No one understands")}
+                          href="#">4. No one understands</a>
                       </a>
                     </h5>
                   </div>
@@ -231,8 +268,8 @@ class Concerns extends Component {
                         <a
                           role="menuitem"
                           tabIndex={-1}
-                          onClick={() => this.concernUpdate("Concern5")}
-                          href="#">Concern5</a>
+                          onClick={() => this.concernUpdate("It’s hopeless")}
+                          href="#">5.	It’s hopeless</a>
                       </a>
                     </h5>
                   </div>
@@ -265,8 +302,8 @@ class Concerns extends Component {
                         <a
                           role="menuitem"
                           tabIndex={-1}
-                          onClick={() => this.concernUpdate("Concern6")}
-                          href="#">Concern6</a>
+                          onClick={() => this.concernUpdate("I’m too behind")}
+                          href="#">6.	I’m too behind</a>
                       </a>
                     </h5>
                   </div>
