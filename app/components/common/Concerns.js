@@ -171,7 +171,7 @@ componentDidMount () { // Where all AJAX requests will live
                           <a
                             role="menuitem"
                             tabIndex={-1}
-                            onClick={() => this.concernUpdate("Life feels unbearable")}
+                            onClick={() => this.concernUpdate("You will make it")}
                             href="#">1. Life feels unbearable</a>
                         </a>
                       </h5>
@@ -204,7 +204,7 @@ componentDidMount () { // Where all AJAX requests will live
                           <a
                             role="menuitem"
                             tabIndex={-1}
-                            onClick={() => this.concernUpdate("I’m not enough")}
+                            onClick={() => this.concernUpdate("You are enough")}
                             href="#">2. I’m not enough</a>
                         </a>
                       </h5>
@@ -239,7 +239,7 @@ componentDidMount () { // Where all AJAX requests will live
                           <a
                             role="menuitem"
                             tabIndex={-1}
-                            onClick={() => this.concernUpdate("I’ve failed so much")}
+                            onClick={() => this.concernUpdate("Still, keep going")}
                             href="#">3. I’ve failed so much</a>
                         </a>
                       </h5>
@@ -260,6 +260,7 @@ componentDidMount () { // Where all AJAX requests will live
                   <div className="card-header" role="tab" id="headingFour">
                     <h5 className="mb-0">
                       <a
+                        className="collapsed"
                         data-toggle="collapse"
                         data-parent="#accordion"
                         href="#collapseFour"
@@ -268,7 +269,7 @@ componentDidMount () { // Where all AJAX requests will live
                         <a
                           role="menuitem"
                           tabIndex={-1}
-                          onClick={() => this.concernUpdate("No one understands")}
+                          onClick={() => this.concernUpdate("Someone understands")}
                           href="#">4. No one understands</a>
                       </a>
                     </h5>
@@ -294,6 +295,7 @@ componentDidMount () { // Where all AJAX requests will live
                   <div className="card-header" role="tab" id="headingFive">
                     <h5 className="mb-0">
                       <a
+                      className="collapsed"
                         data-toggle="collapse"
                         data-parent="#accordion"
                         href="#collapseFive"
@@ -302,7 +304,7 @@ componentDidMount () { // Where all AJAX requests will live
                         <a
                           role="menuitem"
                           tabIndex={-1}
-                          onClick={() => this.concernUpdate("It’s hopeless")}
+                          onClick={() => this.concernUpdate("Goodness awaits you")}
                           href="#">5.	It’s hopeless</a>
                       </a>
                     </h5>
@@ -328,6 +330,7 @@ componentDidMount () { // Where all AJAX requests will live
                   <div className="card-header" role="tab" id="headingSix">
                     <h5 className="mb-0">
                       <a
+                      className="collapsed"
                         data-toggle="collapse"
                         data-parent="#accordion"
                         href="#collapseSix"
@@ -336,7 +339,7 @@ componentDidMount () { // Where all AJAX requests will live
                         <a
                           role="menuitem"
                           tabIndex={-1}
-                          onClick={() => this.concernUpdate("I’m too behind")}
+                          onClick={() => this.concernUpdate("Stay in your lane")}
                           href="#">6.	I’m too behind</a>
                       </a>
                     </h5>

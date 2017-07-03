@@ -47,6 +47,10 @@ color: white;
 font-family: 'Bungee Shade', cursive;
 }
 
+nav li a {
+  color: floralwhite;
+}
+
 /*PAIR W/ BUNGEE: 
 Hed bold--Bungee
 Hed cursive--Lobster
@@ -66,6 +70,14 @@ a.navHed.navbar-brand{
 font-size: 29px;
 
 }
+
+ #basic-nav-dropdown .dropdown-toggle a{
+    color: floralwhite;
+
+}
+
+
+
 /*HOME pg?*/
  label {
     display: inline-block;
@@ -139,6 +151,17 @@ padding: 5px;
  margin-top:7px; 
 border-radius:10px; 
 text-align:center;
+}
+
+div #accordion a {
+  color: floralwhite;
+      font-size: 20px;
+
+}
+
+h5.mb-0 a {
+    color: floralwhite;
+    font-size: 20px;
 }
 
 .thereHereBtns li  {
