@@ -30,6 +30,40 @@ class Concerns extends Component {
 			bio: {},
 			repos: []
     };
+  }
+    init () {
+		this.ref = base.bindToState(this.router.getCurrentParams().username, { // When the .username endpoint changes, this will update the state for 'notes' 
+			 context: this,
+			 asArray: true,
+			 state: 'notes'
+		});
+		
+		helpers.getGithubInfo(this.router.getCurrentParams().username)
+		.then((dataObj) => {
+			this.setState({
+				bio: dataObj.bio,
+				repos: dataObj.repos
+			});
+		}); // this refers to this in the upper contexts
+	
+	componentWillMount (); {
+		this.router = this.context.router;
+	}
+	componentDidMount (); { // Where all AJAX requests will live
+		this.init();
+	}
+	componentWillUnmount (); { // So that we don't get listeners keep adding, we will unmount them
+		 base.removeBinding(this.ref);
+	}
+	componentWillReceiveProps (); {
+		base.removeBinding(this.ref);
+		this.init();
+	}
+	handleAddNote (newNote) ;{ // Make the function in the component where it will be evoked
+		 base.post(this.router.getCurrentParams().username,  {
+		 	data: this.state.notes.concat([newNote])
+		 });																																								// in .set() we get the previous values in an array and output a new array with newNote added
+    }
     // Binding handleInputChange and handleButtonClick since we'll be passing them
     // as callbacks and 'this' will change otherwise
     this.handleInputChange = this
