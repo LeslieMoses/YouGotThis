@@ -19,7 +19,7 @@ class SubmitStory extends Component {
       concern: "",
       source:""
     };
-    
+
     // Binding getQuotes to this component since we'll be passing this method to
     // other components to use
     this.getQuotes = this
@@ -36,13 +36,19 @@ class SubmitStory extends Component {
       let objStory = {};
       // orgainze data and pass it off to axios --> fb
       // i j need info being submitted
-     let values = document.getElementsByClassName("storyGather");
+      let values = document.getElementsByClassName("storyGather");
      for (var i = 0; i < values.length; i++){
           console.log(values[i].value);
           objStory[values[i].name] = values[i].value;
           console.log(objStory);
-    }
-    base.post("story", {data:objStory, then(error){
+     }
+
+
+ 
+
+
+
+    base.push("story", {data:objStory, then(error){
       console.log(error);
     }
     
@@ -99,7 +105,7 @@ class SubmitStory extends Component {
           {/* Name field */}
           <label className="control-label submit" htmlFor="name">Storyteller</label>
           <input
-            className="form-control by"
+            className="form-control by storyGather"
             id="name"
             name="name"
             placeholder=" &nbsp;Your Name "
@@ -112,22 +118,22 @@ class SubmitStory extends Component {
         </div>
         <div className="form-group">
           {/* Headline field */}
-          <label className="control-label submit" htmlFor="subject">Headline</label>
+          <label className="control-label submit" htmlFor="headline">Headline</label>
           <input
             className="form-control title storyGather"
-            id="subject"
+            id="headline"
             placeholder=" &nbsp;Story Title "
-            name="subject"
+            name="headline"
             type="text"/>
         </div>
         <div className="form-group">
           {/* Story field */}
-          <label className="control-label submit" htmlFor="message">Story</label>
+          <label className="control-label submit " htmlFor="message">Story</label>
           <br />
 
           <div className="col-md-6">
-            <h3 className="inputTitle" htmlFor="sel1"></h3>
-            <select className="form-control" id="sel1">
+            <h3 className="inputTitle " htmlFor="sel1"></h3>
+            <select className="form-control " id="sel1">
               <option>
                 &nbsp; Concern 1</option>
               <option>
@@ -157,9 +163,9 @@ class SubmitStory extends Component {
           </div>
 
           <textarea
-            className="form-control"
+            className="form-control storyGather"
             cols={40}
-            id="message"
+            id="story"
             name="story"
             rows={10}
             defaultValue={this.state.story}/>
@@ -167,11 +173,11 @@ class SubmitStory extends Component {
  
         <div className="form-group">
           {/* Source field */}
-          <label className="control-label submit" htmlFor="name">Source</label>
+          <label className="control-label submit" htmlFor="source">Source</label>
           <input
-            className="form-control by storyGather"
-            id="name"
-            name="name"
+            className="form-control storyGather"
+            id="source"
+            name="source"
             placeholder=" &nbsp;Website, source "
             type="text"/>
         </div>
