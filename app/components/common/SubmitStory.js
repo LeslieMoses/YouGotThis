@@ -1,6 +1,11 @@
 import React, {Component} from "react";
 import Panel from "./Panel";
 // import API from "../utils/API";
+ import rebase from 're-base';
+ import firebase from "firebase";
+
+import {base} from "../../utils/rebase";
+
 
 class SubmitStory extends Component {
   constructor() {
@@ -8,8 +13,13 @@ class SubmitStory extends Component {
     this.state = {
       quotes: [],
       true: true,
-    
+      email: "",
+      headline:"",
+      story: "",
+      concern: "",
+      source:""
     };
+    
     // Binding getQuotes to this component since we'll be passing this method to
     // other components to use
     this.getQuotes = this
@@ -21,6 +31,32 @@ class SubmitStory extends Component {
       .handleInputChange
       .bind(this);
   }
+  // ??use??
+    handleSubmit(){
+      let objStory = {};
+      // orgainze data and pass it off to axios --> fb
+      // i j need info being submitted
+     let values = document.getElementsByClassName("storyGather");
+     for (var i = 0; i < values.length; i++){
+          console.log(values[i].value);
+          objStory[values[i].name] = values[i].value;
+          console.log(objStory);
+    }
+    base.post("story", {data:objStory, then(error){
+      console.log(error);
+    }
+    
+  });
+
+    //  values.forEach(function(val, i){
+    
+    //  }) 
+    //  var newNote = this.refs.note.findDOMNode().value;
+    // this.refs.note.findDOMNode().value = '';
+    // this.props.addNote(newNote);
+    // console.log("clicking", click);
+    console.log(this.state);
+  }
   // www
   handleInputChange(event) {
     const target = event.target;
@@ -28,6 +64,7 @@ class SubmitStory extends Component {
       ? target.checked
       : target.value;
     const name = target.name;
+    console.log("yo");
 
     this.setState({[name]: value});
   }
@@ -56,106 +93,97 @@ class SubmitStory extends Component {
 
   render() {
     return (
-      
-   <div className="container-fluid">
 
-      <div>
-       
-<div>
-
- 
-        
-        <div className="input-group">
-
-         
-          <div className="container">
-        
-            <form>
-              <div className="form-group">
-         
-                <h3 className="inputTitle">Storyteller</h3>
-                <input type="text" placeholder=" &nbsp;Your Name " className="form-control" id="by" />           
-                
-    <br />               
-
-            <h3 className="inputTitle" htmlFor="sel1">Story's Concern</h3>
-            <select className="form-control" id="sel1">
-              <option> &nbsp; Concern 1</option>
-              <option> &nbsp; Concern 2</option>
-              <option> &nbsp; Concern 3</option>
-              <option> &nbsp; Concern 4</option>
-              <option> &nbsp; Concern 5</option>
-              <option> &nbsp; Concern 6</option>
-              <option> &nbsp; Other</option>
-
-            </select>            
-        <br />       
-            <h3 className="inputTitle" htmlFor="usr">Headline</h3>
-                <input type="text" className="form-control" placeholder=" &nbsp;Story Title " id="title" />
-   
-         <div>
-        <div className="form-group"> {/* Name field */}
-          <label className="control-label " htmlFor="name">Name</label>
-          <input className="form-control" id="name" name="name" type="text" />
-        </div>
-        <div className="form-group"> {/* Email field */}
-          <label className="control-label requiredField" htmlFor="email">Email<span className="asteriskField">*</span></label>
-          <input className="form-control" id="email" name="email" type="text" />
-        </div>
-        <div className="form-group"> {/* Subject field */}
-          <label className="control-label " htmlFor="subject">Subject</label>
-          <input className="form-control" id="subject" name="subject" type="text" />
-        </div>
-        <div className="form-group"> {/* Message field */}
-          <label className="control-label " htmlFor="message">Message</label>
-          <textarea className="form-control" cols={40} id="message" name="message" rows={10} defaultValue={""} />
+      <div className="container-fluid holdSubmit">
+         <div className="form-group">
+          {/* Name field */}
+          <label className="control-label submit" htmlFor="name">Storyteller</label>
+          <input
+            className="form-control by"
+            id="name"
+            name="name"
+            placeholder=" &nbsp;Your Name "
+            type="text"/>
         </div>
         <div className="form-group">
-          <button className="btn btn-primary " name="submit" type="submit">Submit</button>
+          {/* Email field */}
+          <label className="control-label submit" htmlFor="email">Email</label>
+          <input className="form-control storyGather" id="email" name="email" type="text"/>
         </div>
-      </div>
+        <div className="form-group">
+          {/* Headline field */}
+          <label className="control-label submit" htmlFor="subject">Headline</label>
+          <input
+            className="form-control title storyGather"
+            id="subject"
+            placeholder=" &nbsp;Story Title "
+            name="subject"
+            type="text"/>
+        </div>
+        <div className="form-group">
+          {/* Story field */}
+          <label className="control-label submit" htmlFor="message">Story</label>
+          <br />
 
-
-            </div>
- 
-
-            </form>
-
+          <div className="col-md-6">
+            <h3 className="inputTitle" htmlFor="sel1"></h3>
+            <select className="form-control" id="sel1">
+              <option>
+                &nbsp; Concern 1</option>
+              <option>
+                &nbsp; Concern 2</option>
+              <option>
+                &nbsp; Concern 3</option>
+              <option>
+                &nbsp; Concern 4</option>
+              <option>
+                &nbsp; Concern 5</option>
+              <option>
+                &nbsp; Concern 6</option>
+              <option>
+                &nbsp; Other</option>
+            </select>
+          </div>
+          <div className="col-md-6">
+            <h3 className="inputTitle">
+              &nbsp; &nbsp; True story?
+              <input
+                className="storyGather"
+                name="false"
+                type="checkbox"
+                checked={this.state.false}
+                onChange={this.handleInputChange}/>
+            </h3>
           </div>
 
+          <textarea
+            className="form-control"
+            cols={40}
+            id="message"
+            name="story"
+            rows={10}
+            defaultValue={this.state.story}/>
         </div>
-
-
-  <form>
-    
-    <div className="form-group">
-      <h3 className="inputTitle" for="comment">Story:</h3>
- <form>
-          <h3 className="inputTitle">
-            True story? 
-            <input
-              name="true"
-              type="checkbox"
-              checked={this.state.true}
-              onChange={this.handleInputChange}/>
-          </h3>
-          <br/>
-           <h3 className="inputTitle">Source</h3>
-                <input type="password" placeholder=" &nbsp;Your Name " className="form-control" id="by" />           
-        </form>
-      <textarea className="form-control" rows="9" id="comment" spellCheck="true"></textarea>
-             <span className="input-group-addon" id="basic-addon3">Guidelines:
-
-
-
-
-
-          </span> </div>
-  </form>
-</div>
-     
-      </div></div>
-
+ 
+        <div className="form-group">
+          {/* Source field */}
+          <label className="control-label submit" htmlFor="name">Source</label>
+          <input
+            className="form-control by storyGather"
+            id="name"
+            name="name"
+            placeholder=" &nbsp;Website, source "
+            type="text"/>
+        </div>
+        <div className="form-group">
+          {/*??*/}
+          <button className="btn btn-danger" name="submit" type="submit" onClick={this.handleSubmit.bind(this)}>Submit</button>
+       <br />
+       <br />   <br />   <br />
+        </div>
+      </div>
+         
+             
     );
   }
 

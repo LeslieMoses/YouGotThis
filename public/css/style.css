@@ -267,19 +267,31 @@ p {
 
 /*SUBMIT STORY pg*/
 
+/*.holdSubmit .container-fluid  {
+  width: 60%;
+}*/
+
+ holdSubmit{
+    /*padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;*/
+    width: 60%;
+}
+
  div .inputTitle {
   font-family: 'Open Sans', sans-serif;
   	color:black;
     font-size: 20px;
 }
 
-#by {
+.by {
   width: 40%;
     border-radius: 5px;
 
 }
 
-#title {
+.title {
   width: 60%;
     border-radius: 5px;
 }
@@ -293,5 +305,14 @@ p {
 #comment {
   width: 60%;
       border-radius: 5px;
+
+}
+
+.submit {
+  text-align: left;
+  color: floralwhite;
+  font-size: 29px;
+}
+
 
 }

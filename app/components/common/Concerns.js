@@ -5,17 +5,17 @@ import API from "../../utils/API";
 import Rebase from 're-base';
 import firebase from "firebase";
 
-var config = {
-    apiKey: "AIzaSyDCWbrkcN-685RdoPHM4dC-PEEPzSx0Ijk",
-    authDomain: "you-got-this.firebaseapp.com",
-    databaseURL: "https://you-got-this.firebaseio.com",
-    projectId: "you-got-this",
-    storageBucket: "you-got-this.appspot.com",
-    messagingSenderId: "536841211014"
-  };
-  var app = firebase.initializeApp(config);
+// var config = {
+//     apiKey: "AIzaSyDCWbrkcN-685RdoPHM4dC-PEEPzSx0Ijk",
+//     authDomain: "you-got-this.firebaseapp.com",
+//     databaseURL: "https://you-got-this.firebaseio.com",
+//     projectId: "you-got-this",
+//     storageBucket: "you-got-this.appspot.com",
+//     messagingSenderId: "536841211014"
+//   };
+//   var app = firebase.initializeApp(config);
 
-var base = Rebase.createClass(app.database());
+// var base = Rebase.createClass(app.database());
 var FontAwesome = require('react-fontawesome');
 
 class Concerns extends Component {
@@ -37,7 +37,7 @@ class Concerns extends Component {
 			 asArray: true,
 			 state: 'notes'
 		});
-		
+		console.log("is this working?", "yes it is");
 		helpers.getGithubInfo(this.router.getCurrentParams().username)
 		.then((dataObj) => {
 			this.setState({
@@ -45,7 +45,7 @@ class Concerns extends Component {
 				repos: dataObj.repos
 			});
 		}); // this refers to this in the upper contexts
-	
+	// method called when instance of component is being created & inserted in DOM
 	componentWillMount (); {
 		this.router = this.context.router;
 	}
@@ -122,7 +122,7 @@ componentDidMount () { // Where all AJAX requests will live
     	componentWillUnmount () { // So that we don't get listeners keep adding, we will unmount them
 		 base.removeBinding(this.ref);
 	}
-
+	// method called when instance of component is being created & inserted in DOM
   render() {
     return (
       <div className="container-fluid">
@@ -171,7 +171,7 @@ componentDidMount () { // Where all AJAX requests will live
                           <a
                             role="menuitem"
                             tabIndex={-1}
-                            onClick={() => this.concernUpdate("You will make it")}
+                            onClick={() => this.concernUpdate("You are able")}
                             href="#">1. Life feels unbearable</a>
                         </a>
                       </h5>
@@ -217,10 +217,7 @@ componentDidMount () { // Where all AJAX requests will live
                       <div className="card-block">
                         Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
                         richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor
-                        brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
-                        sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
-                        shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson
-                        cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo.
+                        brunch. Food truck quinoa nesciunt proident. Ad vegan excepteur butcher vice lomo.
                         Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt
                         you probably haven't heard of them accusamus labore sustainable VHS.
                       </div>
@@ -239,7 +236,7 @@ componentDidMount () { // Where all AJAX requests will live
                           <a
                             role="menuitem"
                             tabIndex={-1}
-                            onClick={() => this.concernUpdate("Still, keep going")}
+                            onClick={() => this.concernUpdate("...and learned much; keep going.")}
                             href="#">3. I’ve failed so much</a>
                         </a>
                       </h5>
@@ -269,7 +266,7 @@ componentDidMount () { // Where all AJAX requests will live
                         <a
                           role="menuitem"
                           tabIndex={-1}
-                          onClick={() => this.concernUpdate("Someone understands")}
+                          onClick={() => this.concernUpdate("God understands")}
                           href="#">4. No one understands</a>
                       </a>
                     </h5>
@@ -281,12 +278,8 @@ componentDidMount () { // Where all AJAX requests will live
                     aria-labelledby="headingFour">
                     <div className="card-block">
                       Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
-                      richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor
-                      brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
-                      sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
-                      shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson
-                      cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo.
-                      Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt
+                      richardson ad squid, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
+                      sunt aliqua put a bird on itr labore wes anderson craft beer farm-to-table, raw denim aesthetic synth nesciunt
                       you probably haven't heard of them accusamus labore sustainable VHS.
                     </div>
                   </div>
@@ -304,7 +297,7 @@ componentDidMount () { // Where all AJAX requests will live
                         <a
                           role="menuitem"
                           tabIndex={-1}
-                          onClick={() => this.concernUpdate("Goodness awaits you")}
+                          onClick={() => this.concernUpdate("Hopeful message here")}
                           href="#">5.	It’s hopeless</a>
                       </a>
                     </h5>
@@ -318,8 +311,7 @@ componentDidMount () { // Where all AJAX requests will live
                       Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
                       richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor
                       brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
-                      sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
-                      shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson
+                      sunt assumenda keffiyeh helvetica, craft beer labore wes anderson
                       cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo.
                       Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt
                       you probably haven't heard of them accusamus labore sustainable VHS.
