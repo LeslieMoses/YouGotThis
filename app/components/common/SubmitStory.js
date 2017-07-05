@@ -1,11 +1,10 @@
 import React, {Component} from "react";
 import Panel from "./Panel";
 // import API from "../utils/API";
- import rebase from 're-base';
- import firebase from "firebase";
+import rebase from 're-base';
+import firebase from "firebase";
 
 import {base} from "../../utils/rebase";
-
 
 class SubmitStory extends Component {
   constructor() {
@@ -14,10 +13,10 @@ class SubmitStory extends Component {
       quotes: [],
       true: true,
       email: "",
-      headline:"",
+      headline: "",
       story: "",
       concern: "",
-      source:""
+      source: ""
     };
 
     // Binding getQuotes to this component since we'll be passing this method to
@@ -32,35 +31,27 @@ class SubmitStory extends Component {
       .bind(this);
   }
   // ??use??
-    handleSubmit(){
-      let objStory = {};
-      // orgainze data and pass it off to axios --> fb
-      // i j need info being submitted
-      let values = document.getElementsByClassName("storyGather");
-     for (var i = 0; i < values.length; i++){
-          console.log(values[i].value);
-          objStory[values[i].name] = values[i].value;
-          console.log(objStory);
-     }
-
-
- 
-
-
-
-    base.push("story", {data:objStory, then(error){
-      console.log(error);
+  handleSubmit() {
+    let objStory = {};
+    // orgainze data and pass it off to axios --> fb i j need info being submitted
+    let values = document.getElementsByClassName("storyGather");
+    for (var i = 0; i < values.length; i++) {
+      console.log(values[i].value);
+      objStory[values[i].name] = values[i].value;
+      console.log(objStory);
     }
-    
-  });
 
-    //  values.forEach(function(val, i){
-    
-    //  }) 
-    //  var newNote = this.refs.note.findDOMNode().value;
-    // this.refs.note.findDOMNode().value = '';
-    // this.props.addNote(newNote);
-    // console.log("clicking", click);
+    base.push("story", {
+      data: objStory,
+      then(error) {
+        console.log(error);
+      }
+
+    });
+
+    //  values.forEach(function(val, i){  })  var newNote =
+    // this.refs.note.findDOMNode().value; this.refs.note.findDOMNode().value = '';
+    // this.props.addNote(newNote); console.log("clicking", click);
     console.log(this.state);
   }
   // www
@@ -101,7 +92,7 @@ class SubmitStory extends Component {
     return (
 
       <div className="container-fluid holdSubmit">
-         <div className="form-group">
+        <div className="form-group">
           {/* Name field */}
           <label className="control-label submit" htmlFor="name">Storyteller</label>
           <input
@@ -114,7 +105,11 @@ class SubmitStory extends Component {
         <div className="form-group">
           {/* Email field */}
           <label className="control-label submit" htmlFor="email">Email</label>
-          <input className="form-control storyGather" id="email" name="email" type="text"/>
+          <input
+            className="form-control storyGather"
+            id="email"
+            name="email"
+            type="text"/>
         </div>
         <div className="form-group">
           {/* Headline field */}
@@ -129,7 +124,7 @@ class SubmitStory extends Component {
         <div className="form-group">
           {/* Story field */}
           <label className="control-label submit " htmlFor="message">Story</label>
-          <br />
+          <br/>
 
           <div className="col-md-6">
             <h3 className="inputTitle " htmlFor="sel1"></h3>
@@ -152,12 +147,12 @@ class SubmitStory extends Component {
           </div>
           <div className="col-md-6">
             <h3 className="inputTitle">
-              &nbsp; &nbsp; True story?
+              &nbsp; &nbsp; True story?&nbsp;&nbsp;
               <input
                 className="storyGather"
                 name="false"
                 type="checkbox"
-                checked={this.state.false}
+                checked={this.state.true}
                 onChange={this.handleInputChange}/>
             </h3>
           </div>
@@ -170,7 +165,7 @@ class SubmitStory extends Component {
             rows={10}
             defaultValue={this.state.story}/>
         </div>
- 
+
         <div className="form-group">
           {/* Source field */}
           <label className="control-label submit" htmlFor="source">Source</label>
@@ -183,13 +178,20 @@ class SubmitStory extends Component {
         </div>
         <div className="form-group">
           {/*??*/}
-          <button className="btn btn-danger" name="submit" type="submit" onClick={this.handleSubmit.bind(this)}>Submit</button>
-       <br />
-       <br />   <br />   <br />
+          <button
+            className="btn btn-danger"
+            name="submit"
+            type="submit"
+            onClick={this
+            .handleSubmit
+            .bind(this)}>Submit</button>
+          <br/>
+          <br/>
+          <br/>
+          <br/>
         </div>
       </div>
-         
-             
+
     );
   }
 

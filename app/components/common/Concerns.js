@@ -2,20 +2,8 @@ import React, {Component} from "react";
 import API from "../../utils/API";
 // import Panel.js from "Panel";
 
-import Rebase from 're-base';
-import firebase from "firebase";
+import {base} from "../../utils/rebase";
 
-// var config = {
-//     apiKey: "AIzaSyDCWbrkcN-685RdoPHM4dC-PEEPzSx0Ijk",
-//     authDomain: "you-got-this.firebaseapp.com",
-//     databaseURL: "https://you-got-this.firebaseio.com",
-//     projectId: "you-got-this",
-//     storageBucket: "you-got-this.appspot.com",
-//     messagingSenderId: "536841211014"
-//   };
-//   var app = firebase.initializeApp(config);
-
-// var base = Rebase.createClass(app.database());
 var FontAwesome = require('react-fontawesome');
 
 class Concerns extends Component {

@@ -34,12 +34,13 @@ class QuoteForm extends Component {
     return (
       <div className="container-fluid">
         <div className="row">
-          {/*<div className="col-md-6">*/}
+          <div className="col-md-6 col-md-offset-3">
           <div style={styles.formStyle} className="form-group">
             <label htmlFor="input-box">
               {/*style={styles.labelStyle}*/}
-              We've got stories...
+              We've &nbsp; got &nbsp; stories...
             </label>
+             </div>
           </div>
           </div>
           <div className="row">
@@ -77,10 +78,10 @@ class QuoteForm extends Component {
           </div>
     <hr />
             <p className="beenThereHome">
-            
+            Hope
             <span style={{
-              fontWeight: 'bold', color:"white"
-            }}>hope for the hopeless</span>
+              fontWeight: 'bold', color:"white", fontSize:"16px"
+            }}>   &nbsp;&nbsp;for the &nbsp;</span>Hopeless
           </p>
                   </div>
 

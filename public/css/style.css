@@ -79,22 +79,31 @@ font-size: 29px;
 
 
 /*HOME pg?*/
- label {
+
+/*.row.homeHed{
+padding: -2px;
+}*/
+
+ label  {
     display: inline-block;
     max-width: 100%;
     margin-bottom: -25px;
-    font-weight: 700;
-    font-size: 42px;
-    font-family: 'Bungee', cursive;
-     font-family: 'Open Sans', sans-serif; 
-     color: #555
+    /*font-weight: 700;*/
+    font-size: 29px;
+    /*font-family: 'Bungee', cursive;*/
+     /*font-family: 'Lobster', cursive;*/
+     font-family: 'Raleway', sans-serif;
+     color: #555;
+     /*float: right;*/
+     /*letter-spacing: .2em;*/
     
 }
 
 .beenThereHome {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 20px;
-color: #333;
+  /*font-family: 'Open Sans', sans-serif;*/
+       font-family: 'Raleway', sans-serif;
+  font-size: 40px;
+color: floralwhite;
 font-weight: bold;
 }
 
@@ -279,10 +288,42 @@ p {
     width: 60%;
 }
 
+.form-control.storyGather {
+  
+    border-radius: 5px;
+
+}
+
+.holdSubmit.container-fluid {
+    padding-right: 25px;
+    padding-left: 25px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 60%;
+     border-radius: 5px;
+     border: floralwhite 85px solid;
+     
+}
+.form-control {
+    padding: 0;
+    border: none;
+    border-radius: 0;
+    -webkit-appearance: none;
+    -webkit-box-shadow: inset 0 -1px 0 #dddddd;
+    box-shadow: inset 0 -1px 0 #dddddd;
+    font-size: 16px;
+    margin-bottom: -5%;
+}
+
  div .inputTitle {
   font-family: 'Open Sans', sans-serif;
-  	color:black;
+  	color:floralwhite;
     font-size: 20px;
+}
+
+input.storyGather::before::after{
+  background-color: #d9534f;
+    border-color: floralwhite;
 }
 
 .by {
@@ -299,6 +340,8 @@ p {
 #sel1 {
   width: 40%;
     border-radius: 5px;
+    margin-top: -10px;
+
 }
 
 
@@ -312,6 +355,7 @@ p {
   text-align: left;
   color: floralwhite;
   font-size: 29px;
+    margin-bottom: auto;
 }
 
 
