@@ -100,8 +100,8 @@ componentDidMount () { // Where all AJAX requests will live
     context: this,
     asArray: true,
     then(data){
-      console.log("data test", data);
-    this.setState({notes});
+      console.log("data test here", data);
+    this.setState({notes:data});
     }
   });
 

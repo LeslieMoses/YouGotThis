@@ -34,17 +34,7 @@ class QuoteForm extends Component {
       <div className="container-fluid">
 
         <div className="row">
-          <div className="col-md-4 col-md-4 col-md-offset-4">
-            <p className="beenThereHome">
-              Hope
-              <span
-                style={{
-                fontWeight: 'bold',
-                color: "white",
-                fontSize: "16px"
-              }}>
-                &nbsp;&nbsp;for the &nbsp;</span>Hopeless
-            </p>
+           
             </div>
 
             {/*???            <i
@@ -53,20 +43,34 @@ class QuoteForm extends Component {
               className={this.props.quote.favorited ? "fa fa-star gold" : "fa fa-star-o"}
               aria-hidden="true"
             />???*/}
+                      <div className="col-md-6 col-md-offset-4">
+     
             <div style={styles.formStyle} className="form-group">
               <label htmlFor="input-box">
-                {/*style={styles.labelStyle}*/}
-                We've &nbsp; got &nbsp; stories...
-              </label>
-              <Link to="/concerns"><FontAwesome
+                                    <p className="beenThereHome">
+             &nbsp;&nbsp; Hope
+              <span
+                style={{
+                fontWeight: 'bold',
+                color: "white",
+                fontSize: "16px"
+              }}>
+                &nbsp;&nbsp;for the &nbsp;</span>Hopeless 
+                
+            </p>
+                 <Link to="/concerns">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<FontAwesome
                 className=''
                 name='book'
-                size='5x'
+                size='2x'
                 style={{
         color: "white",
         textShadow: '0 1px 0 rgba(0, 0, 0, 0.1)'
       }}/>
               </Link>
+                {/*style={styles.labelStyle}*/}
+               <br /> We've &nbsp; got &nbsp; stories...
+              </label>
+             
               <div className="YouGotThisDekHome">
                 <span className="and">+
                 </span>
@@ -76,16 +80,17 @@ class QuoteForm extends Component {
                   color: '#333',
                   fontFamily: 'Bungee Shade'
                 }}>
-                  Got
+                  &nbsp;Got&nbsp;
                 </span>
                 This
-              </div>
+
+            </div>
             </div>
 
          
         </div>
 
-<hr />
+
         <div className="row">
 
           <div className="col-md-4 col-md-4 col-md-4 ">
@@ -119,7 +124,7 @@ class QuoteForm extends Component {
                 <div className="news-card-date">Sunday, 16th April</div>
                 <article className="news-card-article">
                   <h4 className="news-card-title">
-                    <a href="#">5 Features To Watch Out For in Angular v4</a>
+                    <a href="#">5 Features To Watch Out For</a>
                   </h4>
                   <p className="news-card-description">Lorem ipsum dolor sit amet, consectetur
                     adipisicing elit. Recusandae facere, ipsam quae sit, eaque perferendis
@@ -174,7 +179,7 @@ class QuoteForm extends Component {
                 <div className="news-card-date">Sunday, 16th April</div>
                 <article className="news-card-article">
                   <h4 className="news-card-title">
-                    <a href="#">5 Features To Watch Out For in Angular v4</a>
+                    <a href="#">5 Features To Watch Out For</a>
                   </h4>
                   <p className="news-card-description">Lorem ipsum dolor sit amet, consectetur
                     adipisicing elit. Recusandae facere, ipsam quae sit, eaque perferendis
@@ -267,7 +272,7 @@ class QuoteForm extends Component {
                   <div className="news-card-date">Sunday, 16th April</div>
                   <article className="news-card-article">
                     <h4 className="news-card-title">
-                      <a href="#">5 Features To Watch Out For in Angular v4</a>
+                      <a href="#">5 Features To Watch Out For</a>
                     </h4>
                     <p className="news-card-description">Lorem ipsum dolor sit amet, consectetur
                       adipisicing elit. Recusandae facere, ipsam quae sit, eaque perferendis
@@ -303,7 +308,7 @@ class QuoteForm extends Component {
                   <div className="news-card-date">Sunday, 16th April</div>
                   <article className="news-card-article">
                     <h4 className="news-card-title">
-                      <a href="#">5 Features To Watch Out For in Angular v4</a>
+                      <a href="#">5 Features To Watch Out For</a>
                     </h4>
                     <p className="news-card-description">Lorem ipsum dolor sit amet, consectetur
                       adipisicing elit. Recusandae facere, ipsam quae sit, eaque perferendis
@@ -340,7 +345,7 @@ class QuoteForm extends Component {
                   <div className="news-card-date">Sunday, 16th April</div>
                   <article className="news-card-article">
                     <h4 className="news-card-title">
-                      <a href="#">5 Features To Watch Out For in Angular v4</a>
+                      <a href="#">5 Features To Watch Out For</a>
                     </h4>
                     <p className="news-card-description">Lorem ipsum dolor sit amet, consectetur
                       adipisicing elit. Recusandae facere, ipsam quae sit, eaque perferendis

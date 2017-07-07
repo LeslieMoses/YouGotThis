@@ -127,7 +127,7 @@ class SubmitStory extends Component {
 
           <div className="col-md-6">
             <h3 className="inputTitle " htmlFor="sel1"></h3>
-            <select className="form-control " id="sel1">
+            <select className="form-control storyGather" id="sel1">
               <option>
                 &nbsp; Concern 1</option>
               <option>

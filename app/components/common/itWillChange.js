@@ -12,8 +12,8 @@ class Concerns extends Component {
 
     this.state = {
       inputValue: "",
-      beenThere: 0,
-      hereNow: 0,
+      beenThere1: 0,
+      hereNow1: 0,
       notes: [],
 			bio: {},
 			repos: []
@@ -79,14 +79,14 @@ init () {
   addClick() {
     console.log("hi");
     this.setState({
-      beenThere: this.state.beenThere + 1
+      beenThere1: this.state.beenThere1 + 1
     });
   }
 
   addHereClick() {
     console.log("hey");
     this.setState({
-      hereNow: this.state.hereNow + 1
+      hereNow1: this.state.hereNow1 + 1
     });
   }
 
@@ -103,7 +103,8 @@ componentDidMount () { // Where all AJAX requests will live
     asArray: true,
     then(data){
       console.log("data test", data);
-    this.setState({notes});
+    this.setState({notes:data});
+
     }
   });
 
@@ -115,37 +116,184 @@ componentDidMount () { // Where all AJAX requests will live
 	// method called when instance of component is being created & inserted in DOM
   render() {
     return (
-      <div className="container-fluid">
-        <div className="row">
-          <div className="col-md-3 col-md-8 col-md-offset-1">
-            <div style={styles.formStyle} className="form-group">
-              <label className="concernHed">
-It will change
-                {this.state.concernUpdate}
-              </label>
-              <br/>
+
+ 
+ <div className="container-fluid">
+<div className="row">
+
+          <div className="col-md-2">
+
+<div className="card-user-profile">
+        <img className="card-user-profile-img" src="https://images.pexels.com/photos/5439/earth-space.jpg?h=350&auto=compress&cs=tinysrgb" alt="picture of space" />
+        <div className="card-user-profile-content card-section">
+          <div className="card-user-profile-avatar">
+            <img src="https://pbs.twimg.com/profile_images/422887689612820482/sZtHMJu5.png" alt="picture of yeti" />
+          </div>
+          <p className="card-user-profile-name"><label className="concernHed">
+  Life feels unbearable
+        </label></p>
+          <p className="card-user-profile-status">as a Yeti Web Designer</p>
+          <p className="card-user-profile-info">The Yeti, once better known as the Abominable Snowman, is a mysterious bipedal creature said to live in the mountains of Asia. It sometimes leaves tracks in snow, but is also said to dwell below the Himalayan snow line.</p>
+        </div>
+        <div className="card-user-profile-actions">
+
               <button
-
-
-              
                 onClick={this
                 .addClick
                 .bind(this)}
                 type="button"
-                className="btn btn-danger"> Been There &nbsp;
+                className="btn btn-danger"> Been There? &nbsp;
                 <span className="badge">
-                  {this.state.beenThere} </span>
+                  {this.state.beenThere1} </span>
               </button>
-&nbsp;&nbsp;&nbsp;&nbsp;
+
               <button
                 onClick={this
                 .addHereClick
                 .bind(this)}
                 type="button"
-                className="btn btn-danger"> Here Now &nbsp;
+                className="btn btn-danger"> Here Now? &nbsp;
                 <span className="badge"> 
-                  {this.state.hereNow} </span>
+                  {this.state.hereNow1} </span>
               </button>
+
+
+
+
+        </div>
+      </div>
+</div>
+
+{/*BREAK*/}
+          <div className="col-md-10 ">
+
+     
+        <div>
+        {/* Sample 2*/}
+
+
+
+        
+        {/* Posts panel container */}
+        <div className="posts-panel grid">
+          {/* Panel's header */}
+          <header className="panel-header">
+                         <label className="concernHed">
+It will change
+                {/*{this.state.concernUpdate}*/}
+              </label>
+          </header>
+          {/* Panel's content */}
+          <div className="panel-content">
+            {/* Pinned post section */}
+            <section className="pinned-post">
+              {/* Post item */}
+              <div className="post-item">
+                {/* Post's thumbnail */}
+                <a href="#" className="post-thumbnail">
+                  <img src="https://static.pexels.com/photos/24587/pexels-photo-24587.jpg" alt />
+                </a>
+                {/* Post's text */}
+                <div className="post-text">
+                  {/* Post's title */}
+                  <a href="#">
+                    <h3 className="post-title">Post title place-holder</h3>
+                  </a>
+                  {/*<div className="post-meta">*/}
+                    {/*<span className="meta"><span className="meta-icon fa fa-user-circle-o" aria-hidden="true" /><a className="meta-text">Steve Jobs</a></span>*/}
+                    {/*<span className="meta"><span className="meta-icon fa fa-clock-o" aria-hidden="true" /><span className="meta-text">22/06/2030</span></span>
+                  </div>*/}
+                  {/* Post's summary */}
+                  <div className="post-summary">
+                             {this.state.notes.map(function(val, i) {
+                               return <p>{val.story}</p>
+                               
+                               }
+                             
+                             )}       
+
+                       <a href="#" className="post-read-more">Read more<span className="fa fa-chevron-circle-right" aria-hidden="true" /></a>
+                   </div>
+                </div>
+              </div>
+            </section>
+            {/* Posts list */}
+            <section className="posts-list">
+              <div className="post-item">
+                <a href="#" className="post-thumbnail">
+                  <img src="https://static.pexels.com/photos/66274/sunset-poppy-backlight-66274.jpeg" alt />
+                </a>
+                <div className="post-text">
+                  <a href="#">
+                    <h3 className="post-title">Post title place-holder</h3>
+                  </a>
+                  <div className="post-meta">
+                    <span className="meta"><span className="meta-icon fa fa-user-circle-o" aria-hidden="true" /><a className="meta-text">Steve Jobs</a></span>
+                    <span className="meta"><span className="meta-icon fa fa-clock-o" aria-hidden="true" /><span className="meta-text">22/06/2030</span></span>
+                  </div>
+                </div>
+              </div>
+              <div className="post-item">
+                <a href="#" className="post-thumbnail">
+                  <img src="https://static.pexels.com/photos/33109/fall-autumn-red-season.jpg" alt />
+                </a>
+                <div className="post-text">
+                  <a href="#">
+                    <h3 className="post-title">Post title place-holder</h3>
+                  </a>
+                  <div className="post-meta">
+                    <span className="meta"><span className="meta-icon fa fa-user-circle-o" aria-hidden="true" /><a className="meta-text">Steve Jobs</a></span>
+                    <span className="meta"><span className="meta-icon fa fa-clock-o" aria-hidden="true" /><span className="meta-text">22/06/2030</span></span>
+                  </div>
+                </div>
+              </div>
+              <div className="post-item">
+                <a href="#" className="post-thumbnail">
+                  <img src="https://static.pexels.com/photos/12567/photo-1444703686981-a3abbc4d4fe3.jpeg" alt />
+                </a>
+                <div className="post-text">
+                  <a href="#">
+                    <h3 className="post-title">Post title place-holder</h3>
+                  </a>
+                  <div className="post-meta">
+                    <span className="meta"><span className="meta-icon fa fa-user-circle-o" aria-hidden="true" /><a className="meta-text">Steve Jobs</a></span>
+                    <span className="meta"><span className="meta-icon fa fa-clock-o" aria-hidden="true" /><span className="meta-text">22/06/2030</span></span>
+                  </div>
+                </div>
+              </div>
+              <div className="post-item">
+                <a href="#" className="post-thumbnail">
+                  <img src="https://static.pexels.com/photos/370018/pexels-photo-370018.jpeg" alt />
+                </a>
+                <div className="post-text">
+                  <a href="#">
+                    <h3 className="post-title">Post title place-holder</h3>
+                  </a>
+                  <div className="post-meta">
+                    <span className="meta"><span className="meta-icon fa fa-user-circle-o" aria-hidden="true" /><a className="meta-text">Steve Jobs</a></span>
+                    <span className="meta"><span className="meta-icon fa fa-clock-o" aria-hidden="true" /><span className="meta-text">22/06/2030</span></span>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+      </div>
+</div>
+        <div className="row">
+
+          </div>
+                  <div className="row">
+
+          <div className="col-md-3 col-md-8 col-md-offset-1">
+            <div style={styles.formStyle} className="form-group">
+              {/*<label className="concernHed">
+It will change
+                {this.state.concernUpdate}
+              </label>*/}
+              <br/>
+
             </div>
 
             <div className="row">
@@ -334,21 +482,7 @@ It will change
       {/*bt here*/}
 
 
-<div id="id01" className="w3-modal">
-        <div className="w3-modal-content">
-          <header className="w3-container w3-teal"> 
-            <span onclick="document.getElementById('id01').style.display='none'" className="w3-button w3-display-topright">×</span>
-            <h2>Modal Header</h2>
-          </header>
-          <div className="w3-container">
-            <p>Some text..</p>
-            <p>Some text..</p>
-          </div>
-          <footer className="w3-container w3-teal">
-            <p>Modal Footer</p>
-          </footer>
-        </div>
-      </div>
+
 
 
       {/*and here*/}
