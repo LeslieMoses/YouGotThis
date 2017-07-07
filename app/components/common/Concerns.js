@@ -1,9 +1,7 @@
 import React, {Component} from "react";
 import API from "../../utils/API";
 // import Panel.js from "Panel";
-
 import {base} from "../../utils/rebase";
-
 var FontAwesome = require('react-fontawesome');
 
 class Concerns extends Component {

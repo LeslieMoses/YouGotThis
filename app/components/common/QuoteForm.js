@@ -3,12 +3,11 @@ import API from "../../utils/API";
 var FontAwesome = require('react-fontawesome');
 import {Link} from "react-router";
 
-
 class QuoteForm extends Component {
   constructor() {
     super();
     this.state = {
-      // setting new quote to input val; 
+      // setting new quote to input val;
       inputValue: ""
     };
     // Binding handleInputChange and handleButtonClick since we'll be passing them
@@ -34,66 +33,351 @@ class QuoteForm extends Component {
     return (
       <div className="container-fluid">
         <div className="row">
-          <div className="col-md-6 col-md-offset-3">
+          <div className="col-md-6 col-md-offset-3"></div>
+        </div>
+        <div className="row">
+          <div className="col-md-8 col-md-4 col-md-offset-0">
+            <p className="beenThereHome">
+              Hope
+              <span
+                style={{
+                fontWeight: 'bold',
+                color: "white",
+                fontSize: "16px"
+              }}>
+                &nbsp;&nbsp;for the &nbsp;</span>Hopeless
+            </p>
 
-          </div>
-          </div>
-          <div className="row">
-            <div className="col-md-8 col-md-4 col-md-offset-0">
-              <p className="beenThereHome">
-            Hope
-            <span style={{
-              fontWeight: 'bold', color:"white", fontSize:"16px"
-            }}>   &nbsp;&nbsp;for the &nbsp;</span>Hopeless
-          </p>
-
-{/*???            <i
+            {/*???            <i
               onClick={() => this.favoriteQuote(this.props.quote)}
               style={styles.favoriteStyle}
               className={this.props.quote.favorited ? "fa fa-star gold" : "fa fa-star-o"}
               aria-hidden="true"
             />???*/}
-          <div style={styles.formStyle} className="form-group">
-            <label htmlFor="input-box">
-              {/*style={styles.labelStyle}*/}
-              We've &nbsp; got &nbsp; stories...
-            </label>
-             <Link to="/concerns"><FontAwesome
-        className=''
-        name='book'
-        size='5x'
-        style={{ color: "white", textShadow: '0 1px 0 rgba(0, 0, 0, 0.1)' }}
-
-        
-      /> </Link>
-                  <div className="YouGotThisDekHome">
-              <span className="and">+ 
-              </span> you 
-              <span
+            <div style={styles.formStyle} className="form-group">
+              <label htmlFor="input-box">
+                {/*style={styles.labelStyle}*/}
+                We've &nbsp; got &nbsp; stories...
+              </label>
+              <Link to="/concerns"><FontAwesome
+                className=''
+                name='book'
+                size='5x'
                 style={{
-                color: '#333',
-                fontFamily: 'Bungee Shade'
-              }}> Got </span>
-              This
-          </div> 
-             </div>
-         
+        color: "white",
+        textShadow: '0 1px 0 rgba(0, 0, 0, 0.1)'
+      }}/>
+              </Link>
+              <div className="YouGotThisDekHome">
+                <span className="and">+
+                </span>
+                you
+                <span
+                  style={{
+                  color: '#333',
+                  fontFamily: 'Bungee Shade'
+                }}>
+                  Got
+                </span>
+                This
+              </div>
+            </div>
+
+          </div>
+
         
-        </div>
-
-        <div className="col-md-3 col-md-5 col-md-offset-1">
-         
-
-
-
-
-    <hr />
-            
-                  </div>
 
         </div>
 
+<hr />
         <div className="row">
+
+          <div className="col-md-4 col-md-4 col-md-4 ">
+            {/*col-md-offset-1*/}
+            {/*FOUND START*/}
+            <div className="news-card-tag">
+              <span className="concernLabel">
+                <a href="#">Life feels unbearable</a>
+              </span>
+            </div>
+            <div className="card news-card">
+              <div className="view1 ">It will change</div>
+
+              {/*<img src="http://i.imgur.com/6jMbuU1.jpg" />*/}
+              <div className="card-section">
+                <div className="news-card-date">Sunday, 16th April</div>
+                <article className="news-card-article">
+                  <h4 className="news-card-title">
+                    <a href="#">5 Features To Watch Out For in Angular v4</a>
+                  </h4>
+                  <p className="news-card-description">Lorem ipsum dolor sit amet, consectetur
+                    adipisicing elit. Recusandae facere, ipsam quae sit, eaque perferendis
+                    commodi!...</p>
+                </article>
+                <div className="news-card-author">
+                  <div className="news-card-author-image">
+                    <img src="http://i.imgur.com/lAMD2kS.jpg" alt="user"/>
+                  </div>
+                  <div className="news-card-author-name">
+                    By
+                    <a href="#">Harry Manchanda</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          {/*2nd card*/}
+
+          <div className="col-md-4 col-md-4 col-md-4 ">
+
+            <div className="news-card-tag">
+              <span className="label">
+                <a href="#">Angular 2</a>
+              </span>
+              <span className="label">
+                <a href="#">Angular 4</a>
+              </span>
+            </div>
+            <div className="card news-card">
+              <div className="view2 ">You ARE enough </div>
+              <div className="card-section">
+                <div className="news-card-date">Sunday, 16th April</div>
+                <article className="news-card-article">
+                  <h4 className="news-card-title">
+                    <a href="#">5 Features To Watch Out For in Angular v4</a>
+                  </h4>
+                  <p className="news-card-description">Lorem ipsum dolor sit amet, consectetur
+                    adipisicing elit. Recusandae facere, ipsam quae sit, eaque perferendis
+                    commodi!...</p>
+                </article>
+                <div className="news-card-author">
+                  <div className="news-card-author-image">
+                    <img src="http://i.imgur.com/lAMD2kS.jpg" alt="user"/>
+                  </div>
+                  <div className="news-card-author-name">
+                    By
+                    <a href="#">Harry Manchanda</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          {/*3rd card*/}
+
+          <div className="col-md-4 col-md-4 col-md-4 ">
+
+            <div className="news-card-tag">
+              <span className="label">
+                <a href="#">Angular 2</a>
+              </span>
+              <span className="label">
+                <a href="#">Angular 4</a>
+              </span>
+            </div>
+            <div className="card news-card">
+              <div className="view3 ">See what I see in you  </div>
+              <div className="card-section">
+                <div className="news-card-date">Sunday, 16th April</div>
+                <article className="news-card-article">
+                  <h4 className="news-card-title">
+                    <a href="#">5 Features To Watch Out For in Angular v4</a>
+                  </h4>
+                  <p className="news-card-description">Lorem ipsum dolor sit amet, consectetur
+                    adipisicing elit. Recusandae facere, ipsam quae sit, eaque perferendis
+                    commodi!...</p>
+                </article>
+                <div className="news-card-author">
+                  <div className="news-card-author-image">
+                    <img src="http://i.imgur.com/lAMD2kS.jpg" alt="user"/>
+                  </div>
+                  <div className="news-card-author-name">
+                    By
+                    <a href="#">Harry Manchanda</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          {/*2nd CARD ROW*/}
+          {/*4th card*/}
+
+          <div className="row">
+
+            <div className="col-md-4 col-md-4 col-md-4 ">
+              {/*col-md-offset-1*/}
+              {/*FOUND START*/}
+              <div className="news-card-tag">
+                <span className="label">
+                  <a href="#">Angular 2</a>
+                </span>
+                <span className="label">
+                  <a href="#">Angular 4</a>
+                </span>
+              </div>
+              <div className="card news-card">
+                <div className="view4 ">I understand; others do too</div>
+                <div className="card-section">
+                  <div className="news-card-date">Sunday, 16th April</div>
+                  <article className="news-card-article">
+                    <h4 className="news-card-title">
+                      <a href="#">5 Features To Watch Out For in Angular v4</a>
+                    </h4>
+                    <p className="news-card-description">Lorem ipsum dolor sit amet, consectetur
+                      adipisicing elit. Recusandae facere, ipsam quae sit, eaque perferendis
+                      commodi!...</p>
+                  </article>
+                  <div className="news-card-author">
+                    <div className="news-card-author-image">
+                      <img src="http://i.imgur.com/lAMD2kS.jpg" alt="user"/>
+                    </div>
+                    <div className="news-card-author-name">
+                      By
+                      <a href="#">Harry Manchanda</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            {/*5th card*/}
+
+            <div className="col-md-4 col-md-4 col-md-4 ">
+              <div className="news-card-tag">
+                <span className="label">
+                  <a href="#">Angular 2</a>
+                </span>
+                <span className="label">
+                  <a href="#">Angular 4</a>
+                </span>
+              </div>
+              <div className="card news-card">
+                <div className="view5 ">Use life to make a difference</div>
+                <div className="card-section">
+                  <div className="news-card-date">Sunday, 16th April</div>
+                  <article className="news-card-article">
+                    <h4 className="news-card-title">
+                      <a href="#">5 Features To Watch Out For in Angular v4</a>
+                    </h4>
+                    <p className="news-card-description">Lorem ipsum dolor sit amet, consectetur
+                      adipisicing elit. Recusandae facere, ipsam quae sit, eaque perferendis
+                      commodi!...</p>
+                  </article>
+                  <div className="news-card-author">
+                    <div className="news-card-author-image">
+                      <img src="http://i.imgur.com/lAMD2kS.jpg" alt="user"/>
+                    </div>
+                    <div className="news-card-author-name">
+                      By
+                      <a href="#">Harry Manchanda</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            {/*6th card*/}
+
+            <div className="col-md-4 col-md-4 col-md-4 ">
+
+              <div className="news-card-tag">
+                <span className="label">
+                  <a href="#">Angular 2</a>
+                </span>
+                <span className="label">
+                  <a href="#">Angular 4</a>
+                </span>
+              </div>
+              <div className="card news-card">
+                <div className="view6 ">Continue YOUR destiny</div>
+                <div className="card-section">
+                  <div className="news-card-date">Sunday, 16th April</div>
+                  <article className="news-card-article">
+                    <h4 className="news-card-title">
+                      <a href="#">5 Features To Watch Out For in Angular v4</a>
+                    </h4>
+                    <p className="news-card-description">Lorem ipsum dolor sit amet, consectetur
+                      adipisicing elit. Recusandae facere, ipsam quae sit, eaque perferendis
+                      commodi!...</p>
+                  </article>
+                  <div className="news-card-author">
+                    <div className="news-card-author-image">
+                      <img src="http://i.imgur.com/lAMD2kS.jpg" alt="user"/>
+                    </div>
+                    <div className="news-card-author-name">
+                      By
+                      <a href="#">Harry Manchanda</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          {/*FOUND END*/}
+
+          {/*CARD START*/}
+
+          <div className="card" style={{
+            width: '20rem'
+          }}>
+            <img className="card-img-top" src="..." alt="Card image cap"/>
+            <div className="card-block">
+              <h4 className="card-title">Card title</h4>
+              <p className="card-text">Some quick example text to build on the card title and
+                make up the bulk of the card's content.</p>
+            </div>
+            <ul className="list-group list-group-flush">
+              <li className="list-group-item">Cras justo odio</li>
+              <li className="list-group-item">Dapibus ac facilisis in</li>
+              <li className="list-group-item">Vestibulum at eros</li>
+            </ul>
+            <div className="card-block">
+              <a href="#" className="card-link">Card link</a>
+              <a href="#" className="card-link">Another link</a>
+            </div>
+          </div>
+
+          <div className="card-deck">
+            <div className="card">
+              <img className="card-img-top" src="..." alt="Card image cap"/>
+              <div className="card-block">
+                <h4 className="card-title">Card title</h4>
+                <p className="card-text">This is a wider card with supporting text below as a
+                  natural lead-in to additional content. This content is a little bit longer.</p>
+              </div>
+              <div className="card-footer">
+                <small className="text-muted">Last updated 3 mins ago</small>
+              </div>
+            </div>
+            <div className="card">
+              <img className="card-img-top" src="..." alt="Card image cap"/>
+              <div className="card-block">
+                <h4 className="card-title">Card title</h4>
+                <p className="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+              </div>
+              <div className="card-footer">
+                <small className="text-muted">Last updated 3 mins ago</small>
+              </div>
+            </div>
+            <div className="card">
+              <img className="card-img-top" src="..." alt="Card image cap"/>
+              <div className="card-block">
+                <h4 className="card-title">Card title</h4>
+                <p className="card-text">This is a wider card with supporting text below as a
+                  natural lead-in to additional content. This card has even longer content than
+                  the first to show that equal height action.</p>
+              </div>
+              <div className="card-footer">
+                <small className="text-muted">Last updated 3 mins ago</small>
+              </div>
+            </div>
+          </div>
+
+          {/*CARD END*/}
           <div className="col-md-4 col-md-offset-4">
             {/*<ul>
               <li>
@@ -161,8 +445,8 @@ class QuoteForm extends Component {
                 </button>
               </li>*/}
 
-              {/*FORM*/}
-              {/*<textarea
+            {/*FORM*/}
+            {/*<textarea
             style={{
               resize: "none"
             }}
@@ -176,7 +460,7 @@ class QuoteForm extends Component {
 
             {/*</ul>*/}
           </div>
-          
+
         </div>
       </div>
 
