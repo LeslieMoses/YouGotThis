@@ -1,6 +1,7 @@
 import Rebase from 're-base';
 import firebase from "firebase";
 
+
 var config = {
     apiKey: "AIzaSyDCWbrkcN-685RdoPHM4dC-PEEPzSx0Ijk",
     authDomain: "you-got-this.firebaseapp.com",

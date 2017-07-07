@@ -102,7 +102,11 @@ padding: -2px;
 .beenThereHome {
   /*font-family: 'Open Sans', sans-serif;*/
        font-family: 'Raleway', sans-serif;
-  font-size: 40px;
+       font-family: 'Monofett', cursive;
+            font-family: 'Lobster', cursive;
+
+
+  font-size: 30px;
 color: floralwhite;
 font-weight: bold;
 }
@@ -118,25 +122,21 @@ font-size: 25px;
 color: white;
 }
 
-.fa-book:before {
+.fa-book {
     /*content: "\f02d";*/
-    font-size: 200%;
+    font-size: 700%;
     color: navajowhite; 
 }
-
+/*
 .fa-book:hover {
-    /*content: "\f02d";*/
     font-size: 200%;
     color: navajowhite;
-        /*font-size: 5em;*/
-}
-
-
+}*/
 
 .YouGotThisDekHome {
 font-family: 'Bungee', cursive;
-font-size: 72px;
-margin-top: 10px;
+font-size: 32px;
+margin-top: 0px;
 color: white;
 /*background-color: white;*/
 

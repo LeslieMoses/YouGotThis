@@ -15,14 +15,7 @@ import {
 
 const Navigation = () => (
   <Navbar collapseOnSelect>
-    <Navbar.Header>
-      <Navbar.Brand>
-        <Link to="/" className="navHed">You Got This</Link>
-        {/*<a href="#" className="navHed">You Got This</a>*/}
-      </Navbar.Brand>
-      
-      <Navbar.Toggle/>
-    </Navbar.Header>
+
     <Navbar.Collapse>
       <Nav>
         {/*<NavItem eventKey={1} href="#">Link</NavItem>
@@ -60,6 +53,14 @@ const Navigation = () => (
           <MenuItem eventKey={3.8}><Link to="/"> </Link></MenuItem>
 
         </NavDropdown>
+            <Navbar.Header>
+      <Navbar.Brand>
+        <Link to="/" className="navHed">You Got This</Link>
+        {/*<a href="#" className="navHed">You Got This</a>*/}
+      </Navbar.Brand>
+      
+      <Navbar.Toggle/>
+    </Navbar.Header>
       </Nav>
       <Nav pullRight>
         {/*<NavItem eventKey={2}><Link to="/login">LogIn</Link></NavItem>

@@ -39,7 +39,13 @@ class QuoteForm extends Component {
           </div>
           </div>
           <div className="row">
-            <div className="col-md-6 col-md-5 col-md-offset-0">
+            <div className="col-md-8 col-md-4 col-md-offset-0">
+              <p className="beenThereHome">
+            Hope
+            <span style={{
+              fontWeight: 'bold', color:"white", fontSize:"16px"
+            }}>   &nbsp;&nbsp;for the &nbsp;</span>Hopeless
+          </p>
 
 {/*???            <i
               onClick={() => this.favoriteQuote(this.props.quote)}
@@ -52,8 +58,7 @@ class QuoteForm extends Component {
               {/*style={styles.labelStyle}*/}
               We've &nbsp; got &nbsp; stories...
             </label>
-             </div>
-               <Link to="/concerns"><FontAwesome
+             <Link to="/concerns"><FontAwesome
         className=''
         name='book'
         size='5x'
@@ -61,12 +66,7 @@ class QuoteForm extends Component {
 
         
       /> </Link>
-              
-          
-        </div>
-
-        <div className="col-md-3 col-md-5 col-md-offset-1">
-          <div className="YouGotThisDekHome">
+                  <div className="YouGotThisDekHome">
               <span className="and">+ 
               </span> you 
               <span
@@ -75,14 +75,20 @@ class QuoteForm extends Component {
                 fontFamily: 'Bungee Shade'
               }}> Got </span>
               This
-          </div>
+          </div> 
+             </div>
+         
+        
+        </div>
+
+        <div className="col-md-3 col-md-5 col-md-offset-1">
+         
+
+
+
+
     <hr />
-            <p className="beenThereHome">
-            Hope
-            <span style={{
-              fontWeight: 'bold', color:"white", fontSize:"16px"
-            }}>   &nbsp;&nbsp;for the &nbsp;</span>Hopeless
-          </p>
+            
                   </div>
 
         </div>
