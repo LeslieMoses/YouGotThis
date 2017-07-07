@@ -5,6 +5,15 @@ import Main from "../components/Main";
 import Favorites from "../components/Favorites";
 import Home from "../components/Home";
 import Concerns from "../components/common/Concerns";
+import itWillChange from "../components/common/itWillChange";
+import youAreEnough from "../components/common/youAreEnough";
+import seeWhatISee from "../components/common/seeWhatISee";
+import iUnderstand from "../components/common/iunderstand";
+import makeADifference from "../components/common/makeADifference";
+import youAreUnique from "../components/common/youAreUnique";
+
+
+ 
 import Why from "../components/common/Why";
 import AboutUs from "../components/common/aboutus";
 
@@ -20,6 +29,15 @@ const routes = (
       <Route path="favorites" component={Favorites}/>
       <Route path="submitstory" component={SubmitStory}/>
       <Route path="concerns" component={Concerns}/>
+      <Route path="itwillchange" component={itWillChange}/>
+      <Route path="youareenough" component={youAreEnough}/>
+      <Route path="seewhatisee" component={seeWhatISee}/> 
+      <Route path="iunderstand" component={iUnderstand}/>
+      <Route path="makeadifference" component={makeADifference}/>
+      <Route path="youareunique" component={youAreUnique}/>
+
+      
+       
       <Route path="why" component={Why}/>
       <Route path="aboutus" component={AboutUs}/>
       <Route path="login" component={LogIn}/>

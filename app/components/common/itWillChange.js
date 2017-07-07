@@ -120,7 +120,7 @@ componentDidMount () { // Where all AJAX requests will live
           <div className="col-md-3 col-md-8 col-md-offset-1">
             <div style={styles.formStyle} className="form-group">
               <label className="concernHed">
-
+It will change
                 {this.state.concernUpdate}
               </label>
               <br/>
@@ -378,16 +378,7 @@ componentDidMount () { // Where all AJAX requests will live
           <div className="col-md-4 col-md-6 col-md-offset-2">
 
             <p className="lead storyText">#MAKE DYNAMIC isus eget urna mollis ornare vel eu
-              leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
-              ridiculus mus. Nullam id dolor id nibh ultricies vehicula.
-              <p>
-                Donec ullamcorper nulla non metus auctor fringilla. Duis mollis, est non commodo
-                luctus. nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec
-                ullamcorper nulla non metus auctor fringilla.
-              </p>
-              #SCROLL diam eget risus varius blandit sit amet non magna. Donec id elit non mi
-              porta gravida at eget metus. Duis mollis, est non commodo luctus, nisi erat
-              porttitor ligula, eget lacinia odio sem nec elit.
+              checking
             </p>
           </div>
         </div >

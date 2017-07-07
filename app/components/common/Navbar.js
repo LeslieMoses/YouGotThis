@@ -33,9 +33,9 @@ const Navigation = () => (
 
         <ul className="nav navbar-nav">
           {/*className={location.pathname === "/" && "active"}*/}
-          <li >
+          {/*<li >
             <Link to="/">Home</Link>
-          </li>
+          </li>*/}
           {/*<li className={location.pathname === "/profile" && "active"}>
                    <Link to="/profile">Profile</Link>
           </li>*/}
@@ -50,9 +50,14 @@ const Navigation = () => (
           <MenuItem eventKey={3.1}>
             <Link to="/concerns">Concerns</Link>
           </MenuItem>
-          <MenuItem eventKey={3.2}>Something else here</MenuItem>
+          <MenuItem eventKey={3.2}><Link to="/itwillchange">It Will Change</Link></MenuItem>
+          <MenuItem eventKey={3.3}><Link to="/youareenough">You Are Enough</Link></MenuItem>
+          <MenuItem eventKey={3.4}><Link to="/seewhatisee">See What I See</Link></MenuItem>
+          <MenuItem eventKey={3.5}><Link to="/iunderstand">I Understand </Link></MenuItem>
+          <MenuItem eventKey={3.6}><Link to="/makeadifference">Make A Difference</Link></MenuItem>
+          <MenuItem eventKey={3.7}><Link to="/youareunique"> </Link>You Are Unique</MenuItem>                                                  
           <MenuItem divider/>
-          <MenuItem eventKey={3.3}>Separated link</MenuItem>
+          <MenuItem eventKey={3.8}><Link to="/"> </Link></MenuItem>
 
         </NavDropdown>
       </Nav>

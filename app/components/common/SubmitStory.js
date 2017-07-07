@@ -34,19 +34,18 @@ class SubmitStory extends Component {
   handleSubmit() {
     let objStory = {};
     // orgainze data and pass it off to axios --> fb i j need info being submitted
-    let values = document.getElementsByClassName("storyGather");
-    for (var i = 0; i < values.length; i++) {
-      console.log(values[i].value);
-      objStory[values[i].name] = values[i].value;
-      console.log(objStory);
-    }
 
-    base.push("story", {
-      data: objStory,
-      then(error) {
+  let values = document.getElementsByClassName("storyGather");
+       for (var i = 0; i < values.length; i++){
+            console.log(values[i].value);
+            objStory[values[i].name] = values[i].value;
+            console.log(objStory);
+ 
+    };
+
+   base.push("story", {data : objStory, then(error){
         console.log(error);
       }
-
     });
 
     //  values.forEach(function(val, i){  })  var newNote =

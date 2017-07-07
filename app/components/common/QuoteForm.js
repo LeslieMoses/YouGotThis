@@ -35,12 +35,7 @@ class QuoteForm extends Component {
       <div className="container-fluid">
         <div className="row">
           <div className="col-md-6 col-md-offset-3">
-          <div style={styles.formStyle} className="form-group">
-            <label htmlFor="input-box">
-              {/*style={styles.labelStyle}*/}
-              We've &nbsp; got &nbsp; stories...
-            </label>
-             </div>
+
           </div>
           </div>
           <div className="row">
@@ -52,7 +47,12 @@ class QuoteForm extends Component {
               className={this.props.quote.favorited ? "fa fa-star gold" : "fa fa-star-o"}
               aria-hidden="true"
             />???*/}
-
+          <div style={styles.formStyle} className="form-group">
+            <label htmlFor="input-box">
+              {/*style={styles.labelStyle}*/}
+              We've &nbsp; got &nbsp; stories...
+            </label>
+             </div>
                <Link to="/concerns"><FontAwesome
         className=''
         name='book'
