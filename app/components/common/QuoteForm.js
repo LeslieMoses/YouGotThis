@@ -32,11 +32,9 @@ class QuoteForm extends Component {
   render() {
     return (
       <div className="container-fluid">
+
         <div className="row">
-          <div className="col-md-6 col-md-offset-3"></div>
-        </div>
-        <div className="row">
-          <div className="col-md-8 col-md-4 col-md-offset-0">
+          <div className="col-md-4 col-md-4 col-md-offset-4">
             <p className="beenThereHome">
               Hope
               <span
@@ -47,6 +45,7 @@ class QuoteForm extends Component {
               }}>
                 &nbsp;&nbsp;for the &nbsp;</span>Hopeless
             </p>
+            </div>
 
             {/*???            <i
               onClick={() => this.favoriteQuote(this.props.quote)}
@@ -83,10 +82,7 @@ class QuoteForm extends Component {
               </div>
             </div>
 
-          </div>
-
-        
-
+         
         </div>
 
 <hr />
@@ -97,11 +93,26 @@ class QuoteForm extends Component {
             {/*FOUND START*/}
             <div className="news-card-tag">
               <span className="concernLabel">
-                <a href="#">Life feels unbearable</a>
+                <a href="#"><i class="fa fa-circle" aria-hidden="true"></i>
+                
+                
+                <Link to="/itwillchange">
+                <FontAwesome
+                className=''
+                name='circle'
+                size='1x'
+                style={{
+        color: "#FF717E",
+        textShadow: '0 1px 0 rgba(0, 0, 0, 0.1)'
+      }}/>
+              
+                
+                 &nbsp;Life feels unbearable</Link></a>
               </span>
+              
             </div>
             <div className="card news-card">
-              <div className="view1 ">It will change</div>
+                   <Link to="/itwillchange">  <div className="view1 ">It will change</div></Link>
 
               {/*<img src="http://i.imgur.com/6jMbuU1.jpg" />*/}
               <div className="card-section">
@@ -132,15 +143,33 @@ class QuoteForm extends Component {
           <div className="col-md-4 col-md-4 col-md-4 ">
 
             <div className="news-card-tag">
-              <span className="label">
-                <a href="#">Angular 2</a>
+                            <span className="concernLabel">
+
+<a href="#"><i class="fa fa-circle" aria-hidden="true"></i>
+                
+                
+                <Link to="/youareenough">
+                <FontAwesome
+                className=''
+                name='circle'
+                size='1x'
+                style={{
+        color: "#FFdfba",
+        textShadow: '0 1px 0 rgba(0, 0, 0, 0.1)'
+      }}/>
+              
+                
+                 &nbsp;I’m not enough</Link></a>
               </span>
-              <span className="label">
-                <a href="#">Angular 4</a>
-              </span>
+              
             </div>
             <div className="card news-card">
-              <div className="view2 ">You ARE enough </div>
+                   <Link to="/youareenough">
+
+
+
+
+              <div className="view2 ">You ARE enough </div></Link>
               <div className="card-section">
                 <div className="news-card-date">Sunday, 16th April</div>
                 <article className="news-card-article">
@@ -169,20 +198,34 @@ class QuoteForm extends Component {
           <div className="col-md-4 col-md-4 col-md-4 ">
 
             <div className="news-card-tag">
-              <span className="label">
-                <a href="#">Angular 2</a>
+                            <span className="concernLabel">
+
+<a href="#"><i class="fa fa-circle" aria-hidden="true"></i>
+                
+                
+                <Link to="/seewhatisee">
+                <FontAwesome
+                className=''
+                name='circle'
+                size='1x'
+                style={{
+        color: "#1FBED6",
+        textShadow: '0 1px 0 rgba(0, 0, 0, 0.1)'
+      }}/>
+              
+                
+                 &nbsp;I’ve failed too much</Link></a>
               </span>
-              <span className="label">
-                <a href="#">Angular 4</a>
-              </span>
+              
             </div>
             <div className="card news-card">
-              <div className="view3 ">See what I see in you  </div>
+                   <Link to="/seewhatisee">
+              <div className="view3 ">See what I see in you</div></Link>
               <div className="card-section">
                 <div className="news-card-date">Sunday, 16th April</div>
                 <article className="news-card-article">
                   <h4 className="news-card-title">
-                    <a href="#">5 Features To Watch Out For in Angular v4</a>
+                    <a href="#">5 Features To Watch Out For</a>
                   </h4>
                   <p className="news-card-description">Lorem ipsum dolor sit amet, consectetur
                     adipisicing elit. Recusandae facere, ipsam quae sit, eaque perferendis
