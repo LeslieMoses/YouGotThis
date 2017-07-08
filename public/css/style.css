@@ -948,7 +948,13 @@ font-family: 'Open Sans', sans-serif;
 /*---End Foundation Card Article ---*/
 
  .concernHed {
-  font-size: 30px;
+  font-size: 2em;
+  color: #555;
+  font-family: 'Open Sans', sans-serif;
+}
+
+ .viewHed {
+  font-size: 6em;
   color: #555;
   font-family: 'Open Sans', sans-serif;
 }

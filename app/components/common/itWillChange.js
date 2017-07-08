@@ -178,7 +178,7 @@ componentDidMount () { // Where all AJAX requests will live
         <div className="posts-panel grid">
           {/* Panel's header */}
           <header className="panel-header">
-                         <label className="concernHed">
+                         <label className="viewHed">
 It will change
                 {/*{this.state.concernUpdate}*/}
               </label>
