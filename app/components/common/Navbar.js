@@ -45,6 +45,10 @@ const Navigation = () => (
             {/*change Fav to Profile*/}
             <Link to="/submitstory">Submit Story</Link>
           </li>
+          <li >
+            {/*change Fav to Profile*/}
+            <Link to="/submitmodal">Submit Modal</Link>
+          </li>
         </ul>
         <NavDropdown eventKey={3} title="Concerns" id="basic-nav-dropdown">
 

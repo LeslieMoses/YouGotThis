@@ -12,13 +12,11 @@ import iUnderstand from "../components/common/iunderstand";
 import makeADifference from "../components/common/makeADifference";
 import youAreUnique from "../components/common/youAreUnique";
 
-
- 
 import Why from "../components/common/Why";
 import AboutUs from "../components/common/aboutus";
 
-
 import SubmitStory from "../components/common/SubmitStory";
+import SubmitModal from "../components/common/SubmitModal";
 import LogIn from "../components/common/LogIn";
 import LogInBox from "../components/common/LogInBox";
 
@@ -28,6 +26,8 @@ const routes = (
     <Route path="/" component={Main}>
       <Route path="favorites" component={Favorites}/>
       <Route path="submitstory" component={SubmitStory}/>
+      <Route path="submitmodal" component={SubmitModal}/>
+
       <Route path="concerns" component={Concerns}/>
       <Route path="itwillchange" component={itWillChange}/>
       <Route path="youareenough" component={youAreEnough}/>

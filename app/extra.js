@@ -1,3 +1,23 @@
+        {
+          gematriaValues.map((val, i) => {
+            return  <OverlayTrigger placement="top" overlay={<Tooltip id={val.name}>{val.name} {val.gematria}</Tooltip>} key={i}>
+                      <Col lg={1} md={1} sm={1} xs={2} className="pull-right">
+                        <Panel className="gematriaPanel" onClick={this.props.getLetter.bind(this, val)} >
+                          <div className="text-center hebrewLetter">
+                            {val.letter}
+                          </div>
+                        </Panel>
+                      </Col>
+                    </OverlayTrigger>
+          })
+        }
+
+
+
+
+
+
+
 background: darkgrey; /* Old browsers */
 background: -moz-linear-gradient(45deg, #febbbb 0%, #fe9090 45%, #fe9090 62%, #fe9090 74%, #ff5c5c 100%); /* FF3.6-15 */
 background: -webkit-linear-gradient(45deg, #febbbb 0%,#fe9090 45%,#fe9090 62%,#fe9090 74%,#ff5c5c 100%); /* Chrome10-25,Safari5.1-6 */

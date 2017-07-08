@@ -3,6 +3,11 @@ import API from "../../utils/API";
 // import Panel.js from "Panel";
 
 import {base} from "../../utils/rebase";
+import SubmitStory from "./SubmitStory";
+
+import SubmitModal from "./SubmitModal";
+
+
 
 var FontAwesome = require('react-fontawesome');
 
@@ -16,7 +21,8 @@ class Concerns extends Component {
       hereNow1: 0,
       notes: [],
 			bio: {},
-			repos: []
+			repos: [],
+      story:[]
     };
   }
 
@@ -66,13 +72,20 @@ init () {
   handleInputChange(event) {
     this.setState({inputValue: event.target.value});
   }
+  getStoryInput() {
+    SubmitStory.getStoryInput().then((res) => {
+      const storyStuff = res.data.filter(story => story.favorited);
+      this.setState({ stories: storyStuff });
+    });
+  }
+
 
   handleButtonClick() {
 
-    const newQuote = this.state.inputValue;
-    API
-      .saveQuote(newQuote)
-      .then(this.props.getQuotes);
+    const newStory = this.state.inputValue;
+    SubmitStory
+      .saveStory(newStory)
+      .then(this.props.getStoryInput);
     this.setState({inputValue: ""});
   }
 
@@ -109,60 +122,17 @@ componentDidMount () { // Where all AJAX requests will live
   });
 
   	}
-
     	componentWillUnmount () { // So that we don't get listeners keep adding, we will unmount them
 		 base.removeBinding(this.ref);
 	}
 	// method called when instance of component is being created & inserted in DOM
   render() {
     return (
-
  
  <div className="container-fluid">
 <div className="row">
 
-          <div className="col-md-2">
 
-<div className="card-user-profile">
-        <img className="card-user-profile-img" src="https://images.pexels.com/photos/5439/earth-space.jpg?h=350&auto=compress&cs=tinysrgb" alt="picture of space" />
-        <div className="card-user-profile-content card-section">
-          <div className="card-user-profile-avatar">
-            <img src="https://pbs.twimg.com/profile_images/422887689612820482/sZtHMJu5.png" alt="picture of yeti" />
-          </div>
-          <p className="card-user-profile-name"><label className="concernHed">
-  Life feels unbearable
-        </label></p>
-          <p className="card-user-profile-status">as a Yeti Web Designer</p>
-          <p className="card-user-profile-info">The Yeti, once better known as the Abominable Snowman, is a mysterious bipedal creature said to live in the mountains of Asia. It sometimes leaves tracks in snow, but is also said to dwell below the Himalayan snow line.</p>
-        </div>
-        <div className="card-user-profile-actions">
-
-              <button
-                onClick={this
-                .addClick
-                .bind(this)}
-                type="button"
-                className="btn btn-danger"> Been There? &nbsp;
-                <span className="badge">
-                  {this.state.beenThere1} </span>
-              </button>
-
-              <button
-                onClick={this
-                .addHereClick
-                .bind(this)}
-                type="button"
-                className="btn btn-danger"> Here Now? &nbsp;
-                <span className="badge"> 
-                  {this.state.hereNow1} </span>
-              </button>
-
-
-
-
-        </div>
-      </div>
-</div>
 
 {/*BREAK*/}
           <div className="col-md-10 ">
@@ -172,8 +142,6 @@ componentDidMount () { // Where all AJAX requests will live
         {/* Sample 2*/}
 
 
-
-        
         {/* Posts panel container */}
         <div className="posts-panel grid">
           {/* Panel's header */}
@@ -280,6 +248,41 @@ It will change
         </div>
       </div>
       </div>
+                <div className="col-md-2">
+
+<div className="card-user-profile">
+        <img className="card-user-profile-img" src="https://images.pexels.com/photos/5439/earth-space.jpg?h=350&auto=compress&cs=tinysrgb" alt="picture of space" />
+        <div className="card-user-profile-content card-section">
+          <div className="card-user-profile-avatar">
+            <img src="https://pbs.twimg.com/profile_images/422887689612820482/sZtHMJu5.png" alt="picture of yeti" />
+          </div>
+          <p className="card-user-profile-name"><label className="concernHed">
+  Life feels unbearable
+        </label></p>
+          <p className="card-user-profile-status">...at this moment</p>
+          <p className="card-user-profile-info">The Yeti, once better known as the Abominable Snowman, is a mysterious bipedal creature said to live in the mountains of Asia. It sometimes leaves tracks in snow, but is also said to dwell below the Himalayan snow line.</p>
+       <p> <button
+                onClick={this
+                .addClick
+                .bind(this)}
+                type="button"
+                className="btn btn-danger"> Been There? &nbsp;
+                <span className="badge">
+                  {this.state.beenThere1} </span>
+              </button></p> 
+              <p>              <button
+                onClick={this
+                .addHereClick
+                .bind(this)}
+                type="button"
+                className="btn btn-danger"> Here Now? &nbsp;
+                <span className="badge"> 
+                  {this.state.hereNow1} </span>
+              </button></p>
+              </div>
+       
+      </div>
+</div>
 </div>
         <div className="row">
 

@@ -2,6 +2,8 @@ import React, {Component} from "react";
 import API from "../../utils/API";
 var FontAwesome = require('react-fontawesome');
 import {Link} from "react-router";
+import SubmitModal from "./SubmitModal";
+
 
 class QuoteForm extends Component {
   constructor() {
@@ -31,7 +33,9 @@ class QuoteForm extends Component {
   }
   render() {
     return (
+      
       <div className="container-fluid">
+        <SubmitModal />
 
         <div className="row">
            

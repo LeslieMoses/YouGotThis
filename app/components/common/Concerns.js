@@ -102,6 +102,7 @@ componentDidMount () { // Where all AJAX requests will live
     then(data){
       console.log("data test here", data);
     this.setState({notes:data});
+
     }
   });
 
