@@ -31,14 +31,14 @@ const SubmitModal = React.createClass({
 
     return (
       <div>
-        <p>Click to get the full Modal experience!</p>
+        
 
         <Button
           bsStyle="primary"
           bsSize="large"
           onClick={this.open}
         >
-          Launch demo modal
+          Submit YOUR Story
         </Button>
 
         <Modal show={this.state.showModal} onHide={this.close}>

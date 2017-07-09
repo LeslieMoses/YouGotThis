@@ -9,6 +9,7 @@ import SubmitModal from "./SubmitModal";
 
 
 
+
 var FontAwesome = require('react-fontawesome');
 
 class Concerns extends Component {
@@ -131,14 +132,47 @@ componentDidMount () { // Where all AJAX requests will live
  
  <div className="container-fluid">
 <div className="row">
+                <div className="col-md-2">
 
-
+<div className="card-user-profile">
+        <img className="card-user-profile-img" src="https://images.pexels.com/photos/5439/earth-space.jpg?h=350&auto=compress&cs=tinysrgb" alt="picture of space" />
+        <div className="card-user-profile-content card-section">
+          <div className="card-user-profile-avatar">
+            <img src="https://static.pexels.com/photos/12567/photo-1444703686981-a3abbc4d4fe3.jpeg" alt="picture of yeti" />
+          </div>
+          <p className="card-user-profile-name"><label className="concernHed">
+  Life feels unbearable
+        </label></p>
+          <p className="card-user-profile-status">...at this moment</p>
+          <p className="card-user-profile-info">The Yeti, once better known as the Abominable Snowman, is a mysterious bipedal creature said to live in the mountains of Asia. It sometimes leaves tracks in snow, but is also said to dwell below the Himalayan snow line.</p>
+       <p> <button
+                onClick={this
+                .addClick
+                .bind(this)}
+                type="button"
+                className="btn btn-danger"> Been There? &nbsp;
+                <span className="badge">
+                  {this.state.beenThere1} </span>
+              </button></p> 
+              <p>              <button
+                onClick={this
+                .addHereClick
+                .bind(this)}
+                type="button"
+                className="btn btn-danger"> Here Now? &nbsp;
+                <span className="badge"> 
+                  {this.state.hereNow1} </span>
+              </button></p>
+              </div>
+       
+      </div>
+</div>
 
 {/*BREAK*/}
           <div className="col-md-10 ">
 
      
-        <div>
+     
         {/* Sample 2*/}
 
 
@@ -159,13 +193,15 @@ It will change
               <div className="post-item">
                 {/* Post's thumbnail */}
                 <a href="#" className="post-thumbnail">
-                  <img src="https://static.pexels.com/photos/24587/pexels-photo-24587.jpg" alt />
+                  <img src="https://static.pexels.com/photos/12567/photo-1444703686981-a3abbc4d4fe3.jpeg" alt />
                 </a>
                 {/* Post's text */}
                 <div className="post-text">
                   {/* Post's title */}
                   <a href="#">
                     <h3 className="post-title">Post title place-holder</h3>
+                 
+
                   </a>
                   {/*<div className="post-meta">*/}
                     {/*<span className="meta"><span className="meta-icon fa fa-user-circle-o" aria-hidden="true" /><a className="meta-text">Steve Jobs</a></span>*/}
@@ -173,25 +209,26 @@ It will change
                   </div>*/}
                   {/* Post's summary */}
                   <div className="post-summary">
-                             {this.state.notes.map(function(val, i) {
-                               return <p>{val.story}</p>
-                               
-                               }
                              
-                             )}       
-
                        <a href="#" className="post-read-more">Read more<span className="fa fa-chevron-circle-right" aria-hidden="true" /></a>
                    </div>
                 </div>
               </div>
             </section>
             {/* Posts list */}
+                  <SubmitModal />
             <section className="posts-list">
               <div className="post-item">
                 <a href="#" className="post-thumbnail">
-                  <img src="https://static.pexels.com/photos/66274/sunset-poppy-backlight-66274.jpeg" alt />
+                  <img src="https://static.pexels.com/photos/12567/photo-1444703686981-a3abbc4d4fe3.jpeg" alt />
                 </a>
                 <div className="post-text">
+                     {this.state.notes.map(function(val, i) {
+                               return <p>{val.story} </p>
+                               
+                               }
+                             
+                             )} 
                   <a href="#">
                     <h3 className="post-title">Post title place-holder</h3>
                   </a>
@@ -247,42 +284,8 @@ It will change
           </div>
         </div>
       </div>
-      </div>
-                <div className="col-md-2">
-
-<div className="card-user-profile">
-        <img className="card-user-profile-img" src="https://images.pexels.com/photos/5439/earth-space.jpg?h=350&auto=compress&cs=tinysrgb" alt="picture of space" />
-        <div className="card-user-profile-content card-section">
-          <div className="card-user-profile-avatar">
-            <img src="https://pbs.twimg.com/profile_images/422887689612820482/sZtHMJu5.png" alt="picture of yeti" />
-          </div>
-          <p className="card-user-profile-name"><label className="concernHed">
-  Life feels unbearable
-        </label></p>
-          <p className="card-user-profile-status">...at this moment</p>
-          <p className="card-user-profile-info">The Yeti, once better known as the Abominable Snowman, is a mysterious bipedal creature said to live in the mountains of Asia. It sometimes leaves tracks in snow, but is also said to dwell below the Himalayan snow line.</p>
-       <p> <button
-                onClick={this
-                .addClick
-                .bind(this)}
-                type="button"
-                className="btn btn-danger"> Been There? &nbsp;
-                <span className="badge">
-                  {this.state.beenThere1} </span>
-              </button></p> 
-              <p>              <button
-                onClick={this
-                .addHereClick
-                .bind(this)}
-                type="button"
-                className="btn btn-danger"> Here Now? &nbsp;
-                <span className="badge"> 
-                  {this.state.hereNow1} </span>
-              </button></p>
-              </div>
        
-      </div>
-</div>
+
 </div>
         <div className="row">
 
