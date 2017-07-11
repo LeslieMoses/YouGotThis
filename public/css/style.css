@@ -18,7 +18,54 @@ background: linear-gradient(to bottom, rgba(249,247,249,1) 0%,rgba(249,182,200,1
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9f7f9', endColorstr='#ffd3da',GradientType=0 ); /* IE6-9 */
 }
 
+/*-------- modal styling --------- */
 
+#modal {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 7000;
+  background: rgba(0,0,0,0.8);
+}
+
+#modal-open-btn {
+	border: 0;
+	background: #069;
+	color: white;
+	padding: 10px;
+	cursor: pointer;
+}
+
+.modal-close {
+  cursor: pointer;
+  color: white;
+  padding: 20px;
+  z-index: 9100;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.modal-close:hover {
+  color: red;
+}
+
+
+/*-------- content styling --------- */
+
+#content {
+  width: 500px;
+	display: block;
+	color: white;
+	position: relative;
+	margin: 100px auto;
+	padding: 30px;
+	border: 1px solid white;
+  background: rgba(0,0,0,0.25);
+}
+/*END BLACK MODAL*/
 .footer {
   position: absolute;
   bottom: 0;
@@ -1167,7 +1214,22 @@ margin-top:17px;
   margin-left:20px;
 }
 
+/*YOYO*/
 
+.read-more-content,
+.read-more {
+  display: none;
+  margin-top: 1rem;
+}
+
+.read-more-content.expanded .read-more,
+.read-more.expanded .read-more {
+  display: block;
+}
+
+
+
+/*YOYO*/
 
 /*ABOUT US pg*/
 

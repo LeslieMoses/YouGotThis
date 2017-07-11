@@ -143,13 +143,14 @@ componentDidMount () { // Where all AJAX requests will live
             {/*<img src="https://static.pexels.com/photos/12567/photo-1444703686981-a3abbc4d4fe3.jpeg" alt="picture of yeti" />*/}
           </div>
           <p className="card-user-profile-name concernHed"> 
+            <br />
   "Life feels unbearable"<br /><hr />
       </p>
          <br /> <p className="comradeHed">...at this moment</p>
     <br />
           <p className="comrade"> But you're NOT alone. <br /> Who has been there? <br />Who is there now?</p>  
           <p className="witness">Can I get a witness?  
-            <br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
 <FontAwesome
         className='witness'
@@ -222,6 +223,8 @@ It will change
             <section className="pinned-post">
               {/* Post item */}
               <div className="post-item">
+
+
                 {/* Post's thumbnail */}
                 <a href="#" className="post-thumbnail picHed">
                   {/*<img src={unique} alt={"unique"}/> */}
@@ -229,6 +232,27 @@ It will change
                 </a>
                 {/* Post's text */}
                 <div className="post-text">
+                                  {/*YOYO*/}
+   <div className="callout">
+        <h4><strong>FOUNDATION FOR EMAILS</strong></h4>
+        <p>We know things, like building amazing products.</p>
+        <button data-toggle="read-more-content" href="#">SHOW MORE <i className="fa fa-plus" /></button>
+        <div className="read-more-content" id="read-more-content" data-toggler data-animate="hinge-in-from-top slide-out-right">
+          <h5>Spend Less Time Coding, Testing, and Preparing:</h5>
+          <ul>
+            <li>Responsive Grid for Any Layout</li>
+            <li>Common UI Patterns to Build Faster</li>
+            <li>Make stylish emails fast with Sass</li>
+            <li>Inky: A New Templating Language</li>
+            <li>The ZURB Email Stack will make you an email pro</li>
+            <li>Emails that work in all of the major clients, even Outlook</li>
+            <li>Inlining CSS <strike>is</strike> was a pain</li>
+          </ul>
+        </div>
+      </div>
+
+
+                {/*YOYO*/}
                   {/* Post's title */}
                   <a href="#">
                     <h3 className="post-title">Post title place-holder</h3>
@@ -256,13 +280,18 @@ It will change
                 </a>
                 <div className="post-text">
                      {this.state.notes.map(function(val, i) {
-                               return <p>{val.story} </p>
+                               return <div >   <h2>{val.headline} </h2><p>{val.story} ;<br />{val.source}</p>
+                               
+                            
+                               </div>
                                
                                }
                              
                              )} 
                   <a href="#">
                     <h3 className="post-title">Post title place-holder</h3>
+                    <div id="modal1" style={{margin: 50}} />
+                    <modal />
                   </a>
                   <div className="post-meta">
                     <span className="meta"><span className="meta-icon fa fa-user-circle-o" aria-hidden="true" /><a className="meta-text">Steve Jobs</a></span>

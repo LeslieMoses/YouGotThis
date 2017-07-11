@@ -80,7 +80,7 @@ class QuoteForm extends Component {
 
             </div>
              <p className="beenThereHome">
-         Here's courage to take your next step from people who've felt hopeless, too&nbsp;
+         Courage to take your next step through the storms of life from people who've felt hopeless, too&nbsp;
          <FontAwesome
                 className=''
                 name='heart'
