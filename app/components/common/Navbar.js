@@ -26,11 +26,7 @@ const Navigation = () => (
 
           <Navbar.Toggle/>
         </Navbar.Header>
-        {/*<NavItem eventKey={1} href="#">Link</NavItem>
-        <NavItem eventKey={2} href="#">Link</NavItem>*/}
-        <NavItem eventKey={1}>
-          <Link to="/favorites">Favorites</Link>
-        </NavItem>
+
 
         <ul className="nav navbar-nav">
           {/*className={location.pathname === "/" && "active"}*/}
@@ -41,42 +37,40 @@ const Navigation = () => (
                    <Link to="/profile">Profile</Link>
           </li>*/}
           {/*className={location.pathname === "/submitstory" && "active"}*/}
-          <li >
+            <NavItem eventKey={1}><li >
             {/*change Fav to Profile*/}
+          
             <Link to="/submitstory">Submit Story</Link>
-          </li>
-          <li >
-            {/*change Fav to Profile*/}
-            <Link to="/submitmodal">Submit Modal</Link>
-          </li>
+           
+          </li>  </NavItem>
+          {/*<li >*/}
+            {/*<Link to="/submitmodal">Submit Modal</Link>*/}
+          {/*</li>*/}
         </ul>
-        <NavDropdown eventKey={3} title="Concerns" id="basic-nav-dropdown">
+        <NavDropdown eventKey={2} title="Concerns" id="basic-nav-dropdown">
 
-          <MenuItem eventKey={3.1}>
-            <Link to="/concerns">Concerns</Link>
-          </MenuItem>
-          <MenuItem eventKey={3.2}>
+          <MenuItem eventKey={2.1}>
             <Link to="/itwillchange">It Will Change</Link>
           </MenuItem>
-          <MenuItem eventKey={3.3}>
+          <MenuItem eventKey={2.2}>
             <Link to="/youareenough">You Are Enough</Link>
           </MenuItem>
-          <MenuItem eventKey={3.4}>
+          <MenuItem eventKey={2.3}>
             <Link to="/seewhatisee">See What I See</Link>
           </MenuItem>
-          <MenuItem eventKey={3.5}>
+          <MenuItem eventKey={2.4}>
             <Link to="/iunderstand">I Understand
             </Link>
           </MenuItem>
-          <MenuItem eventKey={3.6}>
+          <MenuItem eventKey={2.5}>
             <Link to="/makeadifference">Make A Difference</Link>
           </MenuItem>
-          <MenuItem eventKey={3.7}>
-            <Link to="/youareunique"></Link>You Are Unique</MenuItem>
+          <MenuItem eventKey={2.6}>
+            <Link to="/youareunique">You Are Unique</Link></MenuItem>
           <MenuItem divider/>
-          <MenuItem eventKey={3.8}>
+          {/*<MenuItem eventKey={3.8}>
             <Link to="/"></Link>
-          </MenuItem>
+          </MenuItem>*/}
 
         </NavDropdown>
 
@@ -86,7 +80,7 @@ const Navigation = () => (
         <NavItem eventKey={3}><Link to="/loginbox">LogInBox</Link></NavItem>*/}
         {/*<NavItem eventKey={4}><Link to="/submitstory">Submit Story</Link></NavItem>*/}
         <NavItem eventKey={5}>
-          <Link to="/why">Why</Link>
+          <Link to="/why">Why Stories</Link>
         </NavItem>
         <NavItem eventKey={6}>
           <Link to="/aboutus">About Us</Link>

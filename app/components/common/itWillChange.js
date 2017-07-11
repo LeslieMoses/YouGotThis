@@ -7,6 +7,8 @@ import SubmitStory from "./SubmitStory";
 
 import SubmitModal from "./SubmitModal";
 
+// import unique from './unique.jpg'; 
+
 
 
 
@@ -144,7 +146,7 @@ componentDidMount () { // Where all AJAX requests will live
   Life feels unbearable
         </label></p>
           <p className="card-user-profile-status">...at this moment</p>
-          <p className="card-user-profile-info">The Yeti, once better known as the Abominable Snowman, is a mysterious bipedal creature said to live in the mountains of Asia. It sometimes leaves tracks in snow, but is also said to dwell below the Himalayan snow line.</p>
+          <p className="card-user-profile-info">The Yeti, once better known as th<p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p><p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p><p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p><p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p><p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p><p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>e Abominable Snowman, is a mysterious bipedal creature said to live in the mountains of Asia. It sometimes leaves tracks in snow, but is also said to dwell below the Himalayan snow line.</p>
        <p> <button
                 onClick={this
                 .addClick
@@ -163,6 +165,7 @@ componentDidMount () { // Where all AJAX requests will live
                 <span className="badge"> 
                   {this.state.hereNow1} </span>
               </button></p>
+                          <SubmitModal />
               </div>
        
       </div>
@@ -171,7 +174,6 @@ componentDidMount () { // Where all AJAX requests will live
 {/*BREAK*/}
           <div className="col-md-10 ">
 
-     
      
         {/* Sample 2*/}
 
@@ -185,6 +187,7 @@ It will change
                 {/*{this.state.concernUpdate}*/}
               </label>
           </header>
+          
           {/* Panel's content */}
           <div className="panel-content">
             {/* Pinned post section */}
@@ -192,7 +195,8 @@ It will change
               {/* Post item */}
               <div className="post-item">
                 {/* Post's thumbnail */}
-                <a href="#" className="post-thumbnail">
+                <a href="#" className="post-thumbnail picHed">
+                  {/*<img src={unique} alt={"unique"}/> */}
                   <img src="https://static.pexels.com/photos/12567/photo-1444703686981-a3abbc4d4fe3.jpeg" alt />
                 </a>
                 {/* Post's text */}
@@ -216,7 +220,7 @@ It will change
               </div>
             </section>
             {/* Posts list */}
-                  <SubmitModal />
+      
             <section className="posts-list">
               <div className="post-item">
                 <a href="#" className="post-thumbnail">
@@ -240,6 +244,7 @@ It will change
               </div>
               <div className="post-item">
                 <a href="#" className="post-thumbnail">
+                  {/*<img src={'./unique.jpg'} />*/}
                   <img src="https://static.pexels.com/photos/33109/fall-autumn-red-season.jpg" alt />
                 </a>
                 <div className="post-text">

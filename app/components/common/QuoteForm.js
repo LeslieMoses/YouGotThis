@@ -62,7 +62,7 @@ class QuoteForm extends Component {
                 &nbsp;&nbsp;for the &nbsp;</span>Hopeless 
                 
             </p>
-                 <Link to="/concerns">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<FontAwesome
+                 <Link to="/concerns">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<FontAwesome
                 className=''
                 name='book'
                 size='2x'
