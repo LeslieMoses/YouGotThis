@@ -58,7 +58,7 @@ class QuoteForm extends Component {
                 name='book'
                 size='2x'
                 style={{
-        color: "white",
+        color: "navajowhite",
         textShadow: '0 1px 0 rgba(0, 0, 0, 0.1)'
       }}/>
               </Link></label>
@@ -80,15 +80,16 @@ class QuoteForm extends Component {
 
             </div>
              <p className="beenThereHome">
-         Courage to take your next step
-          <br /> L<FontAwesome
+         Here's courage to take your next step from people who've felt hopeless, too&nbsp;
+         <FontAwesome
                 className=''
-                name='heart-o'
+                name='heart'
                 size='sm'
                 style={{
-        color: "red",
+        color: "#FF264D",
         textShadow: '0 1px 0 rgba(0, 0, 0, 0.1)'
-      }}/>ve, we who've been there
+      }}/>
+      <hr/>
               {/*<span
                 style={{
                 fontWeight: 'bold',
@@ -125,7 +126,7 @@ class QuoteForm extends Component {
       }}/>
               
                 
-                 &nbsp;Life feels unbearable</Link></a>
+                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Life feels unbearable</Link></a>
               </span>
               
             </div>
@@ -177,7 +178,7 @@ class QuoteForm extends Component {
       }}/>
               
                 
-                 &nbsp;I’m not enough</Link></a>
+                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I’m not enough</Link></a>
               </span>
               
             </div>

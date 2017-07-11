@@ -154,7 +154,7 @@ color: white;
 
 .YouGotThisDekHome {
 font-family: 'Bungee', cursive;
-font-size: 42px;
+font-size: 5em;
 margin-top: 0px;
 color: white;
 /*background-color: white;*/
@@ -173,7 +173,7 @@ ul {list-style: none;
 
 .news-card-tag .label {
   border-radius: 0.125rem;
-  background-color: #1779ba;
+  /*background-color: #1779ba;*/
   color: #fefefe;
 }
 
@@ -183,7 +183,7 @@ ul {list-style: none;
 }
 
 .news-card-tag .label:hover, .news-card-tag .label:focus {
-  background-color: #14679e;
+  /*background-color: #14679e;*/
 }
 
 .news-card-tag .label:hover a, .news-card-tag .label:focus a {
@@ -225,7 +225,7 @@ ul {list-style: none;
 }
 
 .news-card .card-section .news-card-article .news-card-title a:hover {
-  color: #1779ba;
+  color: navajowhite;
 }
 
 .news-card .card-section .news-card-article .news-card-description {
@@ -253,6 +253,9 @@ ul {list-style: none;
   vertical-align: middle;
 }
 
+div.news-card-tag {
+  color:transparent;
+}
 /*foundARTICLES*/
 
 .posts-panel {
@@ -697,14 +700,14 @@ ul {list-style: none;
     flex-direction: column;
     margin-top: 12rem;
     margin-left: 2rem;
-    width: 120%;
+    width: 130%;
     border: 0;
     border-radius: 0;
-    background: #fefefe;
+    background: #333;
     box-shadow: none;
     overflow: hidden;
-    color: #0a0a0a;
-    padding: 10%;
+    color:floralwhite;
+    padding: 20%;
     border-radius: 10px;
 }
 
@@ -887,12 +890,17 @@ font-family: 'Open Sans', sans-serif;
 font-family: 'Open Sans', sans-serif;
 }
 
-.concernLabel {
+.concernLabel a{
   background: white;
-  color: #555;
+  color: #333;
   padding: 5px;
   border-radius: 6px;
+  font-style: initial;
   border: solid .5px  #FF717E	;
+              font-family: 'Lobster', cursive;
+              font-family: 'Playfair Display', serif;
+              font-size:1.25em;
+
 }
 
 /*END FOUND*/
@@ -1032,10 +1040,31 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#97c30a', end
 
 /*---End Foundation Card Article ---*/
 
- .concernHed {
-  font-size: 2em;
+ .concernHed  {
+  font-size: 4em;
   color: #555;
   font-family: 'Open Sans', sans-serif;
+
+}
+.card-user-profile-name {
+    margin-bottom: 0;
+    font-weight: 300;
+    font-size: 4rem;
+font-family: 'Monofett', cursive;
+  /*font-weight: bolder;*/
+  color: floralwhite;
+  font-family: 'Open Sans', sans-serif;
+
+
+}
+
+.pullQuote {
+   font-family: 'Open Sans', sans-serif;
+   font-style: italic;
+   color: white;
+       font-size: 1.25em;
+
+
 }
 
  .viewHed {
@@ -1048,7 +1077,29 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#97c30a', end
   text-align: center;
 
 }
+.comradeHed {
+  font-size:2em;
+    font-weight: bolder;
+      width: 120%;
+    font-family: 'Open Sans', sans-serif;
+  color: #FF717E;
 
+}
+.comrade {
+  font-size: 1.5em;
+    font-family: 'Open Sans', sans-serif;
+                        font-family: 'Playfair Display', serif;
+
+  color: floralwhite;
+      width: 120%;
+
+}
+.witness {
+    font-size: 1.5em;
+      /*font-family: 'Lobster', cursive;*/
+        color: floralwhite;
+
+}
 .concernTally{
 background: white; 
 width: 20%; 
@@ -1103,7 +1154,7 @@ margin-top:17px;
 .blockquote  {
     padding: 30px 20px;
     margin: 20 0 20px;
-    font-size: 20px;
+    font-size: 25px;
     border-left: 5px solid #eee;
     /*color: green;*/
 }

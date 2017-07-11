@@ -34,8 +34,9 @@ const SubmitModal = React.createClass({
         
 
         <Button
-          bsStyle="primary"
+          bsStyle="info"
           bsSize="large"
+          backgroundColof="pink"
           onClick={this.open}
         >
           Submit YOUR Story

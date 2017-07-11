@@ -133,36 +133,39 @@ componentDidMount () { // Where all AJAX requests will live
  <div className="container-fluid BG1">
 <div className="row">
                 <div className="col-md-2">
-                                                                            <blockquote class="blockquote">
-
-      <FontAwesome
-        className='pullQuoteMark'
-        name='quote-left'
-        size='3x'
-        style={{ color: "white", textShadow: '0 1px 0 rgba(0, 0, 0, 0.1)' }}
-      />
-<p>And that’s when it all changed. That’s when I realized I saw the start of a world yet undiscovered...” </p>
-  
-</blockquote>
+    
 
 <div className="card-user-profile">
         <img className="card-user-profile-img" src="https://images.pexels.com/photos/5439/earth-space.jpg?h=350&auto=compress&cs=tinysrgb" alt="picture of space" />
         <div className="card-user-profile-content card-section">
           <div className="card-user-profile-avatar">
-            <img src='./unique.jpg' />
+            {/*<img src='./unique.jpg' />*/}
             {/*<img src="https://static.pexels.com/photos/12567/photo-1444703686981-a3abbc4d4fe3.jpeg" alt="picture of yeti" />*/}
           </div>
-          <p className="card-user-profile-name"><label className="concernHed">
-  Life feels unbearable
-        </label></p>
-          <p className="card-user-profile-status">...at this moment</p>
-          <p className="card-user-profile-info">The Yeti, once better known as th<p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p><p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p><p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p><p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p><p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p><p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>e Abominable Snowman, is a mysterious bipedal creature said to live in the mountains of Asia. It sometimes leaves tracks in snow, but is also said to dwell below the Himalayan snow line.</p>
+          <p className="card-user-profile-name concernHed"> 
+  "Life feels unbearable"<br /><hr />
+      </p>
+         <br /> <p className="comradeHed">...at this moment</p>
+    <br />
+          <p className="comrade"> But you're NOT alone. <br /> Who has been there? <br />Who is there now?</p>  
+          <p className="witness">Can I get a witness?  
+            <br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+<FontAwesome
+        className='witness'
+        name='hand-o-down'
+        size='sm'
+        style={{ color: "white" }}
+      />
+
+          </p>
+
        <p> <button
                 onClick={this
                 .addClick
                 .bind(this)}
                 type="button"
-                className="btn btn-danger"> Been There? &nbsp;
+                className="btn btn-warning"> Been There? &nbsp;
                 <span className="badge">
                   {this.state.beenThere1} </span>
               </button></p> 
@@ -171,10 +174,25 @@ componentDidMount () { // Where all AJAX requests will live
                 .addHereClick
                 .bind(this)}
                 type="button"
-                className="btn btn-danger"> Here Now? &nbsp;
+                className="btn btn-warning"> Here Now? &nbsp;&nbsp;&nbsp;&nbsp;
                 <span className="badge"> 
                   {this.state.hereNow1} </span>
               </button></p>
+<br />
+<br /><br /><br />
+
+                          <blockquote class="blockquote">
+
+      <FontAwesome
+        className='pullQuoteMark'
+        name='quote-left'
+        size='3x'
+        style={{ color: "white", textShadow: '0 1px 0 rgba(0, 0, 0, 0.1)' }}
+      />
+<div className="pullQuote"><p >And that’s when it all changed. That’s when I realized I saw the start of a world yet undiscovered...” </p></div>
+  
+</blockquote>
+<br /><br /><br /><br />
                           <SubmitModal />
               </div>
        
