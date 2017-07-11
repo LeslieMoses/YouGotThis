@@ -139,7 +139,7 @@ componentDidMount () { // Where all AJAX requests will live
         <img className="card-user-profile-img" src="https://images.pexels.com/photos/5439/earth-space.jpg?h=350&auto=compress&cs=tinysrgb" alt="picture of space" />
         <div className="card-user-profile-content card-section">
           <div className="card-user-profile-avatar">
-            {/*<img src='./unique.jpg' />*/}
+            {/*<img src='/images/images.jpg' />*/}
             {/*<img src="https://static.pexels.com/photos/12567/photo-1444703686981-a3abbc4d4fe3.jpeg" alt="picture of yeti" />*/}
           </div>
           <p className="card-user-profile-name concernHed"> 
@@ -274,20 +274,16 @@ It will change
             {/* Posts list */}
       
             <section className="posts-list">
+               {this.state.notes.map(function(val, i) {
+                  return <PostItem headline={val.headline} story={val.story} source={val.source} /> 
+                } 
+              )} 
               <div className="post-item">
                 <a href="#" className="post-thumbnail">
                   <img src="https://static.pexels.com/photos/12567/photo-1444703686981-a3abbc4d4fe3.jpeg" alt />
                 </a>
                 <div className="post-text">
-                     {this.state.notes.map(function(val, i) {
-                               return <div >   <h2>{val.headline} </h2><p>{val.story} ;<br />{val.source}</p>
-                               
-                            
-                               </div>
-                               
-                               }
-                             
-                             )} 
+                    
                   <a href="#">
                     <h3 className="post-title">Post title place-holder</h3>
                     <div id="modal1" style={{margin: 50}} />

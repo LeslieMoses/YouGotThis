@@ -1,6 +1,6 @@
 import React, {Component} from "react";
 import Panel from "./Panel";
-// import API from "../utils/API";
+import API from "../../utils/API";
 import rebase from 're-base';
 import firebase from "firebase";
 
@@ -90,7 +90,7 @@ class SubmitStory extends Component {
   render() {
     return (
 
-      <div className="container-fluid holdSubmit">
+      <div className=" holdSubmit ">
         <div className="form-group">
           {/* Name field */}
           <label className="control-label submit" htmlFor="name">Storyteller</label>

@@ -1,5 +1,7 @@
 import React from "react";
 import {Link} from "react-router";
+import SubmitModal from "./SubmitModal";
+
 import {
   Nav,
   NavItem,
@@ -39,8 +41,10 @@ const Navigation = () => (
           {/*className={location.pathname === "/submitstory" && "active"}*/}
             <NavItem eventKey={1}><li >
             {/*change Fav to Profile*/}
+            <SubmitModal />
           
-            <Link to="/submitstory">Submit Story</Link>
+            {/*<Link to="/submitstory"></></Link>*/}
+            
            
           </li>  </NavItem>
           {/*<li >*/}

@@ -37,6 +37,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9f7f9', end
 	padding: 10px;
 	cursor: pointer;
 }
+.modal-title{
+    font-size: 4em;
+  color: #FF717E;
+  font-family: 'Lobster', cursive;
+}
 
 .modal-close {
   cursor: pointer;
@@ -956,7 +961,15 @@ font-family: 'Open Sans', sans-serif;
 
 /*CONCERN PG*/
 
+.BGmodal{
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f9f7f9+0,ffd47f+28,ffd5a5+44,ffd5a5+44,fffcfc+58,ff93a5+63,3f3fa8+69,ffc0cb+78,ffc0cb+84,ffc0cb+89,ffc0cb+89,ffc0cb+93 */
+background: rgb(249,247,249); /* Old browsers */
+background: -moz-linear-gradient(45deg, rgba(249,247,249,1) 0%, rgba(255,212,127,1) 28%, rgba(255,213,165,1) 44%, rgba(255,213,165,1) 44%, rgba(255,252,252,1) 58%, rgba(255,147,165,1) 63%, #1FBED6 69%, rgba(255,192,203,1) 78%, rgba(255,192,203,1) 84%, rgba(255,192,203,1) 89%, rgba(255,192,203,1) 89%, rgba(255,192,203,1) 93%); /* FF3.6-15 */
+background: -webkit-linear-gradient(45deg, rgba(249,247,249,1) 0%,rgba(255,212,127,1) 28%,rgba(255,213,165,1) 44%,rgba(255,213,165,1) 44%,rgba(255,252,252,1) 58%,rgba(255,147,165,1) 63%,#1FBED6 69%,rgba(255,192,203,1) 78%,rgba(255,192,203,1) 84%,rgba(255,192,203,1) 89%,rgba(255,192,203,1) 89%,rgba(255,192,203,1) 93%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(45deg, rgba(249,247,249,1) 0%,rgba(255,212,127,1) 28%,rgba(255,213,165,1) 44%,rgba(255,213,165,1) 44%,rgba(255,252,252,1) 58%,rgba(255,147,165,1) 63%,#1FBED6 69%,rgba(255,192,203,1) 78%,rgba(255,192,203,1) 84%,rgba(255,192,203,1) 89%,rgba(255,192,203,1) 89%,rgba(255,192,203,1) 93%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9f7f9', endColorstr='#ffc0cb',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 
+}
 
   .BG1{/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f9f7f9+0,60bcab+28,4f838c+35,fffcfc+42,ffc0cb+56,ff3855+64,ffc0cb+78,ffc0cb+78,ffc0cb+86 */
 background: rgb(249,247,249); /* Old browsers */
@@ -1332,7 +1345,7 @@ p {
 
  div .inputTitle {
   font-family: 'Open Sans', sans-serif;
-  	color:floralwhite;
+  	color:#333;
     font-size: 20px;
 }
 
@@ -1368,7 +1381,7 @@ input.storyGather::before::after{
 
 .submit {
   text-align: left;
-  color: floralwhite;
+  color: #333;
   font-size: 29px;
     margin-bottom: auto;
 }

@@ -2,6 +2,8 @@ import React, {Component} from "react";
 import API from "../../utils/API";
 import {base} from "../../utils/rebase";
 import { Modal, Button } from 'react-bootstrap';
+import SubmitStory from "./SubmitStory";
+
 
 
 const SubmitModal = React.createClass({
@@ -30,10 +32,11 @@ const SubmitModal = React.createClass({
     // );
 
     return (
-      <div>
+      <div >
         
 
         <Button
+        
           bsStyle="info"
           bsSize="large"
           backgroundColof="pink"
@@ -44,9 +47,11 @@ const SubmitModal = React.createClass({
 
         <Modal show={this.state.showModal} onHide={this.close}>
           <Modal.Header closeButton>
-            <Modal.Title>Modal heading</Modal.Title>
+            <Modal.Title>&nbsp;Tell Your Story</Modal.Title>
           </Modal.Header>
-          <Modal.Body>
+          <Modal.Body className="BGmodal">
+            {/*{this.props.children}*/}
+            <SubmitStory />
             <h4>Text in a modal</h4>
             <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula.</p>
 
@@ -90,10 +95,10 @@ const SubmitModal = React.createClass({
             <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
           </Modal.Body>
           <Modal.Footer>
-            <Button onClick={this.close}>Close</Button>
+            <Button warning onClick={this.close}>Close</Button>
           </Modal.Footer>
         </Modal>
-      </div>
+      </div> 
     );
   }
 });
