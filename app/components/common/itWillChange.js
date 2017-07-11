@@ -9,9 +9,6 @@ import SubmitModal from "./SubmitModal";
 
 // import unique from './unique.jpg'; 
 
-
-
-
 var FontAwesome = require('react-fontawesome');
 
 class Concerns extends Component {
@@ -132,15 +129,28 @@ componentDidMount () { // Where all AJAX requests will live
   render() {
     return (
  
- <div className="container-fluid">
+//  CHANGE BG PER PG
+ <div className="container-fluid BG1">
 <div className="row">
                 <div className="col-md-2">
+                                                                            <blockquote class="blockquote">
+
+      <FontAwesome
+        className='pullQuoteMark'
+        name='quote-left'
+        size='3x'
+        style={{ color: "white", textShadow: '0 1px 0 rgba(0, 0, 0, 0.1)' }}
+      />
+<p>And that’s when it all changed. That’s when I realized I saw the start of a world yet undiscovered...” </p>
+  
+</blockquote>
 
 <div className="card-user-profile">
         <img className="card-user-profile-img" src="https://images.pexels.com/photos/5439/earth-space.jpg?h=350&auto=compress&cs=tinysrgb" alt="picture of space" />
         <div className="card-user-profile-content card-section">
           <div className="card-user-profile-avatar">
-            <img src="https://static.pexels.com/photos/12567/photo-1444703686981-a3abbc4d4fe3.jpeg" alt="picture of yeti" />
+            <img src='./unique.jpg' />
+            {/*<img src="https://static.pexels.com/photos/12567/photo-1444703686981-a3abbc4d4fe3.jpeg" alt="picture of yeti" />*/}
           </div>
           <p className="card-user-profile-name"><label className="concernHed">
   Life feels unbearable
@@ -333,8 +343,10 @@ It will change
                       className="collapse "
                       role="tabpanel"
                       aria-labelledby="headingOne">
+  
                       <div className="card-block">
                             <ul className="list-group">
+   
                               <li className="list-group-item list-group-item-success">Dapibus ac facilisis in</li>
                               <li className="list-group-item list-group-item-info">Cras sit amet nibh libero</li>
                               <li className="list-group-item list-group-item-warning">Porta ac consectetur ac</li>

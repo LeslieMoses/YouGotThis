@@ -51,17 +51,8 @@ class QuoteForm extends Component {
      
             <div style={styles.formStyle} className="form-group">
               <label htmlFor="input-box">
-                                    <p className="beenThereHome">
-             &nbsp;&nbsp; Hope
-              <span
-                style={{
-                fontWeight: 'bold',
-                color: "white",
-                fontSize: "16px"
-              }}>
-                &nbsp;&nbsp;for the &nbsp;</span>Hopeless 
-                
-            </p>
+                                    We've &nbsp; got &nbsp; stories... <br />
+              
                  <Link to="/concerns">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<FontAwesome
                 className=''
                 name='book'
@@ -70,10 +61,9 @@ class QuoteForm extends Component {
         color: "white",
         textShadow: '0 1px 0 rgba(0, 0, 0, 0.1)'
       }}/>
-              </Link>
+              </Link></label>
                 {/*style={styles.labelStyle}*/}
-               <br /> We've &nbsp; got &nbsp; stories...
-              </label>
+              
              
               <div className="YouGotThisDekHome">
                 <span className="and">+
@@ -89,6 +79,25 @@ class QuoteForm extends Component {
                 This
 
             </div>
+             <p className="beenThereHome">
+         Courage to take your next step
+          <br /> L<FontAwesome
+                className=''
+                name='heart-o'
+                size='sm'
+                style={{
+        color: "red",
+        textShadow: '0 1px 0 rgba(0, 0, 0, 0.1)'
+      }}/>ve, we who've been there
+              {/*<span
+                style={{
+                fontWeight: 'bold',
+                color: "white",
+                fontSize: "16px"
+              }}>
+                &nbsp;&nbsp; &nbsp;</span>  */}
+                
+            </p>
             </div>
 
          
