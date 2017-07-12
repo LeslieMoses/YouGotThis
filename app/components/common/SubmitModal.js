@@ -37,8 +37,8 @@ const SubmitModal = React.createClass({
 
         <Button
         
-          bsStyle="warning"
-          bsSize="small"
+          bsStyle="primary"
+          bsSize="medium"
           backgroundColor="pink"
           onClick={this.open}
         >

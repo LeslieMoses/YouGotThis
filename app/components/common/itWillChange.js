@@ -274,10 +274,10 @@ It will change
             {/* Posts list */}
       
             <section className="posts-list">
-               {this.state.notes.map(function(val, i) {
+               {/*{this.state.notes.map(function(val, i) {
                   return <PostItem headline={val.headline} story={val.story} source={val.source} /> 
                 } 
-              )} 
+              )} */}
             
               <div className="post-item">
                 <a href="#" className="post-thumbnail">
@@ -308,16 +308,18 @@ It will change
                   <div className="post-meta">
                     <span className="meta"><span className="meta-icon fa fa-user-circle-o" aria-hidden="true" /><a className="meta-text">Steve Jobs</a></span>
                     <span className="meta"><span className="meta-icon fa fa-clock-o" aria-hidden="true" /><span className="meta-text">22/06/2030</span></span>
-                          <Button
+                          {/*<Button
         
           bsStyle="warning"
           bsSize="small"
           backgroundColor="pink"
           onClick={this.open}
-        >              <PostItem headline={val.headline} story={val.story} source={val.source} /> 
+        >              
+        
          
           Read More
-        </Button>
+        </Button>*/}
+        {/*<PostItem headline={val.headline} story={val.story} source={val.source} /> */}
                   </div>
                 </div>
               </div>

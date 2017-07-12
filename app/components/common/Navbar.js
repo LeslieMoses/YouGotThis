@@ -42,7 +42,7 @@ const Navigation = () => (
           {/*className={location.pathname === "/submitstory" && "active"}*/}
             <NavItem eventKey={1}><li >
             {/*change Fav to Profile*/}
-            <SubmitModal />
+            
           
             {/*<Link to="/submitstory"></></Link>*/}
             
@@ -52,7 +52,20 @@ const Navigation = () => (
             {/*<Link to="/submitmodal">Submit Modal</Link>*/}
           {/*</li>*/}
         </ul>
-        <NavDropdown eventKey={2} title="Concerns" id="basic-nav-dropdown">
+        
+
+      </Nav>
+      <Nav pullRight>
+        {/*<NavItem eventKey={2}><Link to="/login">LogIn</Link></NavItem>
+        <NavItem eventKey={3}><Link to="/loginbox">LogInBox</Link></NavItem>*/}
+        <NavItem eventKey={4}><SubmitModal /></NavItem>
+        <NavItem eventKey={5}>
+          <Link to="/why">Why Stories</Link>
+        </NavItem>
+        <NavItem eventKey={6}>
+          <Link to="/aboutus">About Us</Link>
+        </NavItem>
+<NavDropdown eventKey={2} title="Concerns" id="basic-nav-dropdown">
 
           <MenuItem eventKey={2.1}>
             <Link to="/itwillchange">It Will Change</Link>
@@ -78,19 +91,7 @@ const Navigation = () => (
           </MenuItem>*/}
 
         </NavDropdown>
-
-      </Nav>
-      <Nav pullRight>
-        {/*<NavItem eventKey={2}><Link to="/login">LogIn</Link></NavItem>
-        <NavItem eventKey={3}><Link to="/loginbox">LogInBox</Link></NavItem>*/}
-        {/*<NavItem eventKey={4}><Link to="/submitstory">Submit Story</Link></NavItem>*/}
-        <NavItem eventKey={5}>
-          <Link to="/why">Why Stories</Link>
-        </NavItem>
-        <NavItem eventKey={6}>
-          <Link to="/aboutus">About Us</Link>
-        </NavItem>
-
+        
       </Nav>
     </Navbar.Collapse>
 

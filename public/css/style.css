@@ -36,6 +36,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9f7f9', end
 	color: pink;
 	padding: 10px;
 	cursor: pointer;
+   background-color: #444 !important;
 }
 
 .btn-info {
@@ -43,6 +44,15 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9f7f9', end
     background-color: #444;
     border-color: pink;
 }
+.btn-primary{
+   background-color: #444 !important;
+       border-color: pink !important;
+    color: pink !important;
+
+
+}
+
+
 .modal-title{
     font-size: 5em;
   color: #FF717E;
@@ -195,13 +205,13 @@ font-weight: bold;
 
 .and {
 font-family: 'Bungee', cursive;
-font-size: 25px;
+font-size: 35px;
 color: white;
 }
 
 .fa-book {
     /*content: "\f02d";*/
-    font-size: 300%;
+    font-size: 150%;
     color: navajowhite; 
 }
 /*
@@ -212,7 +222,7 @@ color: white;
 
 .YouGotThisDekHome {
 font-family: 'Bungee', cursive;
-font-size: 5em;
+font-size: 4.5em;
 margin-top: 0px;
 color: white;
 /*background-color: white;*/

@@ -4,7 +4,6 @@ var FontAwesome = require('react-fontawesome');
 import {Link} from "react-router";
 import SubmitModal from "./SubmitModal";
 
-
 class QuoteForm extends Component {
   constructor() {
     super();
@@ -33,63 +32,79 @@ class QuoteForm extends Component {
   }
   render() {
     return (
-      
+
       <div className="container-fluid">
-        <SubmitModal />
 
         <div className="row">
-           
-            </div>
 
-            {/*???            <i
+        {/*???            <i
               onClick={() => this.favoriteQuote(this.props.quote)}
               style={styles.favoriteStyle}
               className={this.props.quote.favorited ? "fa fa-star gold" : "fa fa-star-o"}
               aria-hidden="true"
             />???*/}
-                      <div className="col-md-6 col-md-offset-4">
-     
-            <div style={styles.formStyle} className="form-group">
-              <label htmlFor="input-box">
-                                    We've &nbsp; got &nbsp; stories... <br />
-              
-                 <Link to="/concerns">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<FontAwesome
+        <div className="col-md-6 col-md-offset-0">
+
+          <div style={styles.formStyle} className="form-group">
+            <label htmlFor="input-box">&nbsp;&nbsp;
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;We've &nbsp; got &nbsp; stories...<Link to="/concerns">&nbsp;&nbsp;&nbsp;<FontAwesome
                 className=''
                 name='book'
-                size='2x'
+                size='sm'
                 style={{
-        color: "navajowhite",
+        color: "peachpuff",
         textShadow: '0 1px 0 rgba(0, 0, 0, 0.1)'
       }}/>
-              </Link></label>
-                {/*style={styles.labelStyle}*/}
+              </Link>
+              <br/>
+
               
-             
-              <div className="YouGotThisDekHome">
-                <span className="and">+
-                </span>
-                you
-                <span
-                  style={{
-                  color: '#333',
-                  fontFamily: 'Bungee Shade'
-                }}>
-                  &nbsp;Got&nbsp;
-                </span>
-                This
+            </label>
+            {/*style={styles.labelStyle}*/}
+
+            <div className="YouGotThisDekHome">
+              <span className="and">
+                +
+              </span>
+              you
+              <span style={{
+                fontFamily: 'Bungee Shade'
+              }}>
+                &nbsp;Got&nbsp;
+              </span>
+              This
 
             </div>
-             <p className="beenThereHome">
-         Courage to take your next step through the storms of life from people who've felt hopeless, too&nbsp;
-         <FontAwesome
+            <blockquote class="blockquote"><p className="beenThereHome">
+ 
+   Courage  &nbsp;             
+             <FontAwesome
+                className=''
+                name='thumbs-up'
+                size='lg '
+                style={{
+                color: "navajowhite",
+                textShadow: '0 1px 0 rgba(0, 0, 0, 0.1)'
+              }}/>&nbsp;to take your next step 
+               <br/>
+           through life's storms  &nbsp; <FontAwesome
+                className=''
+                name='umbrella'
+                size='lg'
+                style={{
+                color: "#1FBED6",
+                textShadow: '0 1px 0 rgba(0, 0, 0, 0.1)'
+              }}/>  
+              <br/> 
+from people         <FontAwesome
                 className=''
                 name='heart'
                 size='sm'
                 style={{
-        color: "#FF264D",
-        textShadow: '0 1px 0 rgba(0, 0, 0, 0.1)'
-      }}/>
-      <hr/>
+                color: "#FF264D",
+                textShadow: '0 1px 0 rgba(0, 0, 0, 0.1)'
+              }}/> &nbsp;who've
+              felt hopeless, too
               {/*<span
                 style={{
                 fontWeight: 'bold',
@@ -97,41 +112,45 @@ class QuoteForm extends Component {
                 fontSize: "16px"
               }}>
                 &nbsp;&nbsp; &nbsp;</span>  */}
-                
-            </p>
-            </div>
 
-         
+            </p>
+            </blockquote>
+          </div>
+  </div>
         </div>
 
-
         <div className="row">
-
+       <hr />
+       <br />
           <div className="col-md-4 col-md-4 col-md-4 ">
+     
+
             {/*col-md-offset-1*/}
             {/*FOUND START*/}
             <div className="news-card-tag">
               <span className="concernLabel">
-                <a href="#"><i class="fa fa-circle" aria-hidden="true"></i>
-                
-                
-                <Link to="/itwillchange">
-                <FontAwesome
-                className=''
-                name='circle'
-                size='1x'
-                style={{
-        color: "#FF717E",
-        textShadow: '0 1px 0 rgba(0, 0, 0, 0.1)'
-      }}/>
-              
-                
-                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Life feels unbearable</Link></a>
+                <a href="#">
+                  <i class="fa fa-circle" aria-hidden="true"></i>
+
+                  <Link to="/itwillchange">
+                    <FontAwesome
+                      className=''
+                      name='circle'
+                      size='1x'
+                      style={{
+                      color: "#FF717E",
+                      textShadow: '0 1px 0 rgba(0, 0, 0, 0.1)'
+                    }}/>
+
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Life feels unbearable</Link>
+                </a>
               </span>
-              
+
             </div>
             <div className="card news-card">
-                   <Link to="/itwillchange">  <div className="view1 ">It will change</div></Link>
+              <Link to="/itwillchange">
+                <div className="view1 ">It will change</div>
+              </Link>
 
               {/*<img src="http://i.imgur.com/6jMbuU1.jpg" />*/}
               <div className="card-section">
@@ -162,33 +181,32 @@ class QuoteForm extends Component {
           <div className="col-md-4 col-md-4 col-md-4 ">
 
             <div className="news-card-tag">
-                            <span className="concernLabel">
+              <span className="concernLabel">
 
-<a href="#"><i class="fa fa-circle" aria-hidden="true"></i>
-                
-                
-                <Link to="/youareenough">
-                <FontAwesome
-                className=''
-                name='circle'
-                size='1x'
-                style={{
-        color: "#FFdfba",
-        textShadow: '0 1px 0 rgba(0, 0, 0, 0.1)'
-      }}/>
-              
-                
-                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I’m not enough</Link></a>
+                <a href="#">
+                  <i class="fa fa-circle" aria-hidden="true"></i>
+
+                  <Link to="/youareenough">
+                    <FontAwesome
+                      className=''
+                      name='circle'
+                      size='1x'
+                      style={{
+                      color: "#FFdfba",
+                      textShadow: '0 1px 0 rgba(0, 0, 0, 0.1)'
+                    }}/>
+
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I’m not enough</Link>
+                </a>
               </span>
-              
+
             </div>
             <div className="card news-card">
-                   <Link to="/youareenough">
+              <Link to="/youareenough">
 
-
-
-
-              <div className="view2 ">You ARE enough </div></Link>
+                <div className="view2 ">You ARE enough
+                </div>
+              </Link>
               <div className="card-section">
                 <div className="news-card-date">Sunday, 16th April</div>
                 <article className="news-card-article">
@@ -217,29 +235,30 @@ class QuoteForm extends Component {
           <div className="col-md-4 col-md-4 col-md-4 ">
 
             <div className="news-card-tag">
-                            <span className="concernLabel">
+              <span className="concernLabel">
 
-<a href="#"><i class="fa fa-circle" aria-hidden="true"></i>
-                
-                
-                <Link to="/seewhatisee">
-                <FontAwesome
-                className=''
-                name='circle'
-                size='1x'
-                style={{
-        color: "#1FBED6",
-        textShadow: '0 1px 0 rgba(0, 0, 0, 0.1)'
-      }}/>
-              
-                
-                 &nbsp;I’ve failed too much</Link></a>
+                <a href="#">
+                  <i class="fa fa-circle" aria-hidden="true"></i>
+
+                  <Link to="/seewhatisee">
+                    <FontAwesome
+                      className=''
+                      name='circle'
+                      size='1x'
+                      style={{
+                      color: "#1FBED6",
+                      textShadow: '0 1px 0 rgba(0, 0, 0, 0.1)'
+                    }}/>
+
+                    &nbsp;I’ve failed too much</Link>
+                </a>
               </span>
-              
+
             </div>
             <div className="card news-card">
-                   <Link to="/seewhatisee">
-              <div className="view3 ">See what I see in you</div></Link>
+              <Link to="/seewhatisee">
+                <div className="view3 ">See what I see in you</div>
+              </Link>
               <div className="card-section">
                 <div className="news-card-date">Sunday, 16th April</div>
                 <article className="news-card-article">
