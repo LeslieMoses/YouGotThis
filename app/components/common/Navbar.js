@@ -19,12 +19,13 @@ const Navigation = () => (
   <Navbar collapseOnSelect>
 
     <Navbar.Collapse>
-      <Nav>
-        <Navbar.Header>
-          <Navbar.Brand>
+                <Navbar.Brand>
             <Link to="/" className="navHed">You Got This</Link>
             {/*<a href="#" className="navHed">You Got This</a>*/}
           </Navbar.Brand>
+      <Nav>
+        <Navbar.Header>
+
 
           <Navbar.Toggle/>
         </Navbar.Header>

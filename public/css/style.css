@@ -32,13 +32,19 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9f7f9', end
 
 #modal-open-btn {
 	border: 0;
-	background: #069;
-	color: white;
+	background: #444;
+	color: pink;
 	padding: 10px;
 	cursor: pointer;
 }
+
+.btn-info {
+    color: pink;
+    background-color: #444;
+    border-color: pink;
+}
 .modal-title{
-    font-size: 4em;
+    font-size: 5em;
   color: #FF717E;
   font-family: 'Lobster', cursive;
 }

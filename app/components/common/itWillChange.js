@@ -6,6 +6,7 @@ import {base} from "../../utils/rebase";
 import SubmitStory from "./SubmitStory";
 
 import SubmitModal from "./SubmitModal";
+import PostItem from "./PostItem"; 
 
 // import unique from './unique.jpg'; 
 
@@ -223,8 +224,6 @@ It will change
             <section className="pinned-post">
               {/* Post item */}
               <div className="post-item">
-
-
                 {/* Post's thumbnail */}
                 <a href="#" className="post-thumbnail picHed">
                   {/*<img src={unique} alt={"unique"}/> */}
@@ -267,6 +266,7 @@ It will change
                   <div className="post-summary">
                              
                        <a href="#" className="post-read-more">Read more<span className="fa fa-chevron-circle-right" aria-hidden="true" /></a>
+                         <PostItem />
                    </div>
                 </div>
               </div>
@@ -278,6 +278,7 @@ It will change
                   return <PostItem headline={val.headline} story={val.story} source={val.source} /> 
                 } 
               )} 
+            
               <div className="post-item">
                 <a href="#" className="post-thumbnail">
                   <img src="https://static.pexels.com/photos/12567/photo-1444703686981-a3abbc4d4fe3.jpeg" alt />
@@ -307,6 +308,16 @@ It will change
                   <div className="post-meta">
                     <span className="meta"><span className="meta-icon fa fa-user-circle-o" aria-hidden="true" /><a className="meta-text">Steve Jobs</a></span>
                     <span className="meta"><span className="meta-icon fa fa-clock-o" aria-hidden="true" /><span className="meta-text">22/06/2030</span></span>
+                          <Button
+        
+          bsStyle="warning"
+          bsSize="small"
+          backgroundColor="pink"
+          onClick={this.open}
+        >              <PostItem headline={val.headline} story={val.story} source={val.source} /> 
+         
+          Read More
+        </Button>
                   </div>
                 </div>
               </div>
@@ -473,7 +484,7 @@ It will change
                         <a
                           role="menuitem"
                           tabIndex={-1}
-                          onClick={() => this.concernUpdate("I understand and others do,  too")}
+                          onClick={() => this.concernUpdate("I understand and others do, too")}
                           href="#">4. No one understands</a>
                       </a>
                     </h5>
