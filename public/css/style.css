@@ -133,6 +133,9 @@ nav.navbar.navbar-default {
 background: #333;    
     /*border-color: pink;*/
     color:floralwhite;
+    padding: 7px;
+    
+    margin-bottom: 0px;
 }
 
 a.navHed.navbar-brand{
@@ -330,6 +333,8 @@ div.news-card-tag {
   max-width: 100rem;
   margin-right: auto;
   margin-left: auto;
+  margin-top: 20px;
+
   width: 100%;
   /*float: left;*/
   padding-right: 0.625rem;
@@ -922,7 +927,7 @@ font-family: 'Open Sans', sans-serif;
         height: 200px;
     width: 340px;
     /*background: blue;*/
-    border: orange   solid 12px;
+    border: #20b2aa    solid 12px;
     border-radius: 6px;
     padding: 10px;
     color: #555;
@@ -935,7 +940,7 @@ font-family: 'Open Sans', sans-serif;
         height: 200px;
     width: 340px;
     /*background: blue;*/
-    border: #ffffba   solid 12px;
+    border: hsla(53, 100%, 51%, 0.82)   solid 12px;
     border-radius: 6px;
     padding: 10px;
     color: #555;
@@ -948,7 +953,7 @@ font-family: 'Open Sans', sans-serif;
         height: 200px;
     width: 340px;
     /*background: blue;*/
-    border: #97C30A  solid 12px;
+    border: #ffa36d   solid 12px;
     border-radius: 6px;
     padding: 10px;
     color: #555;

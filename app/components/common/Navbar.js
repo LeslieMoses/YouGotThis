@@ -62,9 +62,7 @@ const Navigation = () => (
         <NavItem eventKey={5}>
           <Link to="/why">Why Stories</Link>
         </NavItem>
-        <NavItem eventKey={6}>
-          <Link to="/aboutus">About Us</Link>
-        </NavItem>
+        
 <NavDropdown eventKey={2} title="Concerns" id="basic-nav-dropdown">
 
           <MenuItem eventKey={2.1}>
@@ -91,6 +89,9 @@ const Navigation = () => (
           </MenuItem>*/}
 
         </NavDropdown>
+        <NavItem eventKey={6}>
+          <Link to="/saveher">Save Her</Link>
+        </NavItem>
         
       </Nav>
     </Navbar.Collapse>

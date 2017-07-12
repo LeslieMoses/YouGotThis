@@ -13,7 +13,7 @@ import makeADifference from "../components/common/makeADifference";
 import youAreUnique from "../components/common/youAreUnique";
 
 import Why from "../components/common/Why";
-import AboutUs from "../components/common/aboutus";
+import SaveHer from "../components/common/saveher";
 
 import SubmitStory from "../components/common/SubmitStory";
 import SubmitModal from "../components/common/SubmitModal";
@@ -39,7 +39,7 @@ const routes = (
       
        
       <Route path="why" component={Why}/>
-      <Route path="aboutus" component={AboutUs}/>
+      <Route path="saveher" component={SaveHer}/>
       <Route path="login" component={LogIn}/>
       <Route path="loginbox" component={LogInBox}/>
       <IndexRoute component={Home}/>

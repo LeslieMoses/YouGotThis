@@ -3,7 +3,7 @@ import API from "../../utils/API";
 // import Panel.js from "Panel";
 var FontAwesome = require('react-fontawesome');
 
-class AboutUs extends Component {
+class SaveHer extends Component {
     constructor() {
         super();
         this.state = {
@@ -132,4 +132,4 @@ const styles = {
     }
 };
 
-export default AboutUs;
+export default SaveHer;

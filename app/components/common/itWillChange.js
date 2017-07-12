@@ -1,10 +1,8 @@
 import React, {Component} from "react";
 import API from "../../utils/API";
 // import Panel.js from "Panel";
-
 import {base} from "../../utils/rebase";
 import SubmitStory from "./SubmitStory";
-
 import SubmitModal from "./SubmitModal";
 import PostItem from "./PostItem"; 
 
@@ -23,7 +21,8 @@ class Concerns extends Component {
       notes: [],
 			bio: {},
 			repos: [],
-      story:[]
+      story:[],
+      headline: []
     };
   }
 
@@ -224,6 +223,7 @@ It will change
             <section className="pinned-post">
               {/* Post item */}
               <div className="post-item">
+      
                 {/* Post's thumbnail */}
                 <a href="#" className="post-thumbnail picHed">
                   {/*<img src={unique} alt={"unique"}/> */}
@@ -231,27 +231,7 @@ It will change
                 </a>
                 {/* Post's text */}
                 <div className="post-text">
-                                  {/*YOYO*/}
-   <div className="callout">
-        <h4><strong>FOUNDATION FOR EMAILS</strong></h4>
-        <p>We know things, like building amazing products.</p>
-        <button data-toggle="read-more-content" href="#">SHOW MORE <i className="fa fa-plus" /></button>
-        <div className="read-more-content" id="read-more-content" data-toggler data-animate="hinge-in-from-top slide-out-right">
-          <h5>Spend Less Time Coding, Testing, and Preparing:</h5>
-          <ul>
-            <li>Responsive Grid for Any Layout</li>
-            <li>Common UI Patterns to Build Faster</li>
-            <li>Make stylish emails fast with Sass</li>
-            <li>Inky: A New Templating Language</li>
-            <li>The ZURB Email Stack will make you an email pro</li>
-            <li>Emails that work in all of the major clients, even Outlook</li>
-            <li>Inlining CSS <strike>is</strike> was a pain</li>
-          </ul>
-        </div>
-      </div>
 
-
-                {/*YOYO*/}
                   {/* Post's title */}
                   <a href="#">
                     <h3 className="post-title">Post title place-holder</h3>
@@ -266,7 +246,7 @@ It will change
                   <div className="post-summary">
                              
                        <a href="#" className="post-read-more">Read more<span className="fa fa-chevron-circle-right" aria-hidden="true" /></a>
-                         <PostItem />
+                         {/*<PostItem />*/}
                    </div>
                 </div>
               </div>
@@ -274,6 +254,14 @@ It will change
             {/* Posts list */}
       
             <section className="posts-list">
+              {/*<PostItem />ayo 123*/}
+work, pls
+                 {this.state.notes.map(function(val, i) {
+                  return <PostItem headline={val.headline}  /> 
+                } 
+              )} 
+
+              {/*CODE TO USE*/}
                {/*{this.state.notes.map(function(val, i) {
                   return <PostItem headline={val.headline} story={val.story} source={val.source} /> 
                 } 

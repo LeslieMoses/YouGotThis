@@ -85,7 +85,7 @@ class QuoteForm extends Component {
                 style={{
                 color: "navajowhite",
                 textShadow: '0 1px 0 rgba(0, 0, 0, 0.1)'
-              }}/>&nbsp;to take your next step 
+              }}/>&nbsp;to step 
                <br/>
            through life's storms  &nbsp; <FontAwesome
                 className=''
@@ -96,7 +96,7 @@ class QuoteForm extends Component {
                 textShadow: '0 1px 0 rgba(0, 0, 0, 0.1)'
               }}/>  
               <br/> 
-from people         <FontAwesome
+from we         <FontAwesome
                 className=''
                 name='heart'
                 size='sm'
@@ -104,7 +104,7 @@ from people         <FontAwesome
                 color: "#FF264D",
                 textShadow: '0 1px 0 rgba(0, 0, 0, 0.1)'
               }}/> &nbsp;who've
-              felt hopeless, too
+        been there
               {/*<span
                 style={{
                 fontWeight: 'bold',
