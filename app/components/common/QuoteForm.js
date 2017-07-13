@@ -50,7 +50,7 @@ class QuoteForm extends Component {
               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;We've &nbsp; got &nbsp; stories...<Link to="/concerns">&nbsp;&nbsp;&nbsp;<FontAwesome
                 className=''
                 name='book'
-                size='sm'
+                size='lg'
                 style={{
         color: "peachpuff",
         textShadow: '0 1px 0 rgba(0, 0, 0, 0.1)'
@@ -81,7 +81,7 @@ class QuoteForm extends Component {
              <FontAwesome
                 className=''
                 name='thumbs-up'
-                size='lg '
+                size='lg'
                 style={{
                 color: "navajowhite",
                 textShadow: '0 1px 0 rgba(0, 0, 0, 0.1)'
@@ -99,7 +99,7 @@ class QuoteForm extends Component {
 from we         <FontAwesome
                 className=''
                 name='heart'
-                size='sm'
+                size='lg'
                 style={{
                 color: "#FF264D",
                 textShadow: '0 1px 0 rgba(0, 0, 0, 0.1)'
@@ -129,7 +129,7 @@ from we         <FontAwesome
             {/*FOUND START*/}
             <div className="news-card-tag">
               <span className="concernLabel">
-                <a href="#">
+               
                   <i class="fa fa-circle" aria-hidden="true"></i>
 
                   <Link to="/itwillchange">
@@ -143,16 +143,25 @@ from we         <FontAwesome
                     }}/>
 
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Life feels unbearable</Link>
-                </a>
+  
               </span>
 
             </div>
             <div className="card news-card">
               <Link to="/itwillchange">
-                <div className="view1 ">It will change</div>
+              <img className="homePic" src="https://static.pexels.com/photos/12567/photo-1444703686981-a3abbc4d4fe3.jpeg" />
+              
+                <FontAwesome
+                      className=''
+                      name='bolt'
+                      size='5x'
+                      style={{
+                      color: "#FF717E",
+                      textShadow: '0 1px 0 rgba(0, 0, 0, 0.1)'
+                    }}/>
               </Link>
 
-              {/*<img src="http://i.imgur.com/6jMbuU1.jpg" />*/}
+              {/*<img src={"/pics/change.jpg"}/>*/}
               <div className="card-section">
                 <div className="news-card-date">Sunday, 16th April</div>
                 <article className="news-card-article">
@@ -183,7 +192,7 @@ from we         <FontAwesome
             <div className="news-card-tag">
               <span className="concernLabel">
 
-                <a href="#">
+              
                   <i class="fa fa-circle" aria-hidden="true"></i>
 
                   <Link to="/youareenough">
@@ -197,17 +206,29 @@ from we         <FontAwesome
                     }}/>
 
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I’m not enough</Link>
-                </a>
+                
               </span>
 
             </div>
             <div className="card news-card">
+ 
               <Link to="/youareenough">
+              <img className="homePic"  src={"/pics/change.jpg"}/> 
+              
+                  <FontAwesome
+                      className=''
+                      name='battery-full'
+                      size='5x'
+                      style={{
+                      color: "#FFdfba",
+                      textShadow: '0 1px 0 rgba(0, 0, 0, 0.1)'
+                    }}/>
+              </Link>
 
+              
                 <div className="view2 ">You ARE enough
                 </div>
-              </Link>
-              <div className="card-section">
+               <div className="card-section">
                 <div className="news-card-date">Sunday, 16th April</div>
                 <article className="news-card-article">
                   <h4 className="news-card-title">
@@ -237,7 +258,7 @@ from we         <FontAwesome
             <div className="news-card-tag">
               <span className="concernLabel">
 
-                <a href="#">
+            
                   <i class="fa fa-circle" aria-hidden="true"></i>
 
                   <Link to="/seewhatisee">
@@ -251,12 +272,20 @@ from we         <FontAwesome
                     }}/>
 
                     &nbsp;I’ve failed too much</Link>
-                </a>
+     
               </span>
 
             </div>
             <div className="card news-card">
               <Link to="/seewhatisee">
+                                  <FontAwesome
+                      className=''
+                      name='eye'
+                      size='5x'
+                      style={{
+                      color: "#1FBED6",
+                      textShadow: '0 1px 0 rgba(0, 0, 0, 0.1)'
+                    }}/>
                 <div className="view3 ">See what I see in you</div>
               </Link>
               <div className="card-section">
@@ -301,6 +330,14 @@ from we         <FontAwesome
               </div>
               <div className="card news-card">
                 <div className="view4 ">I understand; others do too</div>
+                                          <FontAwesome
+                      className=''
+                      name='heart-o'
+                      size='5x'
+                      style={{
+                      color: "#20b2aa",
+                      textShadow: '0 1px 0 rgba(0, 0, 0, 0.1)'
+                    }}/>
                 <div className="card-section">
                   <div className="news-card-date">Sunday, 16th April</div>
                   <article className="news-card-article">
@@ -337,6 +374,14 @@ from we         <FontAwesome
               </div>
               <div className="card news-card">
                 <div className="view5 ">Use life to make a difference</div>
+                          <FontAwesome
+                      className=''
+                      name='gift'
+                      size='5x'
+                      style={{
+                      color: "hsla(53, 100%, 51%, 0.82)",
+                      textShadow: '0 1px 0 rgba(0, 0, 0, 0.1)'
+                    }}/>
                 <div className="card-section">
                   <div className="news-card-date">Sunday, 16th April</div>
                   <article className="news-card-article">
@@ -374,6 +419,14 @@ from we         <FontAwesome
               </div>
               <div className="card news-card">
                 <div className="view6 ">Continue YOUR destiny</div>
+                                         <FontAwesome
+                      className=''
+                      name='road'
+                      size='5x'
+                      style={{
+                      color: "#ffa36d",
+                      textShadow: '0 1px 0 rgba(0, 0, 0, 0.1)'
+                    }}/>
                 <div className="card-section">
                   <div className="news-card-date">Sunday, 16th April</div>
                   <article className="news-card-article">
@@ -400,147 +453,8 @@ from we         <FontAwesome
           </div>
           {/*FOUND END*/}
 
-          {/*CARD START*/}
-
-          <div className="card" style={{
-            width: '20rem'
-          }}>
-            <img className="card-img-top" src="..." alt="Card image cap"/>
-            <div className="card-block">
-              <h4 className="card-title">Card title</h4>
-              <p className="card-text">Some quick example text to build on the card title and
-                make up the bulk of the card's content.</p>
-            </div>
-            <ul className="list-group list-group-flush">
-              <li className="list-group-item">Cras justo odio</li>
-              <li className="list-group-item">Dapibus ac facilisis in</li>
-              <li className="list-group-item">Vestibulum at eros</li>
-            </ul>
-            <div className="card-block">
-              <a href="#" className="card-link">Card link</a>
-              <a href="#" className="card-link">Another link</a>
-            </div>
-          </div>
-
-          <div className="card-deck">
-            <div className="card">
-              <img className="card-img-top" src="..." alt="Card image cap"/>
-              <div className="card-block">
-                <h4 className="card-title">Card title</h4>
-                <p className="card-text">This is a wider card with supporting text below as a
-                  natural lead-in to additional content. This content is a little bit longer.</p>
-              </div>
-              <div className="card-footer">
-                <small className="text-muted">Last updated 3 mins ago</small>
-              </div>
-            </div>
-            <div className="card">
-              <img className="card-img-top" src="..." alt="Card image cap"/>
-              <div className="card-block">
-                <h4 className="card-title">Card title</h4>
-                <p className="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-              </div>
-              <div className="card-footer">
-                <small className="text-muted">Last updated 3 mins ago</small>
-              </div>
-            </div>
-            <div className="card">
-              <img className="card-img-top" src="..." alt="Card image cap"/>
-              <div className="card-block">
-                <h4 className="card-title">Card title</h4>
-                <p className="card-text">This is a wider card with supporting text below as a
-                  natural lead-in to additional content. This card has even longer content than
-                  the first to show that equal height action.</p>
-              </div>
-              <div className="card-footer">
-                <small className="text-muted">Last updated 3 mins ago</small>
-              </div>
-            </div>
-          </div>
-
-          {/*CARD END*/}
-          <div className="col-md-4 col-md-offset-4">
-            {/*<ul>
-              <li>
-                <button
-                  onClick={this.handleButtonClick}
-                  className="btn btn-danger"
-                  style={styles.buttonStyle}>
-                  concern1
-                </button>
-              </li>
-              <li>
-                <button
-                  onClick={this.handleButtonClick}
-                  className="btn btn-danger"
-                  style={styles.buttonStyle}>
-                  concern2
-                </button>
-              </li>
-              <li>
-                <button
-                  onClick={this.handleButtonClick}
-                  className="btn btn-danger"
-                  style={styles.buttonStyle}>
-                  concern3
-                </button>
-              </li>
-              <li>
-                <button
-                  onClick={this.handleButtonClick}
-                  className="btn btn-danger"
-                  style={styles.buttonStyle}>
-                  concern4
-                </button>
-              </li>
-              <li>
-                <button
-                  onClick={this.handleButtonClick}
-                  className="btn btn-danger"
-                  style={styles.buttonStyle}>
-                  concern3
-                </button>
-              </li>
-              <li>
-                <button
-                  onClick={this.handleButtonClick}
-                  className="btn btn-danger"
-                  style={styles.buttonStyle}>
-                  concern4
-                </button>
-              </li>
-              <li>
-                <button
-                  onClick={this.handleButtonClick}
-                  className="btn btn-danger"
-                  style={styles.buttonStyle}>
-                  concern5
-                </button>
-              </li>
-              <li>
-                <button
-                  onClick={this.handleButtonClick}
-                  className="btn btn-danger"
-                  style={styles.buttonStyle}>
-                  concern6
-                </button>
-              </li>*/}
-
-            {/*FORM*/}
-            {/*<textarea
-            style={{
-              resize: "none"
-            }}
-            onChange={this.handleInputChange}
-            value={this.state.inputValue}
-            placeholder="Add a new quote here!"
-            className="form-control"
-            id="input-box"
-            rows="3"
-          />*/}
-
-            {/*</ul>*/}
-          </div>
+     
+         
 
         </div>
       </div>

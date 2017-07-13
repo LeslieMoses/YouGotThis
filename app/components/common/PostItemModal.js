@@ -49,7 +49,7 @@ const PostItemModal = React.createClass({
                  Storyteller: &nbsp;{this.props.name} &nbsp;<FontAwesome
         className='witness'
         name='pencil'
-        size='sm'
+        size='lg'
         style={{ color: "#FF717E" }}
       /></Modal.Title>
  

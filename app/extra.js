@@ -11,7 +11,372 @@
                     </OverlayTrigger>
           })
         }
+// CSS ON PG
+// const styles = {
+//   buttonStyle: {
+//     // float: "right",
+//     marginTop: 10
+//   },
 
+//   formStyle: {
+//     marginBottom: 60,
+//     marginTop: 60
+//   }
+// };
+
+// CONCERNS DROPDOWN
+//             <div className="row">
+
+//               <div className="container">
+//                 <div id="accordion" role="tablist" aria-multiselectable="true">
+//                   <div className="card">
+//                     <div className="card-header" role="tab" id="headingOne">
+//                       <h5 className="mb-0">
+//                         <a
+//                           data-toggle="collapse"
+//                           data-parent="#accordion"
+//                           href="#collapseOne"
+//                           aria-expanded="false"
+//                           aria-controls="collapseOne">
+//                           <a
+//                             role="menuitem"
+//                             tabIndex={-1}
+//                             onClick={() => this.concernUpdate("…at this moment. It will change")}
+//                             href="#">1. Life feels unbearable</a>
+//                         </a>
+//                       </h5>
+//                     </div>
+//                     <div
+//                       id="collapseOne"
+//                       className="collapse "
+//                       role="tabpanel"
+//                       aria-labelledby="headingOne">
+  
+//                       <div className="card-block">
+//                             <ul className="list-group">
+   
+//                               <li className="list-group-item list-group-item-success">Dapibus ac facilisis in</li>
+//                               <li className="list-group-item list-group-item-info">Cras sit amet nibh libero</li>
+//                               <li className="list-group-item list-group-item-warning">Porta ac consectetur ac</li>
+//                               <li className="list-group-item list-group-item-danger">Vestibulum at eros</li>
+//                           </ul>    
+//                       </div>
+//                     </div>
+//                   </div>
+//                   <div className="card">
+//                     <div className="card-header" role="tab" id="headingTwo">
+//                       <h5 className="mb-0">
+//                         <a
+//                           className="collapsed"
+//                           data-toggle="collapse"
+//                           data-parent="#accordion"
+//                           href="#collapseTwo"
+//                           aria-expanded="false"
+//                           aria-controls="collapseTwo">
+//                           <a
+//                             role="menuitem"
+//                             tabIndex={-1}
+//                             onClick={() => this.concernUpdate("You ARE enough")}
+//                             href="#">2. I'm not enough</a>
+//                         </a>
+//                       </h5>
+//                     </div>
+//                     <div
+//                       id="collapseTwo"
+//                       className="collapse"
+//                       role="tabpanel"
+//                       aria-labelledby="headingTwo">
+//                       <div className="card-block">
+//                         Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+//                         richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor
+//                         brunch. Food truck quinoa nesciunt proident. Ad vegan excepteur butcher vice lomo.
+//                         Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt
+//                         you probably haven't heard of them accusamus labore sustainable VHS.
+//                       </div>
+//                     </div>
+//                   </div>
+//                   <div className="card">
+//                     <div className="card-header" role="tab" id="headingThree">
+//                       <h5 className="mb-0">
+//                         <a
+//                           className="collapsed"
+//                           data-toggle="collapse"
+//                           data-parent="#accordion"
+//                           href="#collapseThree"
+//                           aria-expanded="false"
+//                           aria-controls="collapseThree">
+//                           <a
+//                             role="menuitem"
+//                             tabIndex={-1}
+//                             onClick={() => this.concernUpdate("I want you to see what I see in you")}
+//                             href="#">3. I’ve failed too much</a>
+//                         </a>
+//                       </h5>
+//                     </div>
+//                     <div
+//                       id="collapseThree"
+//                       className="collapse"
+//                       role="tabpanel"
+//                       aria-labelledby="headingThree">
+//                       <div className="card-block">
+//                         Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+                       
+//                       </div>
+//                     </div>
+//                   </div>
+//                 </div>
+//                  <div className="card">
+//                   <div className="card-header" role="tab" id="headingFour">
+//                     <h5 className="mb-0">
+//                       <a
+//                         className="collapsed"
+//                         data-toggle="collapse"
+//                         data-parent="#accordion"
+//                         href="#collapseFour"
+//                         aria-expanded="true"
+//                         aria-controls="collapseFour">
+//                         <a
+//                           role="menuitem"
+//                           tabIndex={-1}
+//                           onClick={() => this.concernUpdate("I understand and others do, too")}
+//                           href="#">4. No one understands</a>
+//                       </a>
+//                     </h5>
+//                   </div>
+//                   <div
+//                     id="collapseFour"
+//                     className="collapse"
+//                     role="tabpanel"
+//                     aria-labelledby="headingFour">
+//                     <div className="card-block">
+//                       Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+//                       richardson ad squid, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
+//                       sunt aliqua put a bird on itr labore wes anderson craft beer farm-to-table, raw denim aesthetic synth nesciunt
+//                       you probably haven't heard of them accusamus labore sustainable VHS.
+//                     </div>
+//                   </div>
+//                 </div>
+//                 <div className="card">
+//                   <div className="card-header" role="tab" id="headingFive">
+//                     <h5 className="mb-0">
+//                       <a
+//                       className="collapsed"
+//                         data-toggle="collapse"
+//                         data-parent="#accordion"
+//                         href="#collapseFive"
+//                         aria-expanded="true"
+//                         aria-controls="collapseFive">
+//                         <a
+//                           role="menuitem"
+//                           tabIndex={-1}
+//                           onClick={() => this.concernUpdate("We only have one life; it’s your choice to make a difference")}
+//                           href="#">5.	It’s hopeless</a>
+//                       </a>
+//                     </h5>
+//                   </div>
+//                   <div
+//                     id="collapseFive"
+//                     className="collapse"
+//                     role="tabpanel"
+//                     aria-labelledby="headingFive">
+//                     <div className="card-block">
+//                       Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+//                       richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor
+//                       brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
+//                       sunt assumenda keffiyeh helvetica, craft beer labore wes anderson
+//                       cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo.
+//                       Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt
+//                       you probably haven't heard of them accusamus labore sustainable VHS.
+//                     </div>
+//                   </div>
+//                 </div>
+//                 <div className="card">
+//                   <div className="card-header" role="tab" id="headingSix">
+//                     <h5 className="mb-0">
+//                       <a
+//                       className="collapsed"
+//                         data-toggle="collapse"
+//                         data-parent="#accordion"
+//                         href="#collapseSix"
+//                         aria-expanded="true"
+//                         aria-controls="collapseSix">
+//                         <a
+//                           role="menuitem"
+//                           tabIndex={-1}
+//                           onClick={() => this.concernUpdate("Continue your own destiny; you are unique")}
+//                           href="#">6. I thought my life would be different </a>
+//                       </a>
+//                     </h5>
+                    
+                   
+      
+//       {/*bt here*/}
+
+//       {/*and here*/}
+//                   </div>
+//                   <div
+//                     id="collapseSix"
+//                     className="collapse"
+//                     role="tabpanel"
+//                     aria-labelledby="headingSix">
+//                     <div className="card-block">
+//                       Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+//                       richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor
+//                       brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
+//                       sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
+//                       shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson
+//                       cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo.
+//                       Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt
+//                       you probably haven't heard of them accusamus labore sustainable VHS.
+//                     </div>
+//                   </div>
+//                 </div>
+//               </div>
+//             </div>
+
+
+     {/*CARD START*/}
+
+          <div className="card" style={{
+            width: '20rem'
+          }}>
+            <img className="card-img-top" src="..." alt="Card image cap"/>
+            <div className="card-block">
+              <h4 className="card-title">Card title</h4>
+              <p className="card-text">Some quick example text to build on the card title and
+                make up the bulk of the card's content.</p>
+            </div>
+            <ul className="list-group list-group-flush">
+              <li className="list-group-item">Cras justo odio</li>
+              <li className="list-group-item">Dapibus ac facilisis in</li>
+              <li className="list-group-item">Vestibulum at eros</li>
+            </ul>
+            <div className="card-block">
+              <a href="#" className="card-link">Card link</a>
+              <a href="#" className="card-link">Another link</a>
+            </div>
+          </div>
+
+          <div className="card-deck">
+            <div className="card">
+              <img className="card-img-top" src="..." alt="Card image cap"/>
+              <div className="card-block">
+                <h4 className="card-title">Card title</h4>
+                <p className="card-text">This is a wider card with supporting text below as a
+                  natural lead-in to additional content. This content is a little bit longer.</p>
+              </div>
+              <div className="card-footer">
+                <small className="text-muted">Last updated 3 mins ago</small>
+              </div>
+            </div>
+            <div className="card">
+              <img className="card-img-top" src="..." alt="Card image cap"/>
+              <div className="card-block">
+                <h4 className="card-title">Card title</h4>
+                <p className="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+              </div>
+              <div className="card-footer">
+                <small className="text-muted">Last updated 3 mins ago</small>
+              </div>
+            </div>
+            <div className="card">
+              <img className="card-img-top" src="..." alt="Card image cap"/>
+              <div className="card-block">
+                <h4 className="card-title">Card title</h4>
+                <p className="card-text">This is a wider card with supporting text below as a
+                  natural lead-in to additional content. This card has even longer content than
+                  the first to show that equal height action.</p>
+              </div>
+              <div className="card-footer">
+                <small className="text-muted">Last updated 3 mins ago</small>
+              </div>
+            </div>
+          </div>
+
+          {/*CARD END*/}
+
+           <div className="col-md-4 col-md-offset-4">
+            {/*<ul>
+              <li>
+                <button
+                  onClick={this.handleButtonClick}
+                  className="btn btn-danger"
+                  style={styles.buttonStyle}>
+                  concern1
+                </button>
+              </li>
+              <li>
+                <button
+                  onClick={this.handleButtonClick}
+                  className="btn btn-danger"
+                  style={styles.buttonStyle}>
+                  concern2
+                </button>
+              </li>
+              <li>
+                <button
+                  onClick={this.handleButtonClick}
+                  className="btn btn-danger"
+                  style={styles.buttonStyle}>
+                  concern3
+                </button>
+              </li>
+              <li>
+                <button
+                  onClick={this.handleButtonClick}
+                  className="btn btn-danger"
+                  style={styles.buttonStyle}>
+                  concern4
+                </button>
+              </li>
+              <li>
+                <button
+                  onClick={this.handleButtonClick}
+                  className="btn btn-danger"
+                  style={styles.buttonStyle}>
+                  concern3
+                </button>
+              </li>
+              <li>
+                <button
+                  onClick={this.handleButtonClick}
+                  className="btn btn-danger"
+                  style={styles.buttonStyle}>
+                  concern4
+                </button>
+              </li>
+              <li>
+                <button
+                  onClick={this.handleButtonClick}
+                  className="btn btn-danger"
+                  style={styles.buttonStyle}>
+                  concern5
+                </button>
+              </li>
+              <li>
+                <button
+                  onClick={this.handleButtonClick}
+                  className="btn btn-danger"
+                  style={styles.buttonStyle}>
+                  concern6
+                </button>
+              </li>*/}
+
+            {/*FORM*/}
+            {/*<textarea
+            style={{
+              resize: "none"
+            }}
+            onChange={this.handleInputChange}
+            value={this.state.inputValue}
+            placeholder="Add a new quote here!"
+            className="form-control"
+            id="input-box"
+            rows="3"
+          />*/}
+
+            {/*</ul>*/}
+          </div>
 
                                   {/*YOYO*/}
    {/*<div className="callout">
@@ -35,7 +400,12 @@
 
                 {/*YOYO*/}
 
+//  <div className="col-md-4 col-md-6 col-md-offset-2">
 
+//             <p className="lead storyText">#MAKE DYNAMIC isus eget urna mollis ornare vel eu
+//               checking
+//             </p>
+//           </div>
 
 
 background: darkgrey; /* Old browsers */

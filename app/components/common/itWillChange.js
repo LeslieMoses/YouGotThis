@@ -140,7 +140,7 @@ componentDidMount () { // Where all AJAX requests will live
         <img className="card-user-profile-img" src="https://images.pexels.com/photos/5439/earth-space.jpg?h=350&auto=compress&cs=tinysrgb" alt="picture of space" />
         <div className="card-user-profile-content card-section">
           <div className="card-user-profile-avatar">
-            {/*<img src='/images/images.jpg' />*/}
+            <img src='/public/css/pics/images/unique.jpg' />
             {/*<img src="https://static.pexels.com/photos/12567/photo-1444703686981-a3abbc4d4fe3.jpeg" alt="picture of yeti" />*/}
           </div>
           <p className="card-user-profile-name concernHed"> 
@@ -156,7 +156,7 @@ componentDidMount () { // Where all AJAX requests will live
 <FontAwesome
         className='witness'
         name='hand-o-down'
-        size='sm'
+        size='lg'
         style={{ color: "white" }}
       />
 
@@ -288,8 +288,8 @@ work, pls
               </div>
               <div className="post-item">
                 <a href="#" className="post-thumbnail">
-                  {/*<img src={'./unique.jpg'} />*/}
-                  <img src="https://static.pexels.com/photos/33109/fall-autumn-red-season.jpg" alt />
+                  <img src={"/pics/change.jpg"}/>
+                  {/*<img src="https://static.pexels.com/photos/33109/fall-autumn-red-season.jpg" alt />*/}
                 </a>
                 <div className="post-text">
                   <a href="#">
@@ -348,258 +348,19 @@ work, pls
        
 
 </div>
-        <div className="row">
+         
 
-          </div>
-                  <div className="row">
+<br /><br /><br />
 
-          <div className="col-md-3 col-md-8 col-md-offset-1">
-            <div style={styles.formStyle} className="form-group">
-              {/*<label className="concernHed">
-It will change
-                {this.state.concernUpdate}
-              </label>*/}
-              <br/>
-
-            </div>
-
-            <div className="row">
-
-              <div className="container">
-                <div id="accordion" role="tablist" aria-multiselectable="true">
-                  <div className="card">
-                    <div className="card-header" role="tab" id="headingOne">
-                      <h5 className="mb-0">
-                        <a
-                          data-toggle="collapse"
-                          data-parent="#accordion"
-                          href="#collapseOne"
-                          aria-expanded="false"
-                          aria-controls="collapseOne">
-                          <a
-                            role="menuitem"
-                            tabIndex={-1}
-                            onClick={() => this.concernUpdate("…at this moment. It will change")}
-                            href="#">1. Life feels unbearable</a>
-                        </a>
-                      </h5>
-                    </div>
-                    <div
-                      id="collapseOne"
-                      className="collapse "
-                      role="tabpanel"
-                      aria-labelledby="headingOne">
-  
-                      <div className="card-block">
-                            <ul className="list-group">
-   
-                              <li className="list-group-item list-group-item-success">Dapibus ac facilisis in</li>
-                              <li className="list-group-item list-group-item-info">Cras sit amet nibh libero</li>
-                              <li className="list-group-item list-group-item-warning">Porta ac consectetur ac</li>
-                              <li className="list-group-item list-group-item-danger">Vestibulum at eros</li>
-                          </ul>    
-                      </div>
-                    </div>
-                  </div>
-                  <div className="card">
-                    <div className="card-header" role="tab" id="headingTwo">
-                      <h5 className="mb-0">
-                        <a
-                          className="collapsed"
-                          data-toggle="collapse"
-                          data-parent="#accordion"
-                          href="#collapseTwo"
-                          aria-expanded="false"
-                          aria-controls="collapseTwo">
-                          <a
-                            role="menuitem"
-                            tabIndex={-1}
-                            onClick={() => this.concernUpdate("You ARE enough")}
-                            href="#">2. I'm not enough</a>
-                        </a>
-                      </h5>
-                    </div>
-                    <div
-                      id="collapseTwo"
-                      className="collapse"
-                      role="tabpanel"
-                      aria-labelledby="headingTwo">
-                      <div className="card-block">
-                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
-                        richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor
-                        brunch. Food truck quinoa nesciunt proident. Ad vegan excepteur butcher vice lomo.
-                        Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt
-                        you probably haven't heard of them accusamus labore sustainable VHS.
-                      </div>
-                    </div>
-                  </div>
-                  <div className="card">
-                    <div className="card-header" role="tab" id="headingThree">
-                      <h5 className="mb-0">
-                        <a
-                          className="collapsed"
-                          data-toggle="collapse"
-                          data-parent="#accordion"
-                          href="#collapseThree"
-                          aria-expanded="false"
-                          aria-controls="collapseThree">
-                          <a
-                            role="menuitem"
-                            tabIndex={-1}
-                            onClick={() => this.concernUpdate("I want you to see what I see in you")}
-                            href="#">3. I’ve failed too much</a>
-                        </a>
-                      </h5>
-                    </div>
-                    <div
-                      id="collapseThree"
-                      className="collapse"
-                      role="tabpanel"
-                      aria-labelledby="headingThree">
-                      <div className="card-block">
-                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
-                       
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                 <div className="card">
-                  <div className="card-header" role="tab" id="headingFour">
-                    <h5 className="mb-0">
-                      <a
-                        className="collapsed"
-                        data-toggle="collapse"
-                        data-parent="#accordion"
-                        href="#collapseFour"
-                        aria-expanded="true"
-                        aria-controls="collapseFour">
-                        <a
-                          role="menuitem"
-                          tabIndex={-1}
-                          onClick={() => this.concernUpdate("I understand and others do, too")}
-                          href="#">4. No one understands</a>
-                      </a>
-                    </h5>
-                  </div>
-                  <div
-                    id="collapseFour"
-                    className="collapse"
-                    role="tabpanel"
-                    aria-labelledby="headingFour">
-                    <div className="card-block">
-                      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
-                      richardson ad squid, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
-                      sunt aliqua put a bird on itr labore wes anderson craft beer farm-to-table, raw denim aesthetic synth nesciunt
-                      you probably haven't heard of them accusamus labore sustainable VHS.
-                    </div>
-                  </div>
-                </div>
-                <div className="card">
-                  <div className="card-header" role="tab" id="headingFive">
-                    <h5 className="mb-0">
-                      <a
-                      className="collapsed"
-                        data-toggle="collapse"
-                        data-parent="#accordion"
-                        href="#collapseFive"
-                        aria-expanded="true"
-                        aria-controls="collapseFive">
-                        <a
-                          role="menuitem"
-                          tabIndex={-1}
-                          onClick={() => this.concernUpdate("We only have one life; it’s your choice to make a difference")}
-                          href="#">5.	It’s hopeless</a>
-                      </a>
-                    </h5>
-                  </div>
-                  <div
-                    id="collapseFive"
-                    className="collapse"
-                    role="tabpanel"
-                    aria-labelledby="headingFive">
-                    <div className="card-block">
-                      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
-                      richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor
-                      brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
-                      sunt assumenda keffiyeh helvetica, craft beer labore wes anderson
-                      cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo.
-                      Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt
-                      you probably haven't heard of them accusamus labore sustainable VHS.
-                    </div>
-                  </div>
-                </div>
-                <div className="card">
-                  <div className="card-header" role="tab" id="headingSix">
-                    <h5 className="mb-0">
-                      <a
-                      className="collapsed"
-                        data-toggle="collapse"
-                        data-parent="#accordion"
-                        href="#collapseSix"
-                        aria-expanded="true"
-                        aria-controls="collapseSix">
-                        <a
-                          role="menuitem"
-                          tabIndex={-1}
-                          onClick={() => this.concernUpdate("Continue your own destiny; you are unique")}
-                          href="#">6. I thought my life would be different </a>
-                      </a>
-                    </h5>
-                    
-                   
-      
-      {/*bt here*/}
-
-
-
-
-
-      {/*and here*/}
-                  </div>
-                  <div
-                    id="collapseSix"
-                    className="collapse"
-                    role="tabpanel"
-                    aria-labelledby="headingSix">
-                    <div className="card-block">
-                      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
-                      richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor
-                      brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
-                      sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
-                      shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson
-                      cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo.
-                      Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt
-                      you probably haven't heard of them accusamus labore sustainable VHS.
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
           </div>
 
          
-          <div className="col-md-4 col-md-6 col-md-offset-2">
+         
 
-            <p className="lead storyText">#MAKE DYNAMIC isus eget urna mollis ornare vel eu
-              checking
-            </p>
-          </div>
-        </div >
-      </div>
 
     );
   }
 }
-const styles = {
-  buttonStyle: {
-    // float: "right",
-    marginTop: 10
-  },
 
-  formStyle: {
-    marginBottom: 60,
-    marginTop: 60
-  }
-};
 
 export default Concerns;
