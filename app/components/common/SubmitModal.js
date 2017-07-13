@@ -33,10 +33,7 @@ const SubmitModal = React.createClass({
 
     return (
       <div >
-        
-
         <Button
-        
           bsStyle="primary"
           bsSize="medium"
           backgroundColor="pink"
@@ -62,6 +59,5 @@ const SubmitModal = React.createClass({
     );
   }
 });
-
 
 export default SubmitModal;

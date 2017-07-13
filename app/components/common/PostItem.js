@@ -54,7 +54,7 @@ class PostItem extends Component {
         >
          Read Story
         </Button>
-           < PostItemModal closeModal={this.close.bind(this)} headline={this.props.headline} showModal={this.state.showModal} story={this.props.storyInfo.story} source={this.props.source} /></div>
+           < PostItemModal closeModal={this.close.bind(this)} headline={this.props.headline} name={this.props.storyInfo.name} showModal={this.state.showModal} story={this.props.storyInfo.story} source={this.props.storyInfo.source} /></div>
               </span>
             </div>
           </div>

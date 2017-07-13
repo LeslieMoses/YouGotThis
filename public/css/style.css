@@ -39,6 +39,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9f7f9', end
    background-color: #444 !important;
 }
 
+
 .btn-info {
     color: pink;
     background-color: #444;
@@ -362,6 +363,13 @@ div.news-card-tag {
 .posts-panel::after {
   clear: both;
 }
+
+ /*.post-text .post-title{
+    font-size: 3.125rem;
+    margin-top: auto;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-weight: 700;
+}*/
 
 @media print, screen and (min-width: 40em) {
   .posts-panel {
@@ -981,6 +989,46 @@ font-family: 'Open Sans', sans-serif;
 
 
 /*CONCERN PG*/
+.StorymodalHed {
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  	font-size: 36px;
+    color: black;
+    	font-weight: bolder;
+
+}
+
+
+.modal-body.BGStorymodal {
+    font-family: Georgia, Times, "Times New Roman", serif;
+    font-size: 18.5px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    line-height: 27px;
+    color: #333;
+    padding: 35px;
+    width: 100%;
+}
+
+.modalName{
+  	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+     text-transform: uppercase;
+  	font-size: 11px;
+    color: #555;
+    	font-weight: lighter;
+      padding: 2px;
+      font-weight: lighter;
+
+}
+
+.modalSource{
+  	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  	font-size: 12px;
+    color: #444;
+    	font-weight: lighter;
+      padding: 2px;
+
+}
 
 .BGmodal{
 /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f9f7f9+0,ffd47f+28,ffd5a5+44,ffd5a5+44,fffcfc+58,ff93a5+63,3f3fa8+69,ffc0cb+78,ffc0cb+84,ffc0cb+89,ffc0cb+89,ffc0cb+93 */
