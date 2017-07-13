@@ -22,7 +22,8 @@ class Concerns extends Component {
 			bio: {},
 			repos: [],
       story:[],
-      headline: []
+      headline: [],
+      source: []
     };
   }
 
@@ -257,10 +258,11 @@ It will change
               {/*<PostItem />ayo 123*/}
 work, pls
                  {this.state.notes.map(function(val, i) {
-                  return <PostItem headline={val.headline}  /> 
+                  return <PostItem headline={val.headline} storyInfo={val} story={val.story} /> 
+                
                 } 
               )} 
-
+ 
               {/*CODE TO USE*/}
                {/*{this.state.notes.map(function(val, i) {
                   return <PostItem headline={val.headline} story={val.story} source={val.source} /> 
