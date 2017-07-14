@@ -355,6 +355,25 @@ div.news-card-tag {
 
 }
 
+.posts-panel2 {
+  max-width: 100rem;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 20px;
+
+  width: 100%;
+  /*float: left;*/
+  padding-right: 0.625rem;
+  padding-left: 0.625rem;
+  float: none !important;
+  /*margin: 1.25rem 0.625rem;*/
+  background-color: #fefefe;
+  border-radius: 10px;
+  box-shadow: 0 0 0.25rem 0 rgba(0, 0, 0, 0.2);
+      border: solid #ffdfba 10px;
+
+}
+
 .posts-panel::before, .posts-panel::after {
   display: table;
   content: ' ';
@@ -1212,6 +1231,21 @@ font-family: 'Monofett', cursive;
   text-align: center;
 
 }
+
+ .viewHed2 {
+    font-size: 9em;
+    color: #ffdfba;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Bungee', cursive;
+    /* font-family: 'Monofett', cursive; */
+    font-family: 'Lobster', cursive;
+    text-align: center;
+    -webkit-text-stroke: 1px #666;
+    color: #ffdfba;
+    text-shadow: 3px 0px 0 #666, -1px -1px 0 #666, 1px -1px 0 #666, -1px 1px 0 #666, 1px 1px 0 #666;
+}
+
+
 .comradeHed {
   font-size:2em;
     font-weight: bolder;
@@ -1220,6 +1254,17 @@ font-family: 'Monofett', cursive;
   color: #FF717E;
 
 }
+
+.comradeHed2 {
+  font-size:2em;
+    font-weight: bolder;
+      width: 120%;
+    font-family: 'Open Sans', sans-serif;
+  color: #ffdfba;
+
+}
+ 
+
 .comrade {
   font-size: 1.5em;
     font-family: 'Open Sans', sans-serif;
@@ -1230,9 +1275,10 @@ font-family: 'Monofett', cursive;
 
 }
 .witness {
-    font-size: 1.5em;
+    font-size: 1.8em;
       /*font-family: 'Lobster', cursive;*/
         color: floralwhite;
+        font-weight: bolder;
 
 }
 .concernTally{

@@ -72,7 +72,7 @@ const Navigation = () => (
             <Link to="/youareenough">You Are Enough</Link>
           </MenuItem>
           <MenuItem eventKey={2.3}>
-            <Link to="/seewhatisee">See What I See</Link>
+            <Link to="/borrowview">Borrow Another View</Link>
           </MenuItem>
           <MenuItem eventKey={2.4}>
             <Link to="/iunderstand">I Understand

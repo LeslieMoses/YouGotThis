@@ -7,7 +7,7 @@ import Home from "../components/Home";
 import Concerns from "../components/common/Concerns";
 import itWillChange from "../components/common/itWillChange";
 import youAreEnough from "../components/common/youAreEnough";
-import seeWhatISee from "../components/common/seeWhatISee";
+import borrowView from "../components/common/borrowView";
 import iUnderstand from "../components/common/iunderstand";
 import makeADifference from "../components/common/makeADifference";
 import youAreUnique from "../components/common/youAreUnique";
@@ -31,7 +31,7 @@ const routes = (
       <Route path="concerns" component={Concerns}/>
       <Route path="itwillchange" component={itWillChange}/>
       <Route path="youareenough" component={youAreEnough}/>
-      <Route path="seewhatisee" component={seeWhatISee}/> 
+      <Route path="borrowview" component={borrowView}/> 
       <Route path="iunderstand" component={iUnderstand}/>
       <Route path="makeadifference" component={makeADifference}/>
       <Route path="youareunique" component={youAreUnique}/>

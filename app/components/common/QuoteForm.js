@@ -148,9 +148,13 @@ from we         <FontAwesome
 
             </div>
             <div className="card news-card">
-              <Link to="/itwillchange">
-              <img className="homePic" src="https://static.pexels.com/photos/12567/photo-1444703686981-a3abbc4d4fe3.jpeg" />
-              
+              {/*<img className="homePic" src="https://static.pexels.com/photos/12567/photo-1444703686981-a3abbc4d4fe3.jpeg" />*/}
+          
+
+              {/*<img src={"/pics/change.jpg"}/>*/}
+                <div className="view1 ">It Will Change
+                                    <Link to="/itwillchange">
+
                 <FontAwesome
                       className=''
                       name='bolt'
@@ -160,8 +164,7 @@ from we         <FontAwesome
                       textShadow: '0 1px 0 rgba(0, 0, 0, 0.1)'
                     }}/>
               </Link>
-
-              {/*<img src={"/pics/change.jpg"}/>*/}
+                </div>
               <div className="card-section">
                 <div className="news-card-date">Sunday, 16th April</div>
                 <article className="news-card-article">
@@ -212,9 +215,13 @@ from we         <FontAwesome
             </div>
             <div className="card news-card">
  
-              <Link to="/youareenough">
-              <img className="homePic"  src={"/pics/change.jpg"}/> 
+              {/*<img className="homePic"  src={"/pics/change.jpg"}/> */}
+        
+
               
+                <div className="view2 ">You ARE Enough
+                                      <Link to="/youareenough">
+
                   <FontAwesome
                       className=''
                       name='battery-full'
@@ -224,9 +231,6 @@ from we         <FontAwesome
                       textShadow: '0 1px 0 rgba(0, 0, 0, 0.1)'
                     }}/>
               </Link>
-
-              
-                <div className="view2 ">You ARE enough
                 </div>
                <div className="card-section">
                 <div className="news-card-date">Sunday, 16th April</div>
@@ -261,7 +265,7 @@ from we         <FontAwesome
             
                   <i class="fa fa-circle" aria-hidden="true"></i>
 
-                  <Link to="/seewhatisee">
+                  <Link to="/borrowview">
                     <FontAwesome
                       className=''
                       name='circle'
@@ -277,7 +281,8 @@ from we         <FontAwesome
 
             </div>
             <div className="card news-card">
-              <Link to="/seewhatisee">
+        
+                <div className="view3 ">Borrow Another View   <Link to="/borrowview">
                                   <FontAwesome
                       className=''
                       name='eye'
@@ -285,9 +290,8 @@ from we         <FontAwesome
                       style={{
                       color: "#1FBED6",
                       textShadow: '0 1px 0 rgba(0, 0, 0, 0.1)'
-                    }}/>
-                <div className="view3 ">See what I see in you</div>
-              </Link>
+                    }}/> </Link></div>
+             
               <div className="card-section">
                 <div className="news-card-date">Sunday, 16th April</div>
                 <article className="news-card-article">

@@ -27,7 +27,6 @@ class Concerns extends Component {
     };
   }
 
-
 init () {
 		this.ref = base.bindToState(this.router.getCurrentParams().username, { // When the .username endpoint changes, this will update the state for 'notes' 
 			 context: this,
@@ -140,7 +139,7 @@ componentDidMount () { // Where all AJAX requests will live
         <img className="card-user-profile-img" src="https://images.pexels.com/photos/5439/earth-space.jpg?h=350&auto=compress&cs=tinysrgb" alt="picture of space" />
         <div className="card-user-profile-content card-section">
           <div className="card-user-profile-avatar">
-            <img src='/public/css/pics/images/unique.jpg' />
+            <img src='/pics/unique.jpg' />
             {/*<img src="https://static.pexels.com/photos/12567/photo-1444703686981-a3abbc4d4fe3.jpeg" alt="picture of yeti" />*/}
           </div>
           <p className="card-user-profile-name concernHed"> 
@@ -191,7 +190,7 @@ componentDidMount () { // Where all AJAX requests will live
         size='3x'
         style={{ color: "white", textShadow: '0 1px 0 rgba(0, 0, 0, 0.1)' }}
       />
-<div className="pullQuote"><p >And that’s when it all changed. That’s when I realized I saw the start of a world yet undiscovered...” </p></div>
+<div className="pullQuote"><p >“Don't ever discount the wonder of your tears. <br />They can be healing waters and a stream of joy. <br />Sometimes they are the best words the heart can speak.” <br /><br />- Wm. Paul Young</p></div>
   
 </blockquote>
 <br /><br /><br /><br />
@@ -354,13 +353,8 @@ work, pls
 
           </div>
 
-         
-         
-
-
     );
   }
 }
-
 
 export default Concerns;
