@@ -3,6 +3,18 @@ import API from "../../utils/API";
 var FontAwesome = require('react-fontawesome');
 import {Link} from "react-router";
 import SubmitModal from "./SubmitModal";
+import itWillChange from "./itWillChange";
+
+import youAreEnough from "./youAreEnough";
+
+import borrowView from "./borrowView";
+
+import iUnderstand from "./iUnderstand";
+
+import makeADifference from "./makeADifference";
+
+import youAreUnique from "./youAreUnique";
+
 
 class QuoteForm extends Component {
   constructor() {
@@ -150,10 +162,10 @@ from we         <FontAwesome
             <div className="card news-card">
               {/*<img className="homePic" src="https://static.pexels.com/photos/12567/photo-1444703686981-a3abbc4d4fe3.jpeg" />*/}
           
-
+ <Link to="/itwillchange">
               {/*<img src={"/pics/change.jpg"}/>*/}
                 <div className="view1 ">It Will Change
-                                    <Link to="/itwillchange">
+                                   
 
                 <FontAwesome
                       className=''
@@ -163,26 +175,18 @@ from we         <FontAwesome
                       color: "#FF717E",
                       textShadow: '0 1px 0 rgba(0, 0, 0, 0.1)'
                     }}/>
-              </Link>
-                </div>
+                </div>              </Link>
+
               <div className="card-section">
-                <div className="news-card-date">Sunday, 16th April</div>
-                <article className="news-card-article">
-                  <h4 className="news-card-title">
-                    <a href="#">5 Features To Watch Out For</a>
-                  </h4>
-                  <p className="news-card-description">Lorem ipsum dolor sit amet, consectetur
-                    adipisicing elit. Recusandae facere, ipsam quae sit, eaque perferendis
-                    commodi!...</p>
+                 <article className="news-card-article">
+                
+                  <p className="news-card-description "><br /> <br /> <br />He was a boy steeped in the “unbearable.” 
+But his painful path also led to brilliant writing.
+</p>
                 </article>
                 <div className="news-card-author">
-                  <div className="news-card-author-image">
-                    <img src="http://i.imgur.com/lAMD2kS.jpg" alt="user"/>
-                  </div>
-                  <div className="news-card-author-name">
-                    By
-                    <a href="#">Harry Manchanda</a>
-                  </div>
+           
+                  <hr />
                 </div>
               </div>
             </div>
@@ -217,10 +221,10 @@ from we         <FontAwesome
  
               {/*<img className="homePic"  src={"/pics/change.jpg"}/> */}
         
-
+   <Link to="/youareenough">
               
                 <div className="view2 ">You ARE Enough
-                                      <Link to="/youareenough">
+                                   
 
                   <FontAwesome
                       className=''
@@ -230,27 +234,17 @@ from we         <FontAwesome
                       color: "#FFdfba",
                       textShadow: '0 1px 0 rgba(0, 0, 0, 0.1)'
                     }}/>
-              </Link>
-                </div>
+          
+                </div>    </Link>
                <div className="card-section">
-                <div className="news-card-date">Sunday, 16th April</div>
-                <article className="news-card-article">
-                  <h4 className="news-card-title">
-                    <a href="#">5 Features To Watch Out For</a>
-                  </h4>
-                  <p className="news-card-description">Lorem ipsum dolor sit amet, consectetur
-                    adipisicing elit. Recusandae facere, ipsam quae sit, eaque perferendis
-                    commodi!...</p>
+                  <article className="news-card-article">
+                
+                  <p className="news-card-description "><br /> <br /> "I am ill every time (the wind) blows hard and nothing but my enthusiastic love for my profession keeps me one hour at sea" 
+</p>
                 </article>
                 <div className="news-card-author">
-                  <div className="news-card-author-image">
-                    <img src="http://i.imgur.com/lAMD2kS.jpg" alt="user"/>
-                  </div>
-                  <div className="news-card-author-name">
-                    By
-                    <a href="#">Harry Manchanda</a>
-                  </div>
-                </div>
+           
+                  <hr />         </div>
               </div>
             </div>
 
@@ -281,8 +275,8 @@ from we         <FontAwesome
 
             </div>
             <div className="card news-card">
-        
-                <div className="view3 ">Borrow Another View   <Link to="/borrowview">
+        <Link to="/borrowview">
+                <div className="view3 ">Borrow Another View   
                                   <FontAwesome
                       className=''
                       name='eye'
@@ -290,27 +284,17 @@ from we         <FontAwesome
                       style={{
                       color: "#1FBED6",
                       textShadow: '0 1px 0 rgba(0, 0, 0, 0.1)'
-                    }}/> </Link></div>
+                    }}/> </div></Link>
              
               <div className="card-section">
-                <div className="news-card-date">Sunday, 16th April</div>
-                <article className="news-card-article">
-                  <h4 className="news-card-title">
-                    <a href="#">5 Features To Watch Out For</a>
-                  </h4>
-                  <p className="news-card-description">Lorem ipsum dolor sit amet, consectetur
-                    adipisicing elit. Recusandae facere, ipsam quae sit, eaque perferendis
-                    commodi!...</p>
+                 <article className="news-card-article">
+                
+                  <p className="news-card-description "><br /> <br /> <br /><br />This “backward” boy grew up to be among the world’s best inventors. 
+</p>
                 </article>
                 <div className="news-card-author">
-                  <div className="news-card-author-image">
-                    <img src="http://i.imgur.com/lAMD2kS.jpg" alt="user"/>
-                  </div>
-                  <div className="news-card-author-name">
-                    By
-                    <a href="#">Harry Manchanda</a>
-                  </div>
-                </div>
+           
+                  <hr />          </div>
               </div>
             </div>
 
@@ -325,15 +309,29 @@ from we         <FontAwesome
               {/*col-md-offset-1*/}
               {/*FOUND START*/}
               <div className="news-card-tag">
-                <span className="label">
-                  <a href="#">Angular 2</a>
-                </span>
-                <span className="label">
-                  <a href="#">Angular 4</a>
-                </span>
-              </div>
+ <span className="concernLabel">
+               
+                  <i class="fa fa-circle" aria-hidden="true"></i>
+
+                  <Link to="/iunderstand">
+                    <FontAwesome
+                      className=''
+                      name='circle'
+                      size='1x'
+                      style={{
+                      color: "#20b2aa",
+                      textShadow: '0 1px 0 rgba(0, 0, 0, 0.1)'
+                    }}/>
+
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;No one understands</Link>
+  
+              </span>
+
+            </div>
               <div className="card news-card">
-                <div className="view4 ">I understand; others do too</div>
+                                  <Link to="/iunderstand">
+
+                <div className="view4 ">Someone understands
                                           <FontAwesome
                       className=''
                       name='heart-o'
@@ -342,25 +340,17 @@ from we         <FontAwesome
                       color: "#20b2aa",
                       textShadow: '0 1px 0 rgba(0, 0, 0, 0.1)'
                     }}/>
+                    </div> </Link>
+
                 <div className="card-section">
-                  <div className="news-card-date">Sunday, 16th April</div>
-                  <article className="news-card-article">
-                    <h4 className="news-card-title">
-                      <a href="#">5 Features To Watch Out For</a>
-                    </h4>
-                    <p className="news-card-description">Lorem ipsum dolor sit amet, consectetur
-                      adipisicing elit. Recusandae facere, ipsam quae sit, eaque perferendis
-                      commodi!...</p>
-                  </article>
-                  <div className="news-card-author">
-                    <div className="news-card-author-image">
-                      <img src="http://i.imgur.com/lAMD2kS.jpg" alt="user"/>
-                    </div>
-                    <div className="news-card-author-name">
-                      By
-                      <a href="#">Harry Manchanda</a>
-                    </div>
-                  </div>
+                   <article className="news-card-article">
+                
+                  <p className="news-card-description "><br /> <br /><br /> <br /><br /> <br /> <br />And she did. She got up and walked.
+</p>
+                </article>
+                <div className="news-card-author">
+           
+                  <hr />                  </div>
                 </div>
               </div>
 
@@ -369,42 +359,48 @@ from we         <FontAwesome
 
             <div className="col-md-4 col-md-4 col-md-4 ">
               <div className="news-card-tag">
-                <span className="label">
-                  <a href="#">Angular 2</a>
-                </span>
-                <span className="label">
-                  <a href="#">Angular 4</a>
-                </span>
-              </div>
+              <span className="concernLabel">
+
+              
+                  <i class="fa fa-circle" aria-hidden="true"></i>
+
+                  <Link to="/makeadifference">
+                    <FontAwesome
+                      className=''
+                      name='circle'
+                      size='1x'
+                      style={{
+                      color: "rgba(255,192,203,1)",
+                      textShadow: '0 1px 0 rgba(0, 0, 0, 0.1)'
+                    }}/>
+
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;It's hopeless</Link>
+                
+              </span>
+
+            </div>
+  
               <div className="card news-card">
-                <div className="view5 ">Use life to make a difference</div>
+                    <Link to="/makeadifference">
+                <div className="view5 ">Live to make a difference
                           <FontAwesome
                       className=''
                       name='gift'
                       size='5x'
                       style={{
-                      color: "hsla(53, 100%, 51%, 0.82)",
+                      color: " rgba(255,192,203,1)",
                       textShadow: '0 1px 0 rgba(0, 0, 0, 0.1)'
                     }}/>
+                    </div> </Link>
                 <div className="card-section">
-                  <div className="news-card-date">Sunday, 16th April</div>
-                  <article className="news-card-article">
-                    <h4 className="news-card-title">
-                      <a href="#">5 Features To Watch Out For</a>
-                    </h4>
-                    <p className="news-card-description">Lorem ipsum dolor sit amet, consectetur
-                      adipisicing elit. Recusandae facere, ipsam quae sit, eaque perferendis
-                      commodi!...</p>
-                  </article>
-                  <div className="news-card-author">
-                    <div className="news-card-author-image">
-                      <img src="http://i.imgur.com/lAMD2kS.jpg" alt="user"/>
-                    </div>
-                    <div className="news-card-author-name">
-                      By
-                      <a href="#">Harry Manchanda</a>
-                    </div>
-                  </div>
+                    <article className="news-card-article">
+                
+                  <p className="news-card-description "><br /> <br /> <br /> <br /> <br />“My assignment is to take my situation and to use it to help others who feel hopeless and/or helpless because of loss. 
+</p>
+                </article>
+                <div className="news-card-author">
+           
+                  <hr />              </div>
                 </div>
               </div>
 
@@ -414,15 +410,28 @@ from we         <FontAwesome
             <div className="col-md-4 col-md-4 col-md-4 ">
 
               <div className="news-card-tag">
-                <span className="label">
-                  <a href="#">Angular 2</a>
-                </span>
-                <span className="label">
-                  <a href="#">Angular 4</a>
-                </span>
-              </div>
-              <div className="card news-card">
-                <div className="view6 ">Continue YOUR destiny</div>
+               <span className="concernLabel">
+
+              
+                  <i class="fa fa-circle" aria-hidden="true"></i>
+
+                  <Link to="/youareunique">
+                    <FontAwesome
+                      className=''
+                      name='circle'
+                      size='1x'
+                      style={{
+                      color: "#ffa36d",
+                      textShadow: '0 1px 0 rgba(0, 0, 0, 0.1)'
+                    }}/>
+
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I’m not enough</Link>
+                
+              </span>
+
+            </div>             <div className="card news-card">
+                  <Link to="/youareunique">
+                <div className="view6 ">Continue YOUR destiny
                                          <FontAwesome
                       className=''
                       name='road'
@@ -431,25 +440,26 @@ from we         <FontAwesome
                       color: "#ffa36d",
                       textShadow: '0 1px 0 rgba(0, 0, 0, 0.1)'
                     }}/>
+                    </div> </Link>
                 <div className="card-section">
-                  <div className="news-card-date">Sunday, 16th April</div>
                   <article className="news-card-article">
-                    <h4 className="news-card-title">
-                      <a href="#">5 Features To Watch Out For</a>
-                    </h4>
-                    <p className="news-card-description">Lorem ipsum dolor sit amet, consectetur
-                      adipisicing elit. Recusandae facere, ipsam quae sit, eaque perferendis
-                      commodi!...</p>
-                  </article>
-                  <div className="news-card-author">
-                    <div className="news-card-author-image">
-                      <img src="http://i.imgur.com/lAMD2kS.jpg" alt="user"/>
-                    </div>
-                    <div className="news-card-author-name">
-                      By
-                      <a href="#">Harry Manchanda</a>
-                    </div>
-                  </div>
+                
+                  <p className="news-card-description "><br /> <br /> <br />“If you live in such a manner as to stand the test of the last judgment,
+you can depend upon it that the world will not speak well of you.”
+
+ 
+
+
+
+
+SUBMIT YOUR STORY
+You Are Unique
+
+</p>
+                </article>
+                <div className="news-card-author">
+           
+                  <hr />                  </div>
                 </div>
               </div>
             </div>

@@ -4,7 +4,7 @@ import {Route, IndexRoute, Router, browserHistory} from "react-router";
 import Main from "../components/Main";
 import Favorites from "../components/Favorites";
 import Home from "../components/Home";
-import Concerns from "../components/common/Concerns";
+// import Concerns from "../components/common/Concerns";
 import itWillChange from "../components/common/itWillChange";
 import youAreEnough from "../components/common/youAreEnough";
 import borrowView from "../components/common/borrowView";
@@ -28,7 +28,7 @@ const routes = (
       <Route path="submitstory" component={SubmitStory}/>
       <Route path="submitmodal" component={SubmitModal}/>
 
-      <Route path="concerns" component={Concerns}/>
+      {/*<Route path="concerns" component={Concerns}/>*/}
       <Route path="itwillchange" component={itWillChange}/>
       <Route path="youareenough" component={youAreEnough}/>
       <Route path="borrowview" component={borrowView}/> 

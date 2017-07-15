@@ -56,13 +56,12 @@ const PostItemModal = React.createClass({
           </Modal.Header>
           <Modal.Body className="BGStorymodal drop-cap lead">
             {this.props.children}{this.props.story}
-            <h4>Text in a modal</h4>
-            <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula.</p>
 
          
             <hr />
          
-            <p className="modalSource">{this.props.source} </p>
+            <p className="modalSource"><h6>SOURCES:</h6><br />
+{this.props.source} </p>
               {/*<p>{this.props.}</p>*/}
           </Modal.Body>
           <Modal.Footer>

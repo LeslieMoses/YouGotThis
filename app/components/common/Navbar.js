@@ -1,6 +1,19 @@
 import React from "react";
 import {Link} from "react-router";
 import SubmitModal from "./SubmitModal";
+import itWillChange from "./itWillChange";
+
+import youAreEnough from "./youAreEnough";
+
+import borrowView from "./borrowView";
+
+import iUnderstand from "./iUnderstand";
+
+import makeADifference from "./makeADifference";
+
+import youAreUnique from "./youAreUnique";
+import QuoteForm from "./QuoteForm"; 
+
 
 import {
   Nav,
@@ -75,7 +88,7 @@ const Navigation = () => (
             <Link to="/borrowview">Borrow Another View</Link>
           </MenuItem>
           <MenuItem eventKey={2.4}>
-            <Link to="/iunderstand">I Understand
+            <Link to="/iunderstand">Someone Understands
             </Link>
           </MenuItem>
           <MenuItem eventKey={2.5}>

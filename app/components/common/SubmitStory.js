@@ -156,17 +156,17 @@ console.log("objStory", objStory);
               ref={(input) => this.concern = input}
               className="form-control" id="sel1">
               <option>
-                &nbsp; Concern 1</option>
+                &nbsp; 1. Life feels unbearable </option>
               <option>
-                &nbsp; Concern 2</option>
+                &nbsp; 2. I’m not enough</option>
               <option>
-                &nbsp; Concern 3</option>
+                &nbsp; 3.	I’ve failed too much</option>
               <option>
-                &nbsp; Concern 4</option>
+                &nbsp; 4. No one understands</option>
               <option>
-                &nbsp; Concern 5</option>
+                &nbsp; 5.	It’s hopeless</option>
               <option>
-                &nbsp; Concern 6</option>
+                &nbsp; 6.	I thought things would be different</option>
               <option>
                 &nbsp; Other</option>
             </select>

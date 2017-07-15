@@ -29,7 +29,7 @@ class PostItem extends Component {
           <a href="#" className="post-thumbnail">
             {/*<img src={'./unique.jpg'} />*/}
             <img
-              src="https://static.pexels.com/photos/33109/fall-autumn-red-season.jpg"
+              src="/pics/pathwalk.jpg"
               alt/>
           </a>
           <div className="post-text">
@@ -38,7 +38,9 @@ class PostItem extends Component {
             </a>
             <div className="post-meta">
               <span className="meta"><span className="meta-icon fa fa-user-circle-o" aria-hidden="true"/>
-                <a className="meta-text">Steve Jobs 
+                <a className="meta-text BGStory">He was a boy steeped in the “unbearable.” <br />
+But his painful path also led to brilliant writing.
+
                   {/*{this.props.storyInfo.story}*/}
                   </a>
               </span>
@@ -47,8 +49,9 @@ class PostItem extends Component {
 
                               <div>       
     <Button   
+          className="readBtn"
           bsStyle="info"
-          bsSize="large"
+          bsSize="small"
           backgroundColor="pink"
           onClick={this.open.bind(this)}
         >

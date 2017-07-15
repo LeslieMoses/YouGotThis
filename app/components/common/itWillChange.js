@@ -5,12 +5,25 @@ import {base} from "../../utils/rebase";
 import SubmitStory from "./SubmitStory";
 import SubmitModal from "./SubmitModal";
 import PostItem from "./PostItem"; 
+import QuoteForm from "./QuoteForm"; 
+
+
+import youAreEnough from "./youAreEnough";
+
+import borrowView from "./borrowView";
+
+import iUnderstand from "./iUnderstand";
+
+import makeADifference from "./makeADifference";
+
+import youAreUnique from "./youAreUnique";
+
 
 // import unique from './unique.jpg'; 
 
 var FontAwesome = require('react-fontawesome');
 
-class Concerns extends Component {
+class itWillChange extends Component {
   constructor() {
     super();
 
@@ -255,7 +268,7 @@ It will change
       
             <section className="posts-list">
               {/*<PostItem />ayo 123*/}
-work, pls
+
                  {this.state.notes.map(function(val, i) {
                   return <PostItem headline={val.headline} storyInfo={val} story={val.story} /> 
                 
@@ -270,7 +283,7 @@ work, pls
             
               <div className="post-item">
                 <a href="#" className="post-thumbnail">
-                  <img src="https://static.pexels.com/photos/12567/photo-1444703686981-a3abbc4d4fe3.jpeg" alt />
+                  <img src="/pics/pathwalk.jpg" alt />
                 </a>
                 <div className="post-text">
                     
@@ -357,4 +370,4 @@ work, pls
   }
 }
 
-export default Concerns;
+export default itWillChange;

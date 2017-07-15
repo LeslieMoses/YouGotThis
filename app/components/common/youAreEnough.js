@@ -5,6 +5,7 @@ import {base} from "../../utils/rebase";
 import SubmitStory from "./SubmitStory";
 import SubmitModal from "./SubmitModal";
 import PostItem from "./PostItem"; 
+import QuoteForm from "./QuoteForm"; 
 
 // import unique from './unique.jpg'; 
 
