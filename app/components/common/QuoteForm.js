@@ -59,7 +59,8 @@ class QuoteForm extends Component {
 
           <div style={styles.formStyle} className="form-group">
             <label htmlFor="input-box">&nbsp;&nbsp;
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;We've &nbsp; got &nbsp; stories...<Link to="/concerns">&nbsp;&nbsp;&nbsp;<FontAwesome
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;We've &nbsp; got &nbsp; stories...<Link to="/concerns">&nbsp;&nbsp;&nbsp;
+              <FontAwesome
                 className=''
                 name='book'
                 size='lg'
@@ -444,7 +445,7 @@ But his painful path also led to brilliant writing.
                 <div className="card-section">
                   <article className="news-card-article">
                 
-                  <p className="news-card-description "><br /> <br /> <br />“If you live in such a manner as to stand the test of the last judgment,
+                  <p className="news-card-description "><br /><br /> <br /> <br />“If you live in such a manner as to stand the test of the last judgment,
 you can depend upon it that the world will not speak well of you.”
 
  
@@ -452,8 +453,6 @@ you can depend upon it that the world will not speak well of you.”
 
 
 
-SUBMIT YOUR STORY
-You Are Unique
 
 </p>
                 </article>

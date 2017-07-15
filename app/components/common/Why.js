@@ -95,17 +95,15 @@ class Why extends Component {
                 </div>
 
                 <div className="col-md-4 col-md-6 col-md-offset-4">
-                    <p className="lead storyText">#MAKE DYNAMIC isus eget urna mollis ornare vel eu
-                        leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
-                        ridiculus mus. Nullam id dolor id nibh ultricies vehicula.
-                        <p>
-                            Donec ullamcorper nulla non metus auctor fringilla. Duis mollis, est non commodo
-                            luctus. nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec
-                            ullamcorper nulla non metus auctor fringilla.
-                        </p>
-                        #SCROLL diam eget risus varius blandit sit amet non magna. Donec id elit non mi
-                        porta gravida at eget metus. Duis mollis, est non commodo luctus, nisi erat
-                        porttitor ligula, eget lacinia odio sem nec elit.
+                    <p className="lead storyText">People need hope. <br />
+U.S. suicide rates recently rocketed to the highest levels in almost 30 years.*<br />
+<br />But true stories help people clear hurdles. <br />One survivor’s story becomes a stone for someone struggling to step on. <br />
+It seems simplistic, but YouTube videos or clinical bullet-point advice can jar or seem judgmental to people who have lost hope.<br />
+<br />Stories, on the other hand, are a gentle yet strong testimony that they can pass through the current test.  <br />
+<br /><br />
+Researchers also found an alarming increase among girls 10 to 14, whose suicide rate, while still very low, had tripled. <br /><br />The number of girls who killed themselves rose to 150 in 2014 from 50 in 1999. <br />“This one certainly jumped out,” said Sally Curtin, a statistician at the center and an author of the report.
+<br /><br /><br />* Suicide in the United States has surged to the highest levels in nearly 30 years, a federal data analysis has found, with increases in every age group except older adults. The rise was particularly steep for women. https://www.nytimes.com/2016/04/22/health/us-suicide-rate-surges-to-a-30-year-high.html
+
                     </p>
 
                 </div>
