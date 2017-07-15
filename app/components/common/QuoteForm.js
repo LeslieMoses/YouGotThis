@@ -426,7 +426,7 @@ But his painful path also led to brilliant writing.
                       textShadow: '0 1px 0 rgba(0, 0, 0, 0.1)'
                     }}/>
 
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I’m not enough</Link>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I thought life would be different</Link>
                 
               </span>
 
