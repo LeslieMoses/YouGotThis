@@ -60,14 +60,14 @@ class QuoteForm extends Component {
           <div style={styles.formStyle} className="form-group">
             <label htmlFor="input-box">&nbsp;&nbsp;
               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;We've &nbsp; got &nbsp; stories...<Link to="/concerns">&nbsp;&nbsp;&nbsp;
-              <FontAwesome
+              {/*<FontAwesome
                 className=''
                 name='book'
                 size='lg'
                 style={{
         color: "peachpuff",
         textShadow: '0 1px 0 rgba(0, 0, 0, 0.1)'
-      }}/>
+      }}/>*/}
               </Link>
               <br/>
 
@@ -426,7 +426,7 @@ But his painful path also led to brilliant writing.
                       textShadow: '0 1px 0 rgba(0, 0, 0, 0.1)'
                     }}/>
 
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I thought life would be different</Link>
+                    &nbsp;Thought it would be different</Link>
                 
               </span>
 

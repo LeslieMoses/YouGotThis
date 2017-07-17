@@ -33,9 +33,6 @@ const PostItemModal = React.createClass({
     return (
       <div >
         
-
-
-
         <Modal show={this.props.showModal} onHide={this.props.closeModal}>
           <Modal.Header closeButton>
             <Modal.Title className="StorymodalHed">&nbsp;{this.props.headline}</Modal.Title>
@@ -43,9 +40,7 @@ const PostItemModal = React.createClass({
             <hr />
                <Modal.Title className="modalName">
 
-
-
-         
+     
                  Storyteller: &nbsp;{this.props.name} &nbsp;<FontAwesome
         className='witness'
         name='pencil'
@@ -54,8 +49,8 @@ const PostItemModal = React.createClass({
       /></Modal.Title>
  
           </Modal.Header>
-          <Modal.Body className="BGStorymodal drop-cap lead">
-            {this.props.children}{this.props.story}
+          <Modal.Body className="BGStorymodal drop-cap lead"><pre>
+            {this.props.children}{this.props.story}</pre>
 
          
             <hr />
