@@ -90,15 +90,16 @@ class QuoteForm extends Component {
             </div>
             <blockquote class="blockquote"><p className="beenThereHome">
  
-   Courage  &nbsp;             
-             <FontAwesome
+   Courage            
+             {/*<FontAwesome
                 className=''
                 name='thumbs-up'
                 size='lg'
                 style={{
                 color: "navajowhite",
                 textShadow: '0 1px 0 rgba(0, 0, 0, 0.1)'
-              }}/>&nbsp;to step 
+              }}/>*/}
+              &nbsp;to step 
                <br/>
            through life's storms  &nbsp; <FontAwesome
                 className=''
