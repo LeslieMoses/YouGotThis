@@ -39,7 +39,6 @@ const PostItemModal = React.createClass({
             {/*<br />*/}
             <hr />
                <Modal.Title className="modalName">
-
      
                  Storyteller: &nbsp;{this.props.name} &nbsp;<FontAwesome
         className='witness'
@@ -49,8 +48,9 @@ const PostItemModal = React.createClass({
       /></Modal.Title>
  
           </Modal.Header>
-          <Modal.Body className="BGStorymodal drop-cap lead"><pre>
-            {this.props.children}{this.props.story}</pre>
+          <Modal.Body className="BGStorymodal drop-cap lead"><pre-wrap> 
+            {/*{this.props.children}*/}
+            {this.props.story} </pre-wrap>
 
          
             <hr />

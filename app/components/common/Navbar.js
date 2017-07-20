@@ -8,7 +8,6 @@ import youAreEnough from "./youAreEnough";
 import borrowView from "./borrowView";
 
 import iUnderstand from "./iUnderstand";
-
 import makeADifference from "./makeADifference";
 
 import youAreUnique from "./youAreUnique";
@@ -32,7 +31,7 @@ const Navigation = () => (
   <Navbar collapseOnSelect>
 
     <Navbar.Collapse>
-                <Navbar.Brand>
+                <Navbar.Brand pullLeft>
             <Link to="/" className="navHed">You Got This</Link>
             {/*<a href="#" className="navHed">You Got This</a>*/}
           </Navbar.Brand>

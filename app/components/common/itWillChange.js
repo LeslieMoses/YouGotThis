@@ -246,11 +246,7 @@ It will change
                 <div className="post-text">
 
                   {/* Post's title */}
-                  <a href="#">
-                    <h3 className="post-title">Post title place-holder</h3>
-                 
-
-                  </a>
+          
                   {/*<div className="post-meta">*/}
                     {/*<span className="meta"><span className="meta-icon fa fa-user-circle-o" aria-hidden="true" /><a className="meta-text">Steve Jobs</a></span>*/}
                     {/*<span className="meta"><span className="meta-icon fa fa-clock-o" aria-hidden="true" /><span className="meta-text">22/06/2030</span></span>
@@ -258,8 +254,7 @@ It will change
                   {/* Post's summary */}
                   <div className="post-summary">
                              
-                       <a href="#" className="post-read-more">Read more<span className="fa fa-chevron-circle-right" aria-hidden="true" /></a>
-                         {/*<PostItem />*/}
+                          {/*<PostItem />*/}
                    </div>
                 </div>
               </div>

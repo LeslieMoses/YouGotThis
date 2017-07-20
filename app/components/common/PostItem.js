@@ -37,27 +37,28 @@ class PostItem extends Component {
               <h3 className="post-title">{this.props.headline}</h3>
             </a>
             <div className="post-meta">
-              <span className="meta"><span className="meta-icon fa fa-user-circle-o" aria-hidden="true"/>
-                <a className="meta-text BGStory">He was a boy steeped in the “unbearable.” <br />
-But his painful path also led to brilliant writing.
-
-                  {/*{this.props.storyInfo.story}*/}
-                  </a>
-              </span>
-              <span className="meta"><span className="meta-icon fa fa-clock-o" aria-hidden="true"/>
-                <span className="meta-text">22/06/2030</span>
-
-                              <div>       
-    <Button   
+              <span className="meta"><span aria-hidden="true"/>
+                <a className="meta-text BGStory">    
+                 &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;  &nbsp;&nbsp;&nbsp; <Button   
           className="readBtn"
           bsStyle="info"
-          bsSize="small"
+          bsSize="large"
           backgroundColor="pink"
           onClick={this.open.bind(this)}
         >
-         Read Story
+         &nbsp;&nbsp;Story&nbsp;&nbsp;
         </Button>
+
+                  {/*{this.props.storyInfo.story}*/}
+                  </a> 
+                  <hr />
+              </span>
+              <span className="meta"><span  aria-hidden="true"/>
+
+                              <div>       
+
            < PostItemModal closeModal={this.close.bind(this)} headline={this.props.headline} name={this.props.storyInfo.name} showModal={this.state.showModal} story={this.props.storyInfo.story} source={this.props.storyInfo.source} /></div>
+             
               </span>
             </div>
           </div>

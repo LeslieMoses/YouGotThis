@@ -59,7 +59,7 @@ class QuoteForm extends Component {
 
           <div style={styles.formStyle} className="form-group">
             <label htmlFor="input-box">&nbsp;&nbsp;
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;We've &nbsp; got &nbsp; stories...<Link to="/concerns">&nbsp;&nbsp;&nbsp;
+              &nbsp;&nbsp;&nbsp;We've &nbsp; got &nbsp; stories...<Link to="/concerns">&nbsp;&nbsp;&nbsp;
               {/*<FontAwesome
                 className=''
                 name='book'
@@ -77,7 +77,7 @@ class QuoteForm extends Component {
 
             <div className="YouGotThisDekHome">
               <span className="and">
-                +
+                +&nbsp;
               </span>
               you
               <span style={{
@@ -101,14 +101,7 @@ class QuoteForm extends Component {
               }}/>*/}
               &nbsp;to step 
                <br/>
-           through life's storms  &nbsp; <FontAwesome
-                className=''
-                name='umbrella'
-                size='lg'
-                style={{
-                color: "#1FBED6",
-                textShadow: '0 1px 0 rgba(0, 0, 0, 0.1)'
-              }}/>  
+           through life's storms  &nbsp; 
               <br/> 
 from we         <FontAwesome
                 className=''
@@ -117,7 +110,8 @@ from we         <FontAwesome
                 style={{
                 color: "#FF264D",
                 textShadow: '0 1px 0 rgba(0, 0, 0, 0.1)'
-              }}/> &nbsp;who've
+              }}/>
+              &nbsp;who've
         been there
               {/*<span
                 style={{
@@ -134,7 +128,7 @@ from we         <FontAwesome
         </div>
 
         <div className="row">
-       <hr />
+  
        <br />
           <div className="col-md-4 col-md-4 col-md-4 ">
      
@@ -171,7 +165,7 @@ from we         <FontAwesome
 
                 <FontAwesome
                       className=''
-                      name='bolt'
+                      name='refresh'
                       size='5x'
                       style={{
                       color: "#FF717E",
@@ -179,18 +173,7 @@ from we         <FontAwesome
                     }}/>
                 </div>              </Link>
 
-              <div className="card-section">
-                 <article className="news-card-article">
-                
-                  <p className="news-card-description "><br /> <br /> <br />He was a boy steeped in the “unbearable.” 
-But his painful path also led to brilliant writing.
-</p>
-                </article>
-                <div className="news-card-author">
-           
-                  <hr />
-                </div>
-              </div>
+   
             </div>
 
           </div>
@@ -238,16 +221,7 @@ But his painful path also led to brilliant writing.
                     }}/>
           
                 </div>    </Link>
-               <div className="card-section">
-                  <article className="news-card-article">
-                
-                  <p className="news-card-description "><br /> <br /> "I am ill every time (the wind) blows hard and nothing but my enthusiastic love for my profession keeps me one hour at sea" 
-</p>
-                </article>
-                <div className="news-card-author">
-           
-                  <hr />         </div>
-              </div>
+
             </div>
 
           </div>
@@ -288,18 +262,9 @@ But his painful path also led to brilliant writing.
                       textShadow: '0 1px 0 rgba(0, 0, 0, 0.1)'
                     }}/> </div></Link>
              
-              <div className="card-section">
-                 <article className="news-card-article">
-                
-                  <p className="news-card-description "><br /> <br /> <br /><br />This “backward” boy grew up to be among the world’s best inventors. 
-</p>
-                </article>
-                <div className="news-card-author">
-           
-                  <hr />          </div>
-              </div>
-            </div>
 
+            </div>
+<br />
           </div>
 
           {/*2nd CARD ROW*/}
@@ -344,17 +309,7 @@ But his painful path also led to brilliant writing.
                     }}/>
                     </div> </Link>
 
-                <div className="card-section">
-                   <article className="news-card-article">
-                
-                  <p className="news-card-description "><br /> <br /><br /> <br /><br /> <br /> <br />And she did. She got up and walked.
-</p>
-                </article>
-                <div className="news-card-author">
-           
-                  <hr />                  </div>
-                </div>
-              </div>
+          </div>
 
             </div>
             {/*5th card*/}
@@ -394,16 +349,6 @@ But his painful path also led to brilliant writing.
                       textShadow: '0 1px 0 rgba(0, 0, 0, 0.1)'
                     }}/>
                     </div> </Link>
-                <div className="card-section">
-                    <article className="news-card-article">
-                
-                  <p className="news-card-description "><br /> <br /> <br /> <br /> <br />“My assignment is to take my situation and to use it to help others who feel hopeless and/or helpless because of loss. 
-</p>
-                </article>
-                <div className="news-card-author">
-           
-                  <hr />              </div>
-                </div>
               </div>
 
             </div>
@@ -443,24 +388,7 @@ But his painful path also led to brilliant writing.
                       textShadow: '0 1px 0 rgba(0, 0, 0, 0.1)'
                     }}/>
                     </div> </Link>
-                <div className="card-section">
-                  <article className="news-card-article">
-                
-                  <p className="news-card-description "><br /><br /> <br /> <br />“If you live in such a manner as to stand the test of the last judgment,
-you can depend upon it that the world will not speak well of you.”
-
- 
-
-
-
-
-
-</p>
-                </article>
-                <div className="news-card-author">
-           
-                  <hr />                  </div>
-                </div>
+  
               </div>
             </div>
 

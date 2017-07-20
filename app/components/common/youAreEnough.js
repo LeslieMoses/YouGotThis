@@ -167,6 +167,7 @@ componentDidMount () { // Where all AJAX requests will live
                 .addClick
                 .bind(this)}
                 type="button"
+                bsSize="large"
                 className="btn btn-warning"> Been There? &nbsp;
                 <span className="badge">
                   {this.state.beenThere1} </span>
@@ -236,11 +237,11 @@ You ARE Enough
                 <div className="post-text">
 
                   {/* Post's title */}
-                  <a href="#">
-                    <h3 className="post-title">Post title place-holder</h3>
+                  {/*<a href="#">*/}
+                    <h2 className="post-title">  </h2>
                  
 
-                  </a>
+                  {/*</a>*/}
                   {/*<div className="post-meta">*/}
                     {/*<span className="meta"><span className="meta-icon fa fa-user-circle-o" aria-hidden="true" /><a className="meta-text">Steve Jobs</a></span>*/}
                     {/*<span className="meta"><span className="meta-icon fa fa-clock-o" aria-hidden="true" /><span className="meta-text">22/06/2030</span></span>
@@ -248,7 +249,7 @@ You ARE Enough
                   {/* Post's summary */}
                   <div className="post-summary">
                              
-                       <a href="#" className="post-read-more">Read more<span className="fa fa-chevron-circle-right" aria-hidden="true" /></a>
+                       {/*<a href="#" className="post-read-more">Read more<span className="fa fa-chevron-circle-right" aria-hidden="true" /></a>*/}
                          {/*<PostItem />*/}
                    </div>
                 </div>
@@ -258,7 +259,7 @@ You ARE Enough
       
             <section className="posts-list">
               {/*<PostItem />ayo 123*/}
-work, pls
+ 
                  {this.state.notes.map(function(val, i) {
                   return <PostItem headline={val.headline} storyInfo={val} story={val.story} /> 
                 
