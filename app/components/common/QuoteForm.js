@@ -161,7 +161,8 @@ from we         <FontAwesome
  <Link to="/itwillchange">
               {/*<img src={"/pics/change.jpg"}/>*/}
                 <div className="view1 ">It Will Change
-                                   
+                  <br />
+                             <br />      
 
                 <FontAwesome
                       className=''

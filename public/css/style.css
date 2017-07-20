@@ -943,7 +943,8 @@ screen and (min-width: 40em) {
     font-weight: bolder;
     text-align: center;
    font-family: 'Bungee', cursive; 
-       font-family: 'Bungee Outline', cursive; light?
+       font-family: 'Bungee Outline', cursive;  
+        font-family: 'Open Sans', sans-serif;
 
     /*font-family: 'Bungee Shade', cursive;
 
