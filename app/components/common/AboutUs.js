@@ -72,7 +72,7 @@ class SaveHer extends Component {
       <img src="img_avatar1.png" className="media-object" style="width:60px">
     </div>*/}
     <div className="media-body">
-      <h4 className="media-heading">Leslie</h4>
+      <h4 className="media-heading">She needs your help</h4>
       <p>Ronsectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tedidunt ut labore et dolore magna aliqua.</p>
       <p>Wem mpor incidi dolor sit amet, consectetur adipiscing elit, sed do eiusmod tedunt ut labore et dolore magna aliqua.</p>

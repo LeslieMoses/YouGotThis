@@ -1,16 +1,27 @@
-        {
-          gematriaValues.map((val, i) => {
-            return  <OverlayTrigger placement="top" overlay={<Tooltip id={val.name}>{val.name} {val.gematria}</Tooltip>} key={i}>
-                      <Col lg={1} md={1} sm={1} xs={2} className="pull-right">
-                        <Panel className="gematriaPanel" onClick={this.props.getLetter.bind(this, val)} >
-                          <div className="text-center hebrewLetter">
-                            {val.letter}
-                          </div>
-                        </Panel>
-                      </Col>
-                    </OverlayTrigger>
-          })
-        }
+// dk what this is, but maybe it's important de wh Dustin did?       
+ {/*<PostItem headline={val.headline} story={val.story} source={val.source} /> */} 
+
+ 
+      {/*CODE TO USE*/}
+               {/*{this.state.notes.map(function(val, i) {
+                  return <PostItem headline={val.headline} story={val.story} source={val.source} /> 
+                } 
+              )} */} 
+
+
+// {
+//           gematriaValues.map((val, i) => {
+//             return  <OverlayTrigger placement="top" overlay={<Tooltip id={val.name}>{val.name} {val.gematria}</Tooltip>} key={i}>
+//                       <Col lg={1} md={1} sm={1} xs={2} className="pull-right">
+//                         <Panel className="gematriaPanel" onClick={this.props.getLetter.bind(this, val)} >
+//                           <div className="text-center hebrewLetter">
+//                             {val.letter}
+//                           </div>
+//                         </Panel>
+//                       </Col>
+//                     </OverlayTrigger>
+//           })
+//         }
 // CSS ON PG
 // const styles = {
 //   buttonStyle: {

@@ -270,84 +270,12 @@ It will change
                 } 
               )} 
  
-              {/*CODE TO USE*/}
-               {/*{this.state.notes.map(function(val, i) {
-                  return <PostItem headline={val.headline} story={val.story} source={val.source} /> 
-                } 
-              )} */}
+        
             
-              <div className="post-item">
-                <a href="#" className="post-thumbnail">
-                  <img src="/pics/pathwalk.jpg" alt />
-                </a>
-                <div className="post-text">
-                    
-                  <a href="#">
-                    <h3 className="post-title">Post title place-holder</h3>
-                    <div id="modal1" style={{margin: 50}} />
-                    <modal />
-                  </a>
-                  <div className="post-meta">
-                    <span className="meta"><span className="meta-icon fa fa-user-circle-o" aria-hidden="true" /><a className="meta-text">Steve Jobs</a></span>
-                    <span className="meta"><span className="meta-icon fa fa-clock-o" aria-hidden="true" /><span className="meta-text">22/06/2030</span></span>
-                  </div>
-                </div>
-              </div>
-              <div className="post-item">
-                <a href="#" className="post-thumbnail">
-                  <img src={"/pics/change.jpg"}/>
-                  {/*<img src="https://static.pexels.com/photos/33109/fall-autumn-red-season.jpg" alt />*/}
-                </a>
-                <div className="post-text">
-                  <a href="#">
-                    <h3 className="post-title">Post title place-holder</h3>
-                  </a>
-                  <div className="post-meta">
-                    <span className="meta"><span className="meta-icon fa fa-user-circle-o" aria-hidden="true" /><a className="meta-text">Steve Jobs</a></span>
-                    <span className="meta"><span className="meta-icon fa fa-clock-o" aria-hidden="true" /><span className="meta-text">22/06/2030</span></span>
-                          {/*<Button
+
         
-          bsStyle="warning"
-          bsSize="small"
-          backgroundColor="pink"
-          onClick={this.open}
-        >              
         
-         
-          Read More
-        </Button>*/}
-        {/*<PostItem headline={val.headline} story={val.story} source={val.source} /> */}
-                  </div>
-                </div>
-              </div>
-              <div className="post-item">
-                <a href="#" className="post-thumbnail">
-                  <img src="pics/change.jpg" alt />
-                </a>
-                <div className="post-text">
-                  <a href="#">
-                    <h3 className="post-title">Post title place-holder</h3>
-                  </a>
-                  <div className="post-meta">
-                    <span className="meta"><span className="meta-icon fa fa-user-circle-o" aria-hidden="true" /><a className="meta-text">Steve Jobs</a></span>
-                    <span className="meta"><span className="meta-icon fa fa-clock-o" aria-hidden="true" /><span className="meta-text">22/06/2030</span></span>
-                  </div>
-                </div>
-              </div>
-              <div className="post-item">
-                <a href="#" className="post-thumbnail">
-                  <img src="https://static.pexels.com/photos/370018/pexels-photo-370018.jpeg" alt />
-                </a>
-                <div className="post-text">
-                  <a href="#">
-                    <h3 className="post-title">Post title place-holder</h3>
-                  </a>
-                  <div className="post-meta">
-                    <span className="meta"><span className="meta-icon fa fa-user-circle-o" aria-hidden="true" /><a className="meta-text">Steve Jobs</a></span>
-                    <span className="meta"><span className="meta-icon fa fa-clock-o" aria-hidden="true" /><span className="meta-text">22/06/2030</span></span>
-                  </div>
-                </div>
-              </div>
+          
             </section>
           </div>
         </div>
