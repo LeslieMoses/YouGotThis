@@ -33,7 +33,6 @@ const Navigation = () => (
     <Navbar.Collapse>
                 <Navbar.Brand pullLeft>
             <Link to="/" className="navHed">You Got This</Link>
-            {/*<a href="#" className="navHed">You Got This</a>*/}
           </Navbar.Brand>
       <Nav>
         <Navbar.Header>
@@ -60,9 +59,7 @@ const Navigation = () => (
             
            
           </li>  </NavItem>
-          {/*<li >*/}
-            {/*<Link to="/submitmodal">Submit Modal</Link>*/}
-          {/*</li>*/}
+    
         </ul>
         
 

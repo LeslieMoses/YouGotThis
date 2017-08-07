@@ -240,7 +240,7 @@ It will change
                 {/* Post's thumbnail */}
                 <a href="#" className="post-thumbnail picHed">
                   {/*<img src={unique} alt={"unique"}/> */}
-                  <img src="https://static.pexels.com/photos/12567/photo-1444703686981-a3abbc4d4fe3.jpeg" alt />
+                  <img src="/pics/ahead.jpg" alt />
                 </a>
                 {/* Post's text */}
                 <div className="post-text">
@@ -322,7 +322,7 @@ It will change
               </div>
               <div className="post-item">
                 <a href="#" className="post-thumbnail">
-                  <img src="https://static.pexels.com/photos/12567/photo-1444703686981-a3abbc4d4fe3.jpeg" alt />
+                  <img src="pics/change.jpg" alt />
                 </a>
                 <div className="post-text">
                   <a href="#">

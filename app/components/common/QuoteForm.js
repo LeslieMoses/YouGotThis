@@ -144,7 +144,7 @@ from we         <FontAwesome
                     <FontAwesome
                       className=''
                       name='circle'
-                      size='1x'
+                      size='lg'
                       style={{
                       color: "#FF717E",
                       textShadow: '0 1px 0 rgba(0, 0, 0, 0.1)'
@@ -192,7 +192,7 @@ from we         <FontAwesome
                     <FontAwesome
                       className=''
                       name='circle'
-                      size='1x'
+                      size='lg'
                       style={{
                       color: "#FFdfba",
                       textShadow: '0 1px 0 rgba(0, 0, 0, 0.1)'
@@ -240,7 +240,7 @@ from we         <FontAwesome
                     <FontAwesome
                       className=''
                       name='circle'
-                      size='1x'
+                      size='lg'
                       style={{
                       color: "#1FBED6",
                       textShadow: '0 1px 0 rgba(0, 0, 0, 0.1)'
@@ -285,7 +285,7 @@ from we         <FontAwesome
                     <FontAwesome
                       className=''
                       name='circle'
-                      size='1x'
+                      size='lg'
                       style={{
                       color: "#20b2aa",
                       textShadow: '0 1px 0 rgba(0, 0, 0, 0.1)'
@@ -326,13 +326,13 @@ from we         <FontAwesome
                     <FontAwesome
                       className=''
                       name='circle'
-                      size='1x'
+                      size='lg'
                       style={{
                       color: "rgba(255,192,203,1)",
                       textShadow: '0 1px 0 rgba(0, 0, 0, 0.1)'
                     }}/>
 
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;It's hopeless</Link>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;It's hopeless&nbsp;&nbsp;&nbsp;</Link>
                 
               </span>
 
@@ -367,13 +367,13 @@ from we         <FontAwesome
                     <FontAwesome
                       className=''
                       name='circle'
-                      size='1x'
+                      size="lg"
                       style={{
                       color: "#ffa36d",
                       textShadow: '0 1px 0 rgba(0, 0, 0, 0.1)'
                     }}/>
 
-                    &nbsp;Thought it would be different</Link>
+                    &nbsp;Thought it'd be different</Link>
                 
               </span>
 

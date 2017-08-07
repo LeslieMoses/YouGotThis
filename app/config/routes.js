@@ -8,7 +8,7 @@ import Concerns from "../components/common/Concerns";
 import itWillChange from "../components/common/itWillChange";
 import youAreEnough from "../components/common/youAreEnough";
 import borrowView from "../components/common/borrowView";
-import iUnderstand from "../components/common/iunderstand";
+import iUnderstand from "../components/common/iUnderstand";
 import makeADifference from "../components/common/makeADifference";
 import youAreUnique from "../components/common/youAreUnique";
 

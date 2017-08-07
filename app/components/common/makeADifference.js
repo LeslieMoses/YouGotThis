@@ -147,7 +147,7 @@ componentDidMount () { // Where all AJAX requests will live
     
 
 <div className="card-user-profile">
-        <img className="card-user-profile-img" src="https://images.pexels.com/photos/5439/earth-space.jpg?h=350&auto=compress&cs=tinysrgb" alt="picture of space" />
+        <img className="card-user-profile-img" src="/pics/dogSurf.jpg" alt="picture of space" />
         <div className="card-user-profile-content card-section">
           <div className="card-user-profile-avatar">
             <img src='/pics/unique.jpg' />
