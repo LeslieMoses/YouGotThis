@@ -272,6 +272,7 @@ ul {
     border-radius: 2.25rem;
     box-shadow: 0 1px 3px pink, 0 1px 2px #666;
     padding: 10px;
+       width: fit-content;
 }
 .news-card .card-section {
     background-color: inherit;
@@ -751,6 +752,10 @@ screen and (min-width: 40em) {
     .posts-panel .posts-list .post-read-more {
         display: none;
     }
+
+    .div.news-card {
+        width: fit-content;
+}
 }
 @media screen and (min-width: 40em) and (max-width: 63.9375em) {
     .posts-panel .posts-list .post-title {

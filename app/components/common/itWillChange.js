@@ -6,8 +6,6 @@ import SubmitStory from "./SubmitStory";
 import SubmitModal from "./SubmitModal";
 import PostItem from "./PostItem"; 
 import QuoteForm from "./QuoteForm"; 
-
-
 import youAreEnough from "./youAreEnough";
 
 import borrowView from "./borrowView";
