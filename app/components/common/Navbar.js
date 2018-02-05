@@ -12,7 +12,7 @@ import makeADifference from "./makeADifference";
 
 import youAreUnique from "./youAreUnique";
 import QuoteForm from "./QuoteForm"; 
-
+var FontAwesome = require('react-fontawesome');
 
 import {
   Nav,
@@ -41,6 +41,49 @@ const Navigation = () => (
           <Navbar.Toggle/>
         </Navbar.Header>
 
+  {/* START try 081817      */}
+        <div className="responsive-nav-social-mobile" data-responsive-toggle="responsive-nav-social" data-hide-for="medium">
+          <div className="responsive-nav-social-mobile-left">
+            <ul className="menu">
+              <li><a href="https://www.facebook.com/"><i className="fa fa-facebook" aria-hidden="true" /></a></li>
+              <li><a href="https://www.instagram.com/?hl=en"><i className="fa fa-instagram" aria-hidden="true" /></a></li>
+              <li><a href="https://www.pinterest.com/"><i className="fa fa-pinterest-p" aria-hidden="true" /></a></li>
+              <li><a href="https://twitter.com/?lang=en"><i className="fa fa-twitter" aria-hidden="true" /></a></li>
+            </ul>
+          </div>
+          <div className="responsive-nav-social-mobile-right">
+            <button className="menu-icon" type="button" data-toggle="responsive-nav-social" />
+          </div>
+        </div>
+        <div data-sticky-container>
+          <div className="responsive-nav-social" id="responsive-nav-social" data-sticky data-options="marginTop:0;">
+            <div className="row align-justify align-middle" id="responsive-menu">
+              <div className="responsive-nav-social-left">
+                <ul className="menu vertical medium-horizontal">
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">About</a></li>
+                  <li><a href="#">Travel</a></li>
+                  <li><a href="#">Eat</a></li>
+                  <li><a href="#">Relax</a></li>
+                  <li><a href="#">Videos</a></li>
+                </ul>
+              </div>
+              <div className="responsive-nav-social-right hide-for-small-only">
+                <ul className="menu">
+                  <li><a href="https://www.facebook.com/"><i className="fa fa-facebook" aria-hidden="true" /></a></li>
+                  <li><a href="https://www.instagram.com/?hl=en"><i className="fa fa-instagram" aria-hidden="true" /></a></li>
+                  <li><a href="https://www.pinterest.com/"><i className="fa fa-pinterest-p" aria-hidden="true" /></a></li>
+                  <li><a href="https://twitter.com/?lang=en"><i className="fa fa-twitter" aria-hidden="true" /></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+{/* END try 081817*/}
+
+
+
 
         <ul className="nav navbar-nav">
           {/*className={location.pathname === "/" && "active"}*/}
@@ -56,7 +99,7 @@ const Navigation = () => (
             
           
             {/*<Link to="/submitstory"></></Link>*/}
-            
+
            
           </li>  </NavItem>
     

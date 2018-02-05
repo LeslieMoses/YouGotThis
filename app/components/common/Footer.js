@@ -18,9 +18,9 @@ const Footer = () => (
                       fontWeight:"bold",
                       textShadow: '0 1px 0 rgba(0, 0, 0, 0.1)'
                     }}/>
-                     &nbsp;Leslie Moses  &nbsp;&nbsp; | &nbsp;&nbsp; built from da <FontAwesome
+                     &nbsp;Leslie Moses  &nbsp;&nbsp; | &nbsp;&nbsp; Built from da <FontAwesome
                       className=''
-                      name='heart'
+                      name='heart-o'
                       size='1x'
                       style={{
                       color: "deeppink",
