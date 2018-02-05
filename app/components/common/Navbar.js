@@ -42,10 +42,6 @@ const Navigation = () => (
         </Navbar.Header>
 
 
-
-
-
-
         <ul className="nav navbar-nav">
           {/*className={location.pathname === "/" && "active"}*/}
           {/*<li >
