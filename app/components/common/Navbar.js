@@ -65,14 +65,8 @@ const Navigation = () => (
 
       </Nav>
       <Nav pullRight>
-        {/*<NavItem eventKey={2}><Link to="/login">LogIn</Link></NavItem>
-        <NavItem eventKey={3}><Link to="/loginbox">LogInBox</Link></NavItem>*/}
-        <NavItem eventKey={4}><SubmitModal /></NavItem>
-        <NavItem eventKey={5}>
-          <Link to="/why">Why Stories</Link>
-        </NavItem>
-        
-<NavDropdown eventKey={2} title="Concerns" id="basic-nav-dropdown">
+
+      <NavDropdown eventKey={2} title="Concerns" id="basic-nav-dropdown">
 
           <MenuItem eventKey={2.1}>
             <Link to="/itwillchange">It Will Change</Link>
@@ -98,6 +92,15 @@ const Navigation = () => (
           </MenuItem>*/}
 
         </NavDropdown>
+
+        {/*<NavItem eventKey={2}><Link to="/login">LogIn</Link></NavItem>
+        <NavItem eventKey={3}><Link to="/loginbox">LogInBox</Link></NavItem>*/}
+        <NavItem eventKey={4}><SubmitModal /></NavItem>
+        <NavItem eventKey={5}>
+          <Link to="/why">Why Stories</Link>
+        </NavItem>
+        
+
         {/* <NavItem eventKey={6}>
           <Link to="/saveher">Save Her</Link>
         </NavItem> */}
