@@ -85,7 +85,7 @@ class SaveHer extends Component {
                                         onClick={this.handleButtonClick}
                                         className="btn btn-danger"
                                         style={styles.buttonStyle}>
-                                        Her Favorite Story
+                                        Don't push this
                                     </button>
                                 {/*</li>
                           
