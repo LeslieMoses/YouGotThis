@@ -98,9 +98,9 @@ const Navigation = () => (
           </MenuItem>*/}
 
         </NavDropdown>
-        <NavItem eventKey={6}>
+        {/* <NavItem eventKey={6}>
           <Link to="/saveher">Save Her</Link>
-        </NavItem>
+        </NavItem> */}
         
       </Nav>
     </Navbar.Collapse>
