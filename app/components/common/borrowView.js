@@ -144,7 +144,7 @@ componentDidMount () { // Where all AJAX requests will live
           </div>
           <p className="card-user-profile-name concernHed"> 
             <br />
-  "I've failed too much"<br /><hr />
+  "I've failed tooooo much"<br /><hr />
       </p>
          <br /> <p className="comradeHed3">...so you think</p>
     <br />
